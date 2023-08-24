@@ -1,8 +1,10 @@
+import Speakers from "./sections/Speakers";
+
 function App() {
   return (
-    <>
-      <div>Hello world</div>
-    </>
+    <div>
+      <Speakers />
+    </div>
   );
 }
 
