@@ -2,7 +2,29 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "darker-grotesque": ["Darker Grotesque", "sans"],
+        "dm-sans": ["DM Sans", "sans-serif"],
+      },
+      keyframes: {
+        "grow-circle": {
+          "0%": {
+            "border-radius": "50%",
+            transform: "scale(0,0) translate(0, 80%)",
+            opacity: 0,
+          },
+          "100%": {
+            "border-radius": "50%",
+            transform: "scale(1,1) translate(0, 0)",
+            opacity: 1,
+          },
+        },
+      },
+      animation: {
+        "grow-circle": "grow-circle 1s forwards",
+      },
+    },
   },
   plugins: [],
 };
