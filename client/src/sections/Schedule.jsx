@@ -1,3 +1,5 @@
+import ScheduleTile from "../components/ScheduleTile";
+
 const Schedule = () => {
   return (
     <div className="px-24 py-20 font-darker-grotesque">
@@ -11,8 +13,11 @@ const Schedule = () => {
       </div>
 
       <div className="flex text-2xl font-medium">
-        <div className="flex-1 border-solid border-2 border-red-700 "></div>
-        <div className="border-solid border-2 border-red-700 w-3/12 pt-10 pl-10">
+        <div className="flex-1">
+          <ScheduleTile />
+          <ScheduleTile />
+        </div>
+        <div className="w-3/12 pt-10 pl-10">
           Filter By:
           <div className="leading-6">
             <div className>

@@ -24,6 +24,9 @@ export default {
       animation: {
         "grow-circle": "grow-circle 1s forwards",
       },
+      colors: {
+        "theme-blue": "#09189C",
+      },
     },
   },
   plugins: [],
