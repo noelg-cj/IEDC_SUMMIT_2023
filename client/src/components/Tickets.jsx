@@ -14,8 +14,8 @@ function Ticket() {
   }
   
   return (
-    <div className=" mb-6 overflow-hidden relative flex flex-col h-[622px] bg-gradient-to-b from-[#17C4E8] to-[#0E79BE] w-[365.82px] rounded-[30px] ">
-        <div className="h-[234px] bg-white w-full self-center m-[19px] w-11/12 rounded-[30px]"></div>
+    <div className=" mb-6  overflow-hidden relative flex flex-col h-[622px] bg-gradient-to-b from-[#17C4E8] to-[#0E79BE] w-[365.82px] rounded-[30px] ">
+        <div className="h-[234px] bg-white  self-center m-[19px]  w-11/12 rounded-[30px]"></div>
         <div className="self-center flex flex-row bg-lime- ">
             <div className="w-[38px] rotate-180  overflow-hidden">
                 <div className="w-[75px] h-[75px] bg-white rounded-[75px]"></div>
