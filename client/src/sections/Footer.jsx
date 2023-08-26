@@ -4,101 +4,107 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import { Box } from "@mui/material";
 import { Grid } from '@mui/material';
-import { Facebook, Instagram, Twitter } from "@mui/icons-material";
-
+import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
+import footerIcon from "../assets/img/footer/footer heading.png";
 
 export default function Footer() {
   return (
     <Box
-    backgroundColor="#7de1ee"
-    paddingTop="20px"
+    backgroundColor="#1f1f1f"
+    paddingTop="30px"
     component="footer"
     width="100%"
   >
     <Grid container justifyContent="space-evenly">
-          <Grid item xs={12} sm={4} zeroMinWidth>
-            <center>
-            <Typography variant="body1" color="text.primary" paddingTop="15px" gutterBottom>
+    <Grid item xs={12} sm={4} zeroMinWidth>
+            
+            <img src={footerIcon} className="w-48 sm:w-72 lg:w-96 round-full" />
+            <Typography variant="body1" color="#ffffff" paddingTop="30px" gutterBottom>
               Kerala Startup Mission | Govenment of Kerala
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="#ababab" paddingBottom="20px">
               <p>G3B, Thejaswini, Technopark Campus</p>
               <p>Kariavattom, Trivandrum, Kerala, 695581</p>
             </Typography>
 
-            <Typography variant="body1" color="text.primary" paddingTop="20px" gutterBottom>
-              Follow Us
+            <Typography variant="body1" color="#ababab">
+              <p>For Queries:</p>
             </Typography>
-            <Link href="https://www.facebook.com/" color="inherit">
+            <Typography variant="body1" color="#ffffff">
+              <p>iedckerala@startupmission.in</p>
+            </Typography>
+            <Typography variant="body1" color="#ffffff" paddingTop="20px" paddingBottom="30px" gutterBottom>
+              <p>Bergin Russel</p>
+              <p>iedckerala@startupmission.in</p>
+              <p>6238998379</p>
+            </Typography>
+            <Link href="https://www.facebook.com/" color="#ababab">
               <Facebook />
             </Link>
             <Link
               href="https://www.instagram.com/"
-              color="inherit"
+              color="#ababab"
               sx={{ pl: 1, pr: 1 }}
             >
               <Instagram />
             </Link>
-            <Link href="https://www.twitter.com/" color="inherit">
+            <Link href="https://www.twitter.com/" color="#ababab">
               <Twitter />
             </Link>
-            <Typography variant="body1" color="text.primary" padding="20px">
-              <p>For Queries</p>
-              <p>email@email.com</p>
-            </Typography>
-            <Typography variant="body1" color="text.primary" padding="20px" gutterBottom>
-              <p>Name Name</p>
-              <p>email@email.com</p>
-              <p>Phone no</p>
-            </Typography>
-            </center>
+            <Link href="https://www.linkedin.com/" color="#ababab">
+              <LinkedIn />
+            </Link>
             
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <center>
-            <Typography variant="body1" color="text.primary" paddingTop="15px" gutterBottom>
-              College of Engineering, Trivandrum
+          <Grid item xs={12} sm={4} zeroMinWidth>
+            
+            <img src={footerIcon} className="w-48 sm:w-72 lg:w-96 round-full" />
+            <Typography variant="body1" color="#ffffff" paddingTop="30px" gutterBottom>
+              Kerala Startup Mission | Govenment of Kerala
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-            <p>Engineering College, Sreekaryam - Kulathoor Rd</p>
-            <p>Sreekariyam, Thiruvananthapuram, Kerala 695016</p>
+            <Typography variant="body2" color="#ababab" paddingBottom="20px">
+              <p>G3B, Thejaswini, Technopark Campus</p>
+              <p>Kariavattom, Trivandrum, Kerala, 695581</p>
             </Typography>
-            <Typography variant="body1" color="text.primary" paddingTop="20px" gutterBottom>
-              Follow Us
+
+            <Typography variant="body1" color="#ababab">
+              <p>For Queries:</p>
             </Typography>
-            <Link href="https://www.facebook.com/" color="inherit">
+            <Typography variant="body1" color="#ffffff">
+              <p>iedckerala@startupmission.in</p>
+            </Typography>
+            <Typography variant="body1" color="#ffffff" paddingTop="20px" paddingBottom="30px" gutterBottom>
+              <p>Bergin Russel</p>
+              <p>iedckerala@startupmission.in</p>
+              <p>6238998379</p>
+            </Typography>
+            <Link href="https://www.facebook.com/" color="#ababab">
               <Facebook />
             </Link>
             <Link
               href="https://www.instagram.com/"
-              color="inherit"
+              color="#ababab"
               sx={{ pl: 1, pr: 1 }}
             >
               <Instagram />
             </Link>
-            <Link href="https://www.twitter.com/" color="inherit">
+            <Link href="https://www.twitter.com/" color="#ababab">
               <Twitter />
             </Link>
-            <Typography variant="body1" color="text.primary" padding="20px">
-              <p>For Queries</p>
-              <p>email@email.com</p>
-            </Typography>
-            <Typography variant="body1" color="text.primary" padding="20px" gutterBottom>
-              <p>Name Name</p>
-              <p>email@email.com</p>
-              <p>Phone no</p>
-            </Typography>
-            </center>
+            <Link href="https://www.linkedin.com/" color="#ababab">
+              <LinkedIn />
+            </Link>
+            
           </Grid>
     </Grid>
     <Container Width="100%" borderTop={10} sx={{
           p:3,
     }}
     >
-      <Typography variant="body2" color="text.secondary" align="center">
+      <Typography variant="body2" color="#605d5d" align="center">
         {"Copyright © "}
         {new Date().getFullYear()}
-        <Link color="inherit" href="https://your-website.com/"></Link>
+        <Link color="#ababab" href="https://your-website.com/"></Link>
         {"‎ Kerala Startup Mission. All Rights Reserved."}
       </Typography>
     </Container>
