@@ -1,16 +1,49 @@
+import { useState } from "react";
 import ScheduleTile from "../components/ScheduleTile";
 import { schedules } from "../data";
 
 const Schedule = () => {
+  const [location, setLocation] = useState("0");
+  console.log(location);
+  const selectLocation = (e) => {
+    setLocation(e.target.getAttribute("data-loc-id"), () =>
+      console.log(location)
+    );
+  };
+
   return (
     <div className="px-24 py-20 font-darker-grotesque">
-      <h1 className=" text-6xl text-start font-semibold">SCHEDULE</h1>
+      <h1 className=" text-6xl text-start font-semibold">THE SCHEDULE</h1>
 
       <div className="flex py-16 justify-around text-3xl font-semibold">
         <div></div>
-        <div>Dhwani Stage</div>
-        <div>DJ Hall</div>
-        <div>CETAA Hall</div>
+        <div
+          className={`transition-colors	cursor-pointer	duration-300 ${
+            location === "0" ? "" : "text-theme-blue2"
+          }`}
+          onClick={selectLocation}
+          data-loc-id={0}
+        >
+          Dhwani Stage
+        </div>
+        <div
+          className={`transition-colors	cursor-pointer	duration-300 ${
+            location === "1" ? "" : "text-theme-blue2"
+          }`}
+          onClick={selectLocation}
+          data-loc-id={1}
+        >
+          DJ Hall
+        </div>
+        <div
+          className={`transition-colors	cursor-pointer	duration-300 ${
+            location === "2" ? "" : "text-theme-blue2"
+          }`}
+          onClick={selectLocation}
+          data-loc-id={2}
+        >
+          CETAA Hall
+        </div>
       </div>
 
       <div className="flex text-2xl font-medium">

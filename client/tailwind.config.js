@@ -26,6 +26,7 @@ export default {
       },
       colors: {
         "theme-blue": "#09189C",
+        "theme-blue2": "#4656E180",
       },
     },
   },
