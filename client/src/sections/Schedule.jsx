@@ -6,9 +6,7 @@ const Schedule = () => {
   const [location, setLocation] = useState("0");
   console.log(location);
   const selectLocation = (e) => {
-    setLocation(e.target.getAttribute("data-loc-id"), () =>
-      console.log(location)
-    );
+    setLocation(e.target.getAttribute("data-loc-id"));
   };
 
   return (
@@ -64,7 +62,12 @@ const Schedule = () => {
           Filter By:
           <div className="leading-6">
             <div className>
-              <input type="radio" className="align-middle" name="filter-by" />{" "}
+              <input
+                type="radio"
+                className="align-middle"
+                name="filter-by"
+                checked
+              />{" "}
               Venue
             </div>
             <div>

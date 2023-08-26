@@ -1,28 +1,27 @@
 import { speakers } from "../data";
 
 const ScheduleTile = ({ datas, num, top, bottom }) => {
-  console.log(top + " " + bottom);
   return (
     <div className="flex items-center py-8 gap-12">
-      <div className="w-2/12 font-darker-grotesque text-lg font-semibold">
+      <div className="hidden lg:block w-2/12 font-darker-grotesque text-lg font-semibold">
         {datas.time}
       </div>
       <div className="w-2 relative self-stretch my-[-20px] flex flex-col justify-center mr-4">
-        <div className="text-2xl font-semibold text-white bg-theme-blue w-8 h-8 text-center rounded-full z-10">
+        <div className="text-2xl font-semibold text-white bg-theme-blue3 w-8 h-8 text-center rounded-full z-10">
           {num}
         </div>
         <div
           className={
             top
               ? "absolute opacity-0"
-              : "absolute bg-theme-blue w-1 h-4/6 left-3.5 top-[-10%]"
+              : "absolute bg-theme-blue3 w-1 h-4/6 left-3.5 top-[-10%]"
           }
         ></div>
         <div
           className={
             bottom
               ? "absolute opacity-0"
-              : "absolute bg-theme-blue w-1 h-4/6 left-3.5 bottom-[-10%]"
+              : "absolute bg-theme-blue3 w-1 h-4/6 left-3.5 bottom-[-10%]"
           }
         ></div>
       </div>
@@ -33,6 +32,9 @@ const ScheduleTile = ({ datas, num, top, bottom }) => {
         />
       </div>
       <div className="w-6/12">
+        <div className="lg:hidden font-darker-grotesque text-lg font-semibold">
+          {datas.time}
+        </div>
         <div className="font-darker-grotesque text-4xl font-semibold text-theme-blue">
           {datas.title}
         </div>
