@@ -27,23 +27,31 @@
 
 @keyframes move-speakers {
   from {
-    display: none; /* Initially hidden */
-    transform: translateY(100%); /* Translate to the bottom */
+    display: none;
+    transform: translateY(0%);
+    opacity: 0;
+    scale: 1.3;
   }
   to {
-    display: block; /* Fully visible */
-    transform: translateY(-10%); /* Translate to the center */
+    display: block;
+    transform: translateY(-5%);
+    opacity: 1;
+    scale: 1;
   }
 }
 
 @keyframes move-speakers-return {
   from {
-    display: block; /* Initially hidden */
-    transform: translateY(-10%); /* Translate to the bottom */
+    display: block;
+    transform: translateY(-5%);
+    opacity: 1;
+    scale: 1;
   }
   to {
-    display: none; /* Fully visible */
-    transform: translateY(100%); /* Translate to the center */
+    display: none;
+    transform: translateY(0%);
+    opacity: 0;
+    scale: 1.3;
   }
 }
 
@@ -52,7 +60,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(50%);
+    transform: translateX(5%);
   }
 }
 
@@ -61,12 +69,12 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-5%);
   }
 }
 @keyframes move-left-return {
   from {
-    transform: translateX(50%);
+    transform: translateX(5%);
   }
   to {
     transform: translateX(0);
@@ -75,7 +83,7 @@
 
 @keyframes move-right-return {
   from {
-    transform: translateX(-50%);
+    transform: translateX(-5%);
   }
   to {
     transform: translateX(0);
@@ -106,11 +114,9 @@
 }
 
 .animate-speakers-move {
-  animation: move-speakers 1s ease-in-out;
-  /* Other styling for the element */
+  animation: move-speakers 1s forwards;
 }
 
 .animate-speakers-move-return {
-  animation: move-speakers-return 1s ease-in-out;
-  /* Other styling for the element */
+  animation: move-speakers-return 1s forwards;
 }
