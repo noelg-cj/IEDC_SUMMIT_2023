@@ -87,3 +87,30 @@ export const schedules = [
     time: "9:30AM - 9:40AM",
   },
 ];
+
+export const iedcCircle = [
+  {
+    value: 14,
+    title: "districts",
+  },
+  {
+    value: 14,
+    title: "attendees",
+  },
+  {
+    value: 14,
+    title: "startups",
+  },
+  {
+    value: 14,
+    title: "activities",
+  },
+  {
+    value: "20+",
+    title: "speakers",
+  },
+  {
+    value: 14,
+    title: "colleges",
+  },
+];
