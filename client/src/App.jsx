@@ -4,7 +4,6 @@ import Speakers from "./sections/Speakers";
 function App() {
   return (
     <div>
-      <Speakers />
       <Schedule />
     </div>
   );

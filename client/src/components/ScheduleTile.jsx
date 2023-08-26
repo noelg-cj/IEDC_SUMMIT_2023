@@ -2,7 +2,7 @@ import { speakers } from "../data";
 
 const ScheduleTile = ({ datas, num, top, bottom }) => {
   return (
-    <div className="flex items-center py-8 gap-12">
+    <div className="flex items-center py-8 gap-8 lg:gap-12">
       <div className="hidden lg:block w-2/12 font-darker-grotesque text-lg font-semibold">
         {datas.time}
       </div>
@@ -25,23 +25,23 @@ const ScheduleTile = ({ datas, num, top, bottom }) => {
           }
         ></div>
       </div>
-      <div className="w-28">
+      <div className="w-15 sm:w-17 md:w-28">
         <img
           src={datas.img}
           className="aspect-square rounded-full object-cover"
         />
       </div>
-      <div className="w-6/12">
-        <div className="lg:hidden font-darker-grotesque text-lg font-semibold">
+      <div className="w-8/12 lg:w-6/12">
+        <div className="lg:hidden font-darker-grotesque text-sm sm:text-md font-semibold">
           {datas.time}
         </div>
-        <div className="font-darker-grotesque text-4xl font-semibold text-theme-blue">
+        <div className="font-darker-grotesque text-xl sm:text-4xl font-semibold text-theme-blue">
           {datas.title}
         </div>
-        <div className="font-darker-grotesque text-xl font-semibold">
+        <div className="font-darker-grotesque text-md sm:text-xl font-semibold">
           {datas.name}
         </div>
-        <div className="font-darker-grotesque text-xl font-semibold">
+        <div className="font-darker-grotesque text-md sm:text-xl font-semibold">
           {datas.position}
         </div>
       </div>
