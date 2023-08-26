@@ -1,0 +1,116 @@
+/* Add this to your CSS */
+@keyframes move-text {
+  0% {
+    transform: translateY(0);
+    font-size: 384px;
+    color: gray;
+  }
+  100% {
+    transform: translateY(-50%);
+    font-size: 48px;
+    color: white;
+  }
+}
+
+@keyframes move-text-return {
+  0% {
+    transform: translateY(-50%);
+    font-size: 48px;
+    color: white;
+  }
+  100% {
+    transform: translateY(0);
+    font-size: 384px;
+    color: gray;
+  }
+}
+
+@keyframes move-speakers {
+  from {
+    display: none; /* Initially hidden */
+    transform: translateY(100%); /* Translate to the bottom */
+  }
+  to {
+    display: block; /* Fully visible */
+    transform: translateY(-10%); /* Translate to the center */
+  }
+}
+
+@keyframes move-speakers-return {
+  from {
+    display: block; /* Initially hidden */
+    transform: translateY(-10%); /* Translate to the bottom */
+  }
+  to {
+    display: none; /* Fully visible */
+    transform: translateY(100%); /* Translate to the center */
+  }
+}
+
+@keyframes move-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes move-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes move-left-return {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-right-return {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-move {
+  animation: move-text 1s linear forwards;
+}
+.animate-move-return {
+  animation: move-text-return 1s linear forwards;
+}
+
+.animate-left {
+  animation: move-left 1s linear forwards;
+}
+
+.animate-right {
+  animation: move-right 1s linear forwards;
+}
+
+.animate-left-return {
+  animation: move-left-return 1s linear forwards;
+}
+
+.animate-right-return {
+  animation: move-right-return 1s linear forwards;
+}
+
+.animate-speakers-move {
+  animation: move-speakers 1s ease-in-out;
+  /* Other styling for the element */
+}
+
+.animate-speakers-move-return {
+  animation: move-speakers-return 1s ease-in-out;
+  /* Other styling for the element */
+}

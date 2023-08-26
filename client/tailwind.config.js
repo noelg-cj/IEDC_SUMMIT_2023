@@ -22,7 +22,8 @@ export default {
         },
       },
       animation: {
-        "grow-circle": "grow-circle 1s forwards",
+        "grow-circle": "grow-circle 400ms forwards",
+        // "animate-revolve": "revolve 4s linear infinite",
       },
     },
   },
