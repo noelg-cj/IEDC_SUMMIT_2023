@@ -25,6 +25,11 @@ export default {
         "grow-circle": "grow-circle 400ms forwards",
         // "animate-revolve": "revolve 4s linear infinite",
       },
+      colors: {
+        "theme-blue": "#0F86E1",
+        "theme-blue2": "#4656E180",
+        "theme-blue3": "#097ED8",
+      },
     },
   },
   plugins: [],

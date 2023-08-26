@@ -1,12 +1,16 @@
-import COI from "./sections/COI";
+import Schedule from "./sections/Schedule";
 import Speakers from "./sections/Speakers";
-
+import Events from "./sections/Events";
+import CountDown from "./components/countDown";
+import IedcCircle from "./components/IedcCircle";
 function App() {
   return (
-    <div>
-      <COI />
+    <div className=" w-full min-h-screen flex flex-col items-center">
+      <CountDown />
+      <IedcCircle />
       <Speakers />
-      <COI />
+      <Schedule />
+      <Events />
     </div>
   );
 }
