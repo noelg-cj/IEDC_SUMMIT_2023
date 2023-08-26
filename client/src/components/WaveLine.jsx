@@ -16,7 +16,6 @@ function WaveLine({ position, direction }) {
             stroke="white"
             strokeWidth={4}
             strokeOpacity={0.4}
-            stroke-width="4"
           />
         </svg>
       )}
