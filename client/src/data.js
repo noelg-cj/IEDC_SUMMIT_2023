@@ -49,3 +49,41 @@ export const speakers = [
     title2: "Roads and safety",
   },
 ];
+
+export const schedules = [
+  {
+    img: Speaker1,
+    name: "Dr. Sashi Tharoor",
+    title: "Welcome Speech",
+    position: "Member of Parliament",
+    time: "9:30AM - 9:40AM",
+  },
+  {
+    img: Speaker1,
+    name: "Dr. Sashi Tharoor",
+    title: "Welcome Speech",
+    position: "Member of Parliament",
+    time: "9:30AM - 9:40AM",
+  },
+  {
+    img: Speaker1,
+    name: "Dr. Sashi Tharoor",
+    title: "Welcome Speech",
+    position: "Member of Parliament",
+    time: "9:30AM - 9:40AM",
+  },
+  {
+    img: Speaker1,
+    name: "Dr. Sashi Tharoor",
+    title: "Welcome Speech",
+    position: "Member of Parliament",
+    time: "9:30AM - 9:40AM",
+  },
+  {
+    img: Speaker1,
+    name: "Dr. Sashi Tharoor",
+    title: "Welcome Speech",
+    position: "Member of Parliament",
+    time: "9:30AM - 9:40AM",
+  },
+];

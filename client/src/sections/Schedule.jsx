@@ -1,4 +1,5 @@
 import ScheduleTile from "../components/ScheduleTile";
+import { schedules } from "../data";
 
 const Schedule = () => {
   return (
@@ -14,8 +15,17 @@ const Schedule = () => {
 
       <div className="flex text-2xl font-medium">
         <div className="flex-1">
-          <ScheduleTile />
-          <ScheduleTile />
+          {schedules.map((schedule, index) => {
+            return (
+              <ScheduleTile
+                key={schedule.title + index}
+                datas={schedule}
+                num={index + 1}
+                top={index === 0}
+                bottom={index + 1 === schedules.length}
+              />
+            );
+          })}
         </div>
         <div className="w-3/12 pt-10 pl-10">
           Filter By:
