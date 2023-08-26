@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Paragraph from '../components/paragraph'
 import CET from '../assets/img/about/CET.png'
+import KSUM from '../assets/img/about/KSUM.jpeg'
 
 const About = () => {
   const aboutSections = [
@@ -29,25 +30,20 @@ const About = () => {
   return (
     <>
         <div className='w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh] font-dm-sans lg:flex place-items-center'>
-            <div className='flex-1 lg:pr-20 box-border rounded-lg'>
-                <div className = "min-w-5/6 h-96 bg-slate-400 overflow-hidden">
-                    <img src={CET} alt="image of cet" />
+            <div className='flex-1 lg:pr-20 box-border'>
+                    <img src={CET} alt="image of ksum" />
                 </div>
-            </div>
             <div className='flex-1'>
-
                 <Paragraph header={aboutSections[0].header} heading={aboutSections[0].heading} content={aboutSections[0].content} />
             </div>
         </div>
 
         <div className='w-10/12 xs:w-11/12 min-h-[80vh] font-dm-sans lg:flex place-items-center'>
-            <div className='flex-1'>
+            <div className='flex-1 mb-8 md:mb-0'>
                 <Paragraph header={aboutSections[1].header} heading={aboutSections[1].heading} content={aboutSections[1].content} />
             </div>
-            <div className='flex-1 lg:pl-20 box-border overflow-hidden'>
-                <div className="min-w-5/6 h-96 bg-slate-400 rounded-lg">
-                    <img src={CET} alt="image of cet" />
-                </div>
+            <div className='flex-1 lg:pl-20 box-border'>
+                    <img src={CET} alt="image of cet"  />
             </div>
         </div>
     </>
