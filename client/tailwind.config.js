@@ -24,6 +24,11 @@ export default {
       animation: {
         "grow-circle": "grow-circle 1s forwards",
       },
+      colors: {
+        "theme-blue": "#0F86E1",
+        "theme-blue2": "#4656E180",
+        "theme-blue3": "#097ED8",
+      },
     },
   },
   plugins: [],
