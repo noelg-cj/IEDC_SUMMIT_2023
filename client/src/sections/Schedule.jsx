@@ -9,7 +9,7 @@ const Schedule = () => {
   };
 
   return (
-    <div className="px-6 sm:px-16 px-24 self-stretch py-10 sm:py-20 font-darker-grotesque">
+    <div className="px-6 sm:px-16 md:w-11/12 py-10 sm:py-20 font-darker-grotesque">
       <h1 className="text-2xl sm:text-4xl lg:text-6xl text-start font-semibold">
         THE SCHEDULE
       </h1>
@@ -51,14 +51,18 @@ const Schedule = () => {
             <div className>
               <input
                 type="radio"
-                className="align-middle"
+                className="align-middle cursor-pointer"
                 name="filter-by"
                 checked
               />{" "}
               Venue
             </div>
             <div>
-              <input type="radio" className="align-middle" name="filter-by" />{" "}
+              <input
+                type="radio"
+                className="align-middle cursor-pointer"
+                name="filter-by"
+              />{" "}
               Type
             </div>
           </div>
