@@ -9,7 +9,7 @@ import IedcCircle from "./components/IedcCircle";
 
 function App() {
   return (
-    <div className=" w-full min-h-screen flex flex-col items-center">
+    <div>
       <CountDown />
 
       <AboutSummit />
