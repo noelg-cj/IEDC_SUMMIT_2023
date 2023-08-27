@@ -12,7 +12,7 @@ function Speakers() {
   return (
     <div
       ref={ref}
-      className="relative h-screen w-100vw flex-shrink-0 bg-gradient-to-b from-[#097ED8] to-[#001E35]  px-7 py-12 overflow-hidden"
+      className="relative h-screen w-screen flex-shrink-0 bg-gradient-to-b from-[#097ED8] to-[#001E35]  px-7 py-12 overflow-hidden"
     >
       <div className={`${inView ? "animate-right" : "animate-right-return"}`}>
         <WaveLine position="top-8 -right-48" direction={true} />
