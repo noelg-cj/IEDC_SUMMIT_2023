@@ -7,26 +7,25 @@ import AboutSummit from "./sections/AboutSummit";
 
 import IedcCircle from "./components/IedcCircle";
 
-
-import About from "./sections/About"
-
+import About from "./sections/About";
 
 import Footer from "./sections/Footer";
-import Speaker from "./components/SpeakerCard";
+import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
 function App() {
   return (
     <div className="flex flex-col items-center">
-      <LandingPage/>
+      <LandingPage />
       <AboutSummit />
 
       <IedcCircle />
 
-      
+      {/* <Speakers /> */}
       <Schedule />
       <Events />
       <About />
-      <PrevSummut/>
+      <PrevSummut />
+      <Directions />
       <Footer />
     </div>
   );
