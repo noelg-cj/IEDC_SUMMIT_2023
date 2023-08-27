@@ -9,9 +9,13 @@ const IedcCircle = () => {
         <img src={summitIcon} className="w-44 sm:w-60 md:w-80 lg:w-96 round-full" />
         <div className="absolute w-full h-full flex items-center animate-spin-slow">
             {iedcCircle.map((sub, index) => (
-              <div className={`absolute left-0 rotate-[${360/6*index}deg] origin-[160px] sm:origin-[250px] md:origin-[300px] lg:origin-[400px]`}>
+              <div className={`absolute left-0 origin-[160px] sm:origin-[250px] md:origin-[300px] lg:origin-[400px]`} style={{
+                transform: `rotate(calc(360/6 * ${index}deg))`,
+              }}>
                 <div className="animate-spin-opposite">
-                  <div className={`rotate-[${360-index*60}deg]`}>
+                  <div style={{
+                    transform: `rotate(calc(-360/6*${index}deg))`
+                  }}>
                     <IedcSubCircle datas={sub} key={sub.title + index} />
                   </div>
                 </div>
