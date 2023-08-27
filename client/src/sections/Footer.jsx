@@ -3,7 +3,8 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import { Box } from "@mui/material";
-import { Grid } from '@mui/material';
+import { Grid} from '@mui/material';
+import Divider from '@mui/material/Divider';
 import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
 import footerIcon from "../assets/img/footer/footer heading.png";
 
@@ -11,13 +12,13 @@ export default function Footer() {
   return (
     <Box
     backgroundColor="#1f1f1f"
-    paddingTop="30px"
+    paddingTop="50px"
     component="footer"
     width="100%"
   >
-    <Grid container justifyContent="space-evenly">
-    <Grid item xs={12} sm={4} zeroMinWidth>
-            
+    <Grid container justifyContent="space-evenly" columns={16} paddingBottom={5}>
+      <Grid item xs={12} sm={4} zeroMinWidth>
+          
             <img src={footerIcon} className="w-48 sm:w-72 lg:w-96 round-full" />
             <Typography variant="body1" color="#ffffff" paddingTop="30px" gutterBottom>
               Kerala Startup Mission | Govenment of Kerala
@@ -54,10 +55,12 @@ export default function Footer() {
             <Link href="https://www.linkedin.com/" color="#ababab">
               <LinkedIn />
             </Link>
-            
-          </Grid>
-          <Grid item xs={12} sm={4} zeroMinWidth>
-            
+          
+      </Grid>
+
+      <Divider orientation="vertical" color="#ababab" flexItem />
+      
+      <Grid item sm={4} zeroMinWidth>
             <img src={footerIcon} className="w-48 sm:w-72 lg:w-96 round-full" />
             <Typography variant="body1" color="#ffffff" paddingTop="30px" gutterBottom>
               Kerala Startup Mission | Govenment of Kerala
@@ -94,8 +97,7 @@ export default function Footer() {
             <Link href="https://www.linkedin.com/" color="#ababab">
               <LinkedIn />
             </Link>
-            
-          </Grid>
+      </Grid>
     </Grid>
     <Container Width="100%" borderTop={10} sx={{
           p:3,
