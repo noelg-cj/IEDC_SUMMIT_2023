@@ -1,8 +1,11 @@
 import React from "react";
-function videoCard()
-{ return(
-    <div className="w-[350px] h-[250px] bg-lime-200 rounded-[20px]">
-
-    </div>);
+function videoCard({ number }) {
+  return (
+    <div className="w-[350px] h-[250px] bg-gray-300 rounded-[20px] flex flex-col justify-center items-center">
+      <h1 className="font-darker-grotesque font-semibold text-4xl text-black">
+        Video {number}
+      </h1>
+    </div>
+  );
 }
 export default videoCard;

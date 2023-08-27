@@ -22,12 +22,12 @@ function Navbar() {
   return (
     <div className="font-dm-sans font-[600] py-4 w-9/12 self-center flex flex-row justify-between">
       <img className="h-10 w-10 " src={NavLogo} alt="Navbar Logo" />
-      <h className="self-center">HOME</h>
-      <h className="self-center">ABOUT</h>
-      <h className="self-center">SPEAKERS</h>
-      <h className="self-center">SCHEDULE</h>
-      <h className="self-center">EVENTS</h>
-      <h className="self-center">VENUE</h>
+      <h1 className="self-center">HOME</h1>
+      <h1 className="self-center">ABOUT</h1>
+      <h1 className="self-center">SPEAKERS</h1>
+      <h1 className="self-center">SCHEDULE</h1>
+      <h1 className="self-center">EVENTS</h1>
+      <h1 className="self-center">VENUE</h1>
     </div>
   );
 }

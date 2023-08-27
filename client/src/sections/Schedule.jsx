@@ -48,7 +48,7 @@ const Schedule = () => {
         <div className="lg:w-3/12 py-0 lg:py-10 lg:pl-10 flex gap-6 lg:block">
           Filter By:
           <div className="lg:leading-6 flex lg:flex-col gap-3 lg:gap-0">
-            <div className>
+            <div>
               <input
                 type="radio"
                 className="align-middle cursor-pointer"
