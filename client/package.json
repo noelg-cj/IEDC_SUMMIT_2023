@@ -10,15 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-
-    "@react-google-maps/api": "^2.19.2",
-    "@ubilabs/google-maps-react-hooks": "^2.0.2",
-    "combobox": "^1.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "use-places-autocomplete": "^4.0.1"
-
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.6",
