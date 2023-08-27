@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import Speaker from "../components/SpeakerCard";
 import WaveLine from "../components/WaveLine";
 import { speakers } from "../data";
-import "./animations.css";
+import "../assets/css/animations.css";
 
 function Speakers() {
   const { ref, inView } = useInView({
