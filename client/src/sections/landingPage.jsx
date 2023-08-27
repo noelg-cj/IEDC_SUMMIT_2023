@@ -2,11 +2,15 @@ import Navbar from "../components/Navbar";
 import CountDown from "../components/countDown";
 import bg0 from "../assets/img/about/C0.png";
 import bg1 from "../assets/img/about/C1.png";
+import bg2 from "../assets/img/about/C2.png";
 function LandingPage() {
   return (
     <div className="relative w-full bg- flex flex-col">
       <img src={bg0} className="absolute right-0" />
-      <img src={bg1} className="absolute left-0" />
+      <div className="absolute left-0 flex flex-col items-center ">
+        <img src={bg1} />
+        <img src={bg2} />
+      </div>
       <Navbar />
       <div className="font-dm-sans flex flex-col self-center items-left w-9/12 py-28">
         <h className="font-bold text-8xl bg-gradient-to-b from-[#097ED8] to-[#000000] bg-clip-text text-transparent pb-4">
