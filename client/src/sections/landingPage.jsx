@@ -20,7 +20,7 @@ function LandingPage() {
           2023
         </h>
         <h className="font-bold text-2xl md:text-5xl text-[#0065B2] pb-4">
-          SEPTEMBER 12
+          OCTOBER 9
         </h>
         <h className="font-semibold text-xl md:text-3xl text-[#676C70] pb-1">
           COLLEGE OF ENGINEERING,
