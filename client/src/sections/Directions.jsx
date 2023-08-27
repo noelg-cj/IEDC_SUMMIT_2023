@@ -13,9 +13,9 @@ const App = () => {
 
   return (
     <div className="mt-20">
-      <h className="text-6xl text-[#000000] ml-24 font-darker-grotesque font-semibold">
+      <h1 className="text-6xl text-[#000000] ml-24 font-darker-grotesque font-semibold">
         Get Directions to the event
-      </h>
+      </h1>
       <div className="flex flex-row mt-20 space-x-3 w-full">
         <div className="Maps w-full m-auto">
           <div className="container mx-auto items-center">
