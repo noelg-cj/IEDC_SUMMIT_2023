@@ -7,6 +7,7 @@ import AboutSummit from "./sections/AboutSummit";
 
 import IedcCircle from "./components/IedcCircle";
 
+import Footer from "./sections/Footer";
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
       <Speakers />
       <Schedule />
       <Events />
+      <Footer />
     </div>
   );
 }
