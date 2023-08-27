@@ -13,14 +13,14 @@ function prevSummut() {
         <PreSumCard />
       </div>
       <div className="flex lg:flex-row justify-evenly flex-col space-y-2 lg:space-y-0 lg:space-x-3  ">
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
+        <VideoCard number={1} />
+        <VideoCard number={2} />
+        <VideoCard number={3} />
       </div>
       <div className="flex lg:flex-row justify-evenly flex-col space-y-2 lg:space-y-0 lg:space-x-3  ">
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
+        <VideoCard number={4} />
+        <VideoCard number={5} />
+        <VideoCard number={6} />
       </div>
     </div>
   );
