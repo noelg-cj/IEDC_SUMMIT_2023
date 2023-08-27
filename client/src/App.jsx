@@ -7,25 +7,25 @@ import AboutSummit from "./sections/AboutSummit";
 
 import IedcCircle from "./components/IedcCircle";
 
-
-import About from "./sections/About"
-
+import About from "./sections/About";
 
 import Footer from "./sections/Footer";
+import Directions from "./sections/Directions";
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <CountDown />
 
       <AboutSummit />
 
       <IedcCircle />
 
-      <Speakers />
+      {/* <Speakers /> */}
       <Schedule />
       <Events />
       <About />
+      <Directions />
       <Footer />
     </div>
   );
