@@ -10,10 +10,17 @@ function CountDown() {
   function getTimeLeft() {
     const totalSec = Math.floor((deadline - Date.now()) / 1000);
 
-    setDays(Math.floor(totalSec / (60 * 60 * 24)));
-    setHours(Math.floor((totalSec % (60 * 60 * 24)) / (60 * 60)));
-    setMinutes(Math.floor((totalSec % (60 * 60)) / 60));
-    setSeconds(Math.floor(totalSec % 60));
+    setDays(String(Math.floor(totalSec / (60 * 60 * 24))).padStart(2, "0"));
+    setHours(
+      String(Math.floor((totalSec % (60 * 60 * 24)) / (60 * 60))).padStart(
+        2,
+        "0"
+      )
+    );
+    setMinutes(
+      String(Math.floor((totalSec % (60 * 60)) / 60)).padStart(2, "0")
+    );
+    setSeconds(String(Math.floor(totalSec % 60)).padStart(2, "0"));
   }
 
   useEffect(() => {
