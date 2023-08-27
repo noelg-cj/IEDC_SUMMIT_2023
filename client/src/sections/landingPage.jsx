@@ -6,7 +6,7 @@ import bg2 from "../assets/img/about/C2.png";
 function LandingPage() {
   return (
     <div className="relative w-full bg- flex flex-col">
-      <img src={bg0} className="absolute right-0 left-0 " />
+      <img src={bg0} className="absolute right-0" />
       <div className="absolute left-0 right-0 flex flex-col items-start w-72 md:w-96 lg:w-auto">
         <img src={bg1} />
         <img src={bg2} />
