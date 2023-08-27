@@ -28,27 +28,30 @@ function CountDown() {
 
   return (
     <div className=" text-6xl font-medium bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text w-[550px] h-[83.45px] bg-lime-700  flex flex-row justify-between">
-        <div className=" text-center ">
-            <h>{days}</h>
-            <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-xl font-[700]">DAYS</p>
-            
-        </div>
-        <div className=" text-center ">
-            <h>{hours}</h>
-            <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-xl font-[700]">HOURS</p>
-            
-            
-        </div>
-        <div className="text-center">
-            <h>{minutes}</h>
-            <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-xl font-[700]">MINUTES</p>
-            
-        </div>
-        <div className="text-center">
-            <h>{seconds}</h>
-            <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-xl font-[700]">SECONDS</p>
-            
-        </div>
+      <div className=" text-center ">
+        <h1>{days}</h1>
+        <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-xl font-[700]">
+          DAYS
+        </p>
+      </div>
+      <div className=" text-center ">
+        <h1>{hours}</h1>
+        <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-xl font-[700]">
+          HOURS
+        </p>
+      </div>
+      <div className="text-center">
+        <h1>{minutes}</h1>
+        <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-xl font-[700]">
+          MINUTES
+        </p>
+      </div>
+      <div className="text-center">
+        <h1>{seconds}</h1>
+        <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-xl font-[700]">
+          SECONDS
+        </p>
+      </div>
     </div>
   );
 }

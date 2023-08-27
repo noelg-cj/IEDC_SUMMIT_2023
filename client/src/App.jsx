@@ -7,11 +7,15 @@ import AboutSummit from "./sections/AboutSummit";
 
 import IedcCircle from "./components/IedcCircle";
 
+
 import About from "./sections/About"
+
+
+import Footer from "./sections/Footer";
 
 function App() {
   return (
-    <div className=" w-full min-h-screen flex flex-col items-center">
+    <div>
       <CountDown />
 
       <AboutSummit />
@@ -22,6 +26,7 @@ function App() {
       <Schedule />
       <Events />
       <About />
+      <Footer />
     </div>
   );
 }
