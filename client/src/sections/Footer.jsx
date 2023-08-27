@@ -3,8 +3,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import { Box } from "@mui/material";
-import { Grid} from '@mui/material';
-import Divider from '@mui/material/Divider';
+import { Grid, Divider} from '@mui/material';
 import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
 import footerIcon from "../assets/img/footer/footer heading.png";
 
@@ -16,8 +15,9 @@ export default function Footer() {
     component="footer"
     width="100%"
   >
-    <Grid container justifyContent="space-evenly" columns={16} paddingBottom={5}>
-      <Grid item xs={12} sm={4} zeroMinWidth>
+    <Grid container justifyContent="space-evenly" columns={16} 
+    >
+      <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
           
             <img src={footerIcon} className="w-48 sm:w-72 lg:w-96 round-full" />
             <Typography variant="body1" color="#ffffff" paddingTop="30px" gutterBottom>
@@ -58,9 +58,9 @@ export default function Footer() {
           
       </Grid>
 
-      <Divider orientation="vertical" color="#ababab" flexItem />
+      <Divider orientation="vertical" color="#ababab" flexItem 	sx={{ display: { xs: 'none', sm: 'block' } }} />
       
-      <Grid item sm={4} zeroMinWidth>
+      <Grid item xs={12} sm={4} zeroMinWidth paddingBotoom={7}>
             <img src={footerIcon} className="w-48 sm:w-72 lg:w-96 round-full" />
             <Typography variant="body1" color="#ffffff" paddingTop="30px" gutterBottom>
               Kerala Startup Mission | Govenment of Kerala

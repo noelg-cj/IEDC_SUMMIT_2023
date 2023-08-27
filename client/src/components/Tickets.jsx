@@ -28,7 +28,7 @@ function Ticket() {
         <div className="font-dm-sans">
             <div className="w-11/12 mx-auto  h-fit items-center  mx-auto">
                 <h className=" font-[700] text-[38px]">Everyting is Entrepreneaurship</h>
-                <p className=" font-[500] text-[20px]">A series of talks by well-known Women Entrepreneurs.</p>`
+                <p className=" font-[500] text-[20px]">A series of talks by well-known Women Entrepreneurs.</p>
             </div>
             <div className="justify-center flex">
                 <button className=" font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px]">See All</button>
