@@ -2,6 +2,9 @@ import Schedule from "./sections/Schedule";
 import Speakers from "./sections/Speakers";
 import Events from "./sections/Events";
 import CountDown from "./components/countDown";
+
+import Directions from "./sections/Direction";
+
 import LandingPage from "./sections/landingPage";
 import AboutSummit from "./sections/AboutSummit";
 
@@ -14,6 +17,7 @@ import About from "./sections/About"
 import Footer from "./sections/Footer";
 import Speaker from "./components/SpeakerCard";
 import PrevSummut from "./sections/prevSummits";
+
 function App() {
   return (
     <div className="flex flex-col items-center">
@@ -23,11 +27,16 @@ function App() {
       <IedcCircle />
 
       
+      <CountDown/>
+      <Speakers/>
+      <Events/>
+      <Directions/ >
       <Schedule />
       <Events />
       <About />
       <PrevSummut/>
       <Footer />
+
     </div>
   );
 }
