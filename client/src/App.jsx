@@ -14,13 +14,13 @@ import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
 function App() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col justify-center items-center">
       <LandingPage />
       <AboutSummit />
 
       <IedcCircle />
 
-      {/* <Speakers /> */}
+      <Speakers />
       <Schedule />
       <Events />
       <About />
