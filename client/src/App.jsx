@@ -12,20 +12,22 @@ import About from "./sections/About"
 
 
 import Footer from "./sections/Footer";
-
+import Speaker from "./components/SpeakerCard";
+import PrevSummut from "./sections/prevSummits";
 function App() {
   return (
-    <div>
-      <CountDown />
-
+    <div className="flex flex-col items-center">
+      
+      
       <AboutSummit />
 
       <IedcCircle />
 
-      <Speakers />
+      
       <Schedule />
       <Events />
       <About />
+      <PrevSummut/>
       <Footer />
     </div>
   );
