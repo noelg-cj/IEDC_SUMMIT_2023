@@ -2,7 +2,7 @@ import Schedule from "./sections/Schedule";
 import Speakers from "./sections/Speakers";
 import Events from "./sections/Events";
 import CountDown from "./components/countDown";
-
+import LandingPage from "./sections/landingPage";
 import AboutSummit from "./sections/AboutSummit";
 
 import IedcCircle from "./components/IedcCircle";
@@ -10,13 +10,12 @@ import IedcCircle from "./components/IedcCircle";
 import About from "./sections/About";
 
 import Footer from "./sections/Footer";
-import Directions from "./sections/Directions";
-
+import Speaker from "./components/SpeakerCard";
+import PrevSummut from "./sections/prevSummits";
 function App() {
   return (
     <div className="flex flex-col items-center">
-      <CountDown />
-
+      <LandingPage />
       <AboutSummit />
 
       <IedcCircle />
@@ -25,6 +24,7 @@ function App() {
       <Schedule />
       <Events />
       <About />
+      <PrevSummut />
       <Directions />
       <Footer />
     </div>
