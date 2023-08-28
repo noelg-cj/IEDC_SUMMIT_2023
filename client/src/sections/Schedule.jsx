@@ -42,6 +42,15 @@ const Schedule = () => {
         >
           CGPU Substage
         </div>
+        <div
+          className={`transition-colors	cursor-pointer	duration-500 ${
+            location === "2" ? "" : "text-theme-blue2"
+          }`}
+          onClick={selectLocation}
+          data-loc-id={2}
+        >
+          Substage
+        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row text-lg sm:text-xl lg:text-2xl font-medium">
