@@ -17,7 +17,7 @@ export default function Footer() {
     >
       <Grid container justifyContent="space-evenly" columns={16}>
         <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
-          <img src={footerIcon} className="w-48 sm:w-72 lg:w-96 round-full" />
+          <img src={footerIcon} />
           <Typography
             variant="body1"
             color="#ffffff"
@@ -85,7 +85,7 @@ export default function Footer() {
           </Typography>
           <Typography variant="body2" color="#ababab" paddingBottom="20px">
             <p>College of Engineering Trivandrum,</p>
-            <p>Sreekaryam,Thiruvananathapuram,Kerala,695016</p>
+            <p>Sreekaryam, Thiruvananathapuram, Kerala, 695016</p>
           </Typography>
 
           <Typography variant="body1" color="#ababab">
