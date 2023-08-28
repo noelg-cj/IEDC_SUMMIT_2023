@@ -1,5 +1,5 @@
 import IedcSubCircle from "./IedcSubCircle";
-import summitIcon from "../assets/img/summitIcon.svg";
+import summitIcon from "../assets/img/center.png";
 import { iedcCircle } from "../data";
 
 const IedcCircle = () => {
