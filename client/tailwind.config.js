@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      screens : {
+        'custom1' : '1163px',
+        'custom2' : '1100px',
+      },
       fontFamily: {
         "darker-grotesque": ["Darker Grotesque", "sans"],
         "dm-sans": ["DM Sans", "sans-serif"],
