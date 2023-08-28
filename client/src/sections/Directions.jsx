@@ -1,7 +1,23 @@
 import React, { useState } from "react";
-import TVC from "../assets/img/directions/TVC new.png";
-import Kochuveli from "../assets/img/directions/Kochuveli new.png";
-import Petta from "../assets/img/directions/Petta new.png";
+
+import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
+
+const containerStyle = {
+  width: '600px',
+  height: '400px',
+  
+  borderRadius : '10px',
+  boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.1)',
+  
+};
+
+const center = {
+  lat: 8.546137753741851,
+  lng: 76.90639433950193
+};
+
+const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
 const App = () => {
   const [activeLink, setActiveLink] = useState("TVC");
   const [content, setContent] = useState("TVC");
@@ -11,36 +27,36 @@ const App = () => {
     setContent(link);
   };
 
+  
+
+
   return (
-    <div className="mt-20">
-      <h1 className="text-6xl text-[#000000] ml-24 font-darker-grotesque font-semibold">
+    <div className="m-20">
+      <h1 className="text-6xl text-[#000000]font-darker-grotesque font-semibold">
         Get Directions to the event
       </h1>
-      <div className="flex flex-row mt-20 space-x-3 w-full">
-        <div className="Maps w-full m-auto">
-          <div className="container mx-auto items-center">
-            {content === "TVC" && (
-              <img className="h-1/2 w-3/4 m-auto my-3 rounded-xl" src={TVC} />
-            )}
-            {content === "Kochuveli" && (
-              <img
-                className="h-1/2 w-3/4 m-auto my-3 rounded-xl"
-                src={Kochuveli}
-              />
-            )}
-            {content === "Petta" && (
-              <img className="h-1/2 w-3/4 m-auto my-3 rounded-xl" src={Petta} />
-            )}
-          </div>
+      <div className="flex flex-col mt-20 space-x-3 w-full custom2:flex-row">
+        <div className="Maps w-full m-auto flex items-center justify-center">
+            <LoadScript googleMapsApiKey = {apiKey}>
+                <GoogleMap
+                    mapContainerStyle={containerStyle}
+                    center={center}
+                    zoom={17}
+                >
+                    <Marker position={center} />
+                </GoogleMap>
+            </LoadScript>
         </div>
-        <div className="flex flex-col w-full">
-          <nav className="ml-3">
-            <div className="container mx-auto ml-0 flex justify-between items-center">
-              <div className="space-x-4 items-center text-4xl  border-b-2 border-[#858585]  font-darker-grotesque font-semibold ">
+        <div className="flex flex-col p-12 w-full overflow-x-auto">
+          <nav>
+            <div className="container mx-auto ml-0 flex">
+              <div className="space-x-4 items-center text-4xl flex flex-row font-darker-grotesque font-semibold custom1:flex-row custom2:flex-col custom1:items-start">
                 <button
                   onClick={() => handleLinkClick("TVC")}
-                  className={`nav-link ${
-                    activeLink === "TVC" ? "text-[#09189C] " : "text-[#858585]"
+                  className={`nav-link  ml-4 custom1:ml-0 ${
+                    activeLink === "TVC" 
+                    ? "text-[#09189C] underline" 
+                    : "text-[#858585] underline"
                   }`}
                 >
                   TVC
@@ -49,8 +65,8 @@ const App = () => {
                   onClick={() => handleLinkClick("Kochuveli")}
                   className={`nav-link ${
                     activeLink === "Kochuveli"
-                      ? "text-[#09189C]"
-                      : "text-[#858585]"
+                      ? "text-[#09189C] underline"
+                      : "text-[#858585] underline"
                   }`}
                 >
                   Kochuveli
@@ -58,7 +74,9 @@ const App = () => {
                 <button
                   onClick={() => handleLinkClick("Petta")}
                   className={`nav-link ${
-                    activeLink === "Petta" ? "text-[#09189C]" : "text-[#858585]"
+                    activeLink === "Petta" ?
+                     "text-[#09189C] underline" 
+                     : "text-[#858585] underline"
                   }`}
                 >
                   Petta
@@ -66,7 +84,7 @@ const App = () => {
               </div>
             </div>
           </nav>
-          <div className="container mx-auto pl-3">
+          <div className="container mx-auto">
             {content === "TVC" && (
               <div>
                 <div className="font-semibold mt-4 text-4xl text-[#000000] font-darker-grotesque">
