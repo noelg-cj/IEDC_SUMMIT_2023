@@ -40,7 +40,16 @@ const Schedule = () => {
           onClick={selectLocation}
           data-loc-id={2}
         >
-          CGPU Substage
+          CGPU 
+        </div>
+        <div
+          className={`transition-colors	cursor-pointer	duration-500 ${
+            location === "2" ? "" : "text-theme-blue2"
+          }`}
+          onClick={selectLocation}
+          data-loc-id={2}
+        >
+          Substage
         </div>
       </div>
 
