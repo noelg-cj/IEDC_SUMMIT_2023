@@ -17,30 +17,49 @@ function Speakers() {
   return (
     <div
       ref={ref}
-      className="relative h-screen w-full mt-10 flex-shrink-0 bg-gradient-to-b from-[#097ED8] to-[#001E35]  px-7 py-12 overflow-hidden"
+      className="relative md:h-screen w-full mt-10 flex-shrink-0 bg-gradient-to-b from-[#097ED8] to-[#001E35]  px-7 py-12 overflow-hidden"
     >
       <div className={`${inView ? "animate-right" : "animate-right-return"}`}>
-        <WaveLine position="absolute top-0 -right-48" direction={true} />
-        <WaveLine position="absolute top-4 -right-48" direction={true} />
-        <WaveLine position="absolute top-8 -right-48" direction={true} />
-        <WaveLine position="absolute top-12 -right-48" direction={true} />
-        <WaveLine position="absolute top-16 -right-48" direction={true} />
+        <WaveLine
+          position="absolute top-16 md:top-0 -right-48"
+          direction={true}
+        />
+        <WaveLine
+          position="absolute top-20 md:top-4 -right-48"
+          direction={true}
+        />
+        <WaveLine
+          position="absolute top-24 md:top-8 -right-48"
+          direction={true}
+        />
+        <WaveLine
+          position="absolute top-28 md:top-12 -right-48"
+          direction={true}
+        />
+        <WaveLine
+          position="absolute top-32 md:top-16 -right-48"
+          direction={true}
+        />
       </div>
       <div
-        className={`flex justify-center font-darker-grotesque text-center font-medium whitespace-nowrap ${
-          inView ? "animate-move" : "animate-move-return"
+        className={`flex justify-center text-white text-6xl font-darker-grotesque text-center font-medium whitespace-nowrap ${
+          // inView ? "animate-move" : "animate-move-return"
+          ""
         }`}
       >
         <h1>The Speakers</h1>
       </div>
       <div
         className={`lg:h-3/4 4/5 ${
-          inView
-            ? "animate-speakers-move"
-            : "animate-speakers-move-return hidden"
+          // inView
+          //   ? "animate-speakers-move"
+          //   : "animate-speakers-move-return hidden"
+          ""
         }`}
       >
-        <div className={`mb-40 mt-10 grid grid-cols-4 gap-20 ml-10`}>
+        <div
+          className={`mb-20 md:mb-40 mt-10 md:grid md:grid-cols-4 flex flex-col items-center gap-20 md:ml-10`}
+        >
           {speakers.map((speaker) => (
             <Speaker speaker={speaker} key={speaker.name} />
           ))}
@@ -51,8 +70,14 @@ function Speakers() {
         <WaveLine position="absolute bottom-0 -left-48" direction={false} />
         <WaveLine position="absolute -bottom-4 -left-48" direction={false} />
         <WaveLine position="absolute -bottom-8 -left-48" direction={false} />
-        <WaveLine position="absolute -bottom-12 -left-48" direction={false} />
-        <WaveLine position="absolute -bottom-16 -left-48" direction={false} />
+        <WaveLine
+          position="absolute bottom-4 md:-bottom-12 -left-48"
+          direction={false}
+        />
+        <WaveLine
+          position="absolute bottom-8 md:-bottom-16 -left-48"
+          direction={false}
+        />
       </div>
     </div>
   );
