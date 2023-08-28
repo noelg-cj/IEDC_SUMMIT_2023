@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import NavLogo from "../assets/img/kerala-startup-mission-logo.webp";
+// import NavLogo from "../assets/img/kerala-startup-mission-logo.webp";
 
 function Navbar() {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <nav className="font-dm-sans font-[600] py-4 w-9/12 self-center ">
       <div className="hidden md:flex md:justify-between">
-        <img className="h-10 w-10 " src={NavLogo} alt="Navbar Logo" />
+        <StartupMissionLogo />
         {navbarItems.map((item, index) => (
           <h1
             href={item.href}
@@ -34,7 +34,7 @@ function Navbar() {
         ))}
       </div>
       <div className="md:hidden items-center justify-center flex">
-        <img className="h-10 w-10 mx-4" src={NavLogo} alt="Navbar Logo" />
+        <StartupMissionLogo />
         <button onClick={toggleDropDown}>
           <FaBars className="text-2xl" />
         </button>
@@ -56,5 +56,6 @@ function Navbar() {
     </nav>
   );
 }
+import StartupMissionLogo from "./startupMissionLogo";
 
 export default Navbar;
