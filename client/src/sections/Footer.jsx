@@ -5,7 +5,6 @@ import Link from "@mui/material/Link";
 import { Box } from "@mui/material";
 import { Grid, Divider } from "@mui/material";
 import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
-import footerIcon from "../assets/img/footer/footer heading.png";
 import KSUMlogo from "../assets/img/footer/KSUM logo.png";
 import IEDClogo from "../assets/img/footer/IEDC logo.png";
 import cetLogo from "../assets/img/footer/cet.png";
