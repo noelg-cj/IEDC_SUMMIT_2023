@@ -28,10 +28,10 @@ function Ticket() {
       <div className="font-dm-sans">
         <div className="w-11/12 mx-auto  h-fit items-center  mx-auto">
           <h1 className=" font-[700] text-[38px]">
-            Everyting is Entrepreneaurship
+            Coming Soon
           </h1>
           <p className=" font-[500] text-[20px]">
-            A series of talks by well-known Women Entrepreneurs.
+            Coming Soon
           </p>
         </div>
         <div className="justify-center flex">
