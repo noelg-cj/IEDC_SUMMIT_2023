@@ -2,11 +2,12 @@ import React from "react";
 import PreSumCard from "../components/prevSumCard";
 import VideoCard from "../components/videoCard";
 import { prevSummits } from "../data";
+import GIF from "../assets/img/idea.gif";
 function prevSummut() {
   return (
-    <div className=" font-darker-grotesque w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh]  flex flex-col ">
+    <div className="relative font-darker-grotesque w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh]  flex flex-col ">
       <h1 className="font-[500] text-[60px]">Explore Our Previous Summits</h1>
-
+      <img className="absolute w-32 h-32 right-16 top-0" src={GIF} alt="idea" />
       <div className="lg:w-3/5  space-y-5 w-full">
         {prevSummits.map((summit, index) => (
           <PreSumCard summit={summit} key={index} />
