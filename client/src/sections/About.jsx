@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Paragraph from "../components/paragraph";
-import CET from "../assets/img/about/CET.png";
+import CET from "../assets/img/CET.jpeg";
 import KSUM from "../assets/img/about/ksum-office.jpg";
 
 const About = () => {
@@ -71,7 +71,7 @@ const About = () => {
           />
         </div>
         <div className="flex-1 lg:pl-20 box-border">
-          <img src={CET} alt="image of cet" />
+          <img className="w-full h-full" src={CET} alt="image of cet" />
         </div>
       </div>
     </>
