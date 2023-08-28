@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import NavLogo from "../assets/img/about/CET.png";
+// import NavLogo from "../assets/img/kerala-startup-mission-logo.webp";
 
 function Navbar() {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
@@ -20,16 +20,42 @@ function Navbar() {
     { text: "VENUE", href: "/" },
   ];
   return (
-    <div className="font-dm-sans font-[600] py-4 w-9/12 self-center flex flex-row justify-between">
-      <img className="h-10 w-10 " src={NavLogo} alt="Navbar Logo" />
-      <h1 className="self-center">HOME</h1>
-      <h1 className="self-center">ABOUT</h1>
-      <h1 className="self-center">SPEAKERS</h1>
-      <h1 className="self-center">SCHEDULE</h1>
-      <h1 className="self-center">EVENTS</h1>
-      <h1 className="self-center">VENUE</h1>
-    </div>
+    <nav className="font-dm-sans font-[600] py-4 w-9/12 self-center ">
+      <div className="hidden md:flex md:justify-between">
+        <StartupMissionLogo />
+        {navbarItems.map((item, index) => (
+          <h1
+            href={item.href}
+            key={index}
+            className="self-center hover:text-blue-400"
+          >
+            {item.text}
+          </h1>
+        ))}
+      </div>
+      <div className="md:hidden items-center justify-center flex">
+        <StartupMissionLogo />
+        <button onClick={toggleDropDown}>
+          <FaBars className="text-2xl" />
+        </button>
+        {isDropDownOpen && (
+          <div className="absolute top-20 left-0 right-0 flex flex-col items-center justify-center bg-black bg-opacity-80 text-2xl">
+            {navbarItems.map((item, index) => (
+              <a
+                key={index}
+                className="mx-4 my-2 text-gray-500  hover:text-white"
+                href={item.href}
+                onClick={toggleDropDown}
+              >
+                {item.text}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </nav>
   );
 }
+import StartupMissionLogo from "./startupMissionLogo";
 
 export default Navbar;

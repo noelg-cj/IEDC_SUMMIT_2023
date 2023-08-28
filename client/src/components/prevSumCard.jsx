@@ -1,21 +1,33 @@
 import React from "react";
-function preSumCard() {
+function preSumCard({ summit }) {
   return (
     <div>
-      <div className="flex ">
-        <h1 className="self-center text-[#09189C] font-[600] text-[45px]">
-          IEDC Summit 2023
-        </h1>
+      <div className="flex items-center">
+        <a
+          className="text-[#09189C] font-[600] text-[40px] sm:text-[45px] items-center"
+          href={summit.website}
+          target="_blank"
+        >
+          IEDC Summit {summit.year}
+        </a>
         <svg
-          className="self-center"
+          className="items-center"
           width="35"
           height="35"
           viewBox="0 0 35 35"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="19.5" cy="16.5" r="0.5" fill="black" fillOpacity="0.28" />
+          <circle
+            className="items-center"
+            cx="19.5"
+            cy="16.5"
+            r="0.5"
+            fill="black"
+            fillOpacity="0.28"
+          />
           <path
+            className="items-center"
             d="M11 5L23 17L11 29"
             stroke="#09189C"
             strokeWidth="2"
@@ -24,7 +36,7 @@ function preSumCard() {
           />
         </svg>
       </div>
-      <span className="flex space-x-2">
+      <span className="flex gap-5">
         <svg
           className="self-center"
           width="22"
@@ -47,11 +59,11 @@ function preSumCard() {
             strokeLinejoin="round"
           />
         </svg>
-        <p className="font-[400] text-[30px]">
-          Sahradya College of Engineering
+        <p className="font-[400] text-[24px] sm:text-[30px]">
+          {summit.college}
         </p>
       </span>
-      <span className="flex space-x-2">
+      <span className="flex gap-5">
         <svg
           className="self-center"
           width="22"
@@ -90,7 +102,7 @@ function preSumCard() {
           />
         </svg>
 
-        <p className="font-[400] text-[30px]">19 October 2019</p>
+        <p className="font-[400] text-[24px] sm:text-[30px]">{summit.date}</p>
       </span>
     </div>
   );

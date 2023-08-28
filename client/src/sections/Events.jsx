@@ -10,9 +10,8 @@ function Events() {
           experiences and gatherings that will leave you inspired and enriched.
           Join us as we bring together thought leaders, industry experts, and
           enthusiasts to explore a diverse range of topics through engaging
-          workshops, insightful seminars, and captivating networking sessions.
-          Here are the all the interesting events will be held in the IEDC
-          summit 2023.
+          workshops, insightful panel discussions, and captivating networking sessions.
+          Here are all the interesting event that will be held in the IEDC Summit 2023.
         </p>
       </div>
       <div className="flex flex-row flex-wrap justify-evenly">

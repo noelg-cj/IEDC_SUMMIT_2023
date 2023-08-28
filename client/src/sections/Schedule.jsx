@@ -22,7 +22,7 @@ const Schedule = () => {
           onClick={selectLocation}
           data-loc-id={0}
         >
-          Dhwani Stage
+          DJ Hall
         </div>
         <div
           className={`transition-colors	cursor-pointer	duration-500 ${
@@ -31,7 +31,7 @@ const Schedule = () => {
           onClick={selectLocation}
           data-loc-id={1}
         >
-          DJ Hall
+          Sargam Stage
         </div>
         <div
           className={`transition-colors	cursor-pointer	duration-500 ${
@@ -40,7 +40,16 @@ const Schedule = () => {
           onClick={selectLocation}
           data-loc-id={2}
         >
-          CETAA Hall
+          CGPU 
+        </div>
+        <div
+          className={`transition-colors	cursor-pointer	duration-500 ${
+            location === "2" ? "" : "text-theme-blue2"
+          }`}
+          onClick={selectLocation}
+          data-loc-id={2}
+        >
+          Substage
         </div>
       </div>
 
