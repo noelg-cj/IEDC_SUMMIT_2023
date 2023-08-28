@@ -1,23 +1,21 @@
 import React from "react";
 import PreSumCard from "../components/prevSumCard";
 import VideoCard from "../components/videoCard";
+import { prevSummits } from "../data";
 function prevSummut() {
   return (
     <div className=" font-darker-grotesque w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh]  flex flex-col ">
       <h1 className="font-[500] text-[60px]">Explore Our Previous Summits</h1>
 
-      <div className="lg:w-1/2  space-y-5 w-full">
-        <PreSumCard />
-        <PreSumCard />
-        <PreSumCard />
-        <PreSumCard />
+      <div className="lg:w-3/5  space-y-5 w-full">
+        {prevSummits.map((summit, index) => (
+          <PreSumCard summit={summit} key={index} />
+        ))}
       </div>
-      <div className="flex lg:flex-row justify-evenly flex-col space-y-2 lg:space-y-0 lg:space-x-3  ">
+      <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 flex flex-col items-center gap-3 sm:justify-items-center">
         <VideoCard number={1} />
         <VideoCard number={2} />
         <VideoCard number={3} />
-      </div>
-      <div className="flex lg:flex-row justify-evenly flex-col space-y-2 lg:space-y-0 lg:space-x-3  ">
         <VideoCard number={4} />
         <VideoCard number={5} />
         <VideoCard number={6} />

@@ -4,7 +4,7 @@ function Speaker({ speaker }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="relative w-48 h-48 flex flex-col items-center mb-4">
+    <div className="relative justify-center lg:w-48 lg:h-48 md:w-40 md:h-40 sm:w-32 sm:h-32 w-24 h-24 flex flex-col items-center">
       <div
         className="group relative w-full h-full"
         onMouseEnter={() => setIsHovered(true)}
@@ -28,8 +28,8 @@ function Speaker({ speaker }) {
           </p>
         </div>
       </div>
-      <div className="absolute -bottom-6 w-5/6 px-4 py-2 bg-white text-center rounded-3xl flex flex-col items-center justify-center">
-        <p className="text-black font-dm-sans text-base font-medium leading-[1.05]">
+      <div className="absolute -bottom-6 w-11/12 md:w-5/6 px-4 py-2 bg-white text-center rounded-3xl flex flex-col items-center justify-center">
+        <p className="text-black font-dm-sans text-xs md:text-base font-medium leading-[1.05]">
           {speaker.name}
         </p>
       </div>
