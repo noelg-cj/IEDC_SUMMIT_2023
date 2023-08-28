@@ -1,5 +1,5 @@
 // import Alt from "./assets/img/speakers/sashi.jpg";
-import Alt from "../public/iedcSummit.png";
+import Alt from "./assets/img/iedcSummit.png";
 export const speakers = [
   {
     img: Alt,
@@ -95,7 +95,7 @@ export const iedcCircle = [
     title: "districts",
   },
   {
-    value: '5K+',
+    value: "5K+",
     title: "attendees",
   },
   {
@@ -103,7 +103,7 @@ export const iedcCircle = [
     title: "startups",
   },
   {
-    value: '40+',
+    value: "40+",
     title: "events",
   },
   {
@@ -111,7 +111,33 @@ export const iedcCircle = [
     title: "speakers",
   },
   {
-    value: '99+',
+    value: "99+",
     title: "colleges",
+  },
+];
+export const prevSummits = [
+  {
+    date: "04 March 2023",
+    college: "Rajagiri School of Engineering & Technology",
+    year: "2023",
+    website: "https://2023.iedcsummit.in/",
+  },
+  {
+    date: "05 March 2022",
+    college: "St. Joseph's College of Engineering and Technology, Palai",
+    year: "2022",
+    website: "https://iedcsummit.in/2022/",
+  },
+  {
+    date: "28-30 January 2021",
+    college: "Adi Shankara Institute of science and technology, Cochin",
+    year: "2021",
+    website: "https://iedcsummit.in/2021/",
+  },
+  {
+    date: "19 October 2019",
+    college: "Sahrdaya College of Engineering and Technology",
+    year: "2019",
+    website: "https://iedcsummit.in/2019/",
   },
 ];

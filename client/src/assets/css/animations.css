@@ -6,7 +6,7 @@
   }
   100% {
     transform: translateY(-50%);
-    font-size: 48px;
+    font-size: 60px;
     color: white;
   }
 }
@@ -14,7 +14,7 @@
 @keyframes move-text-return {
   0% {
     transform: translateY(-50%);
-    font-size: 48px;
+    font-size: 60px;
     color: white;
   }
   100% {
