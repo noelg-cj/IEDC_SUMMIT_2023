@@ -18,11 +18,19 @@ export default {
             opacity: 1,
           },
         },
-        
-        "spin-opposite" : {
-          '0%' : { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(-360deg)' },
-        }
+        "shrink-circle": {
+          from: {
+            transform: "scale(1)",
+          },
+          to: {
+            transform: "scale(0.95)",
+          },
+        },
+
+        "spin-opposite": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(-360deg)" },
+        },
         // "move-text": {
         //   from: {
         //     transform: "translateY(0)",
@@ -112,8 +120,9 @@ export default {
       },
       animation: {
         "grow-circle": "grow-circle 400ms forwards",
-        "spin-slow" : "spin 90s linear infinite",
-        "spin-opposite" : "spin-opposite 90s linear infinite"
+        "shrink-circle": "shrink-circle 400ms forwards",
+        "spin-slow": "spin 90s linear infinite",
+        "spin-opposite": "spin-opposite 90s linear infinite",
         // "move-text": "move-text 1s linear forwards",
         // "move-text-return": "move-text-return 1s linear forwards",
         // "move-left": "move-left 1s linear forwards",

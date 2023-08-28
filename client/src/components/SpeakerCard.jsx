@@ -6,7 +6,7 @@ function Speaker({ speaker }) {
   return (
     <div className="relative justify-center lg:w-48 lg:h-48 md:w-40 md:h-40 sm:w-32 sm:h-32 w-60 h-60 flex flex-col items-center">
       <div
-        className="group relative w-full h-full"
+        className="group hover:animate-shrink-circle relative w-full h-full"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
