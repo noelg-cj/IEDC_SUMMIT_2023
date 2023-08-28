@@ -2,7 +2,7 @@ import React from "react";
 
 function WaveLine({ position, direction }) {
   return (
-    <div className={`absolute ${position}`}>
+    <div className={`${position}`}>
       {direction && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
