@@ -3,25 +3,25 @@ import Alt from "./assets/img/iedcSummit.png";
 export const speakers = [
   {
     img: Alt,
-    name: "Coming Soon1",
+    name: "Coming Soon",
     title1: "Coming",
     title2: "Soon",
   },
   {
     img: Alt,
-    name: "Coming Soon2",
+    name: "Coming Soon",
     title1: "Coming",
     title2: "Soon",
   },
   {
     img: Alt,
-    name: "Coming Soon3",
-    title1: "Coming4",
+    name: "Coming Soon",
+    title1: "Coming",
     title2: "Soon",
   },
   {
     img: Alt,
-    name: "Coming Soon5",
+    name: "Coming Soon",
     title1: "Coming",
     title2: "Soon",
   },
@@ -95,7 +95,7 @@ export const iedcCircle = [
     title: "districts",
   },
   {
-    value: '5K+',
+    value: "5K+",
     title: "attendees",
   },
   {
@@ -103,7 +103,7 @@ export const iedcCircle = [
     title: "startups",
   },
   {
-    value: '40+',
+    value: "40+",
     title: "events",
   },
   {
@@ -111,7 +111,7 @@ export const iedcCircle = [
     title: "speakers",
   },
   {
-    value: '99+',
+    value: "99+",
     title: "colleges",
   },
 ];
