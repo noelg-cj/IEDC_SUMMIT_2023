@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 import { Grid, Divider } from "@mui/material";
 import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
 import footerIcon from "../assets/img/footer/footer heading.png";
-
+import cetLogo from "../assets/img/footer/cet.png";
 export default function Footer() {
   return (
     <Box
@@ -17,7 +17,7 @@ export default function Footer() {
     >
       <Grid container justifyContent="space-evenly" columns={16}>
         <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
-          <img src={footerIcon} className="w-48 sm:w-72 lg:w-96 round-full" />
+          <img src={footerIcon} />
           <Typography
             variant="body1"
             color="#ffffff"
@@ -74,25 +74,25 @@ export default function Footer() {
         />
 
         <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
-          <img src={footerIcon} className="w-48 sm:w-72 lg:w-96 round-full" />
+          <img src={cetLogo} className=" h-20 w-24" />
           <Typography
             variant="body1"
             color="#ffffff"
             paddingTop="30px"
             gutterBottom
           >
-            Kerala Startup Mission | Govenment of Kerala
+           Innovation and Entrepreneurship Development Centre | CET
           </Typography>
           <Typography variant="body2" color="#ababab" paddingBottom="20px">
-            <p>G3B, Thejaswini, Technopark Campus</p>
-            <p>Kariavattom, Trivandrum, Kerala, 695581</p>
+            <p>College of Engineering Trivandrum,</p>
+            <p>Sreekaryam, Thiruvananathapuram, Kerala, 695016</p>
           </Typography>
 
           <Typography variant="body1" color="#ababab">
             <p>For Queries:</p>
           </Typography>
           <Typography variant="body1" color="#ffffff">
-            <p>iedckerala@startupmission.in</p>
+            <p>iedcsummit@cet.ac.in</p>
           </Typography>
           <Typography
             variant="body1"
@@ -101,9 +101,9 @@ export default function Footer() {
             paddingBottom="30px"
             gutterBottom
           >
-            <p>Bergin Russel</p>
-            <p>iedckerala@startupmission.in</p>
-            <p>6238998379</p>
+            <p>IEDC CET</p>
+            <p>iedc@cet.ac.in</p>
+            <p>00000000</p>
           </Typography>
           <Link href="https://www.facebook.com/" color="#ababab">
             <Facebook />

@@ -95,7 +95,7 @@ export const iedcCircle = [
     title: "districts",
   },
   {
-    value: 14,
+    value: '5K+',
     title: "attendees",
   },
   {
@@ -103,15 +103,15 @@ export const iedcCircle = [
     title: "startups",
   },
   {
-    value: 14,
-    title: "activities",
+    value: '40+',
+    title: "events",
   },
   {
-    value: "20+",
+    value: "30+",
     title: "speakers",
   },
   {
-    value: 14,
+    value: '99+',
     title: "colleges",
   },
 ];
