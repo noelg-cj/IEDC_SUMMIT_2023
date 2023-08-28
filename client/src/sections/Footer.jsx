@@ -30,7 +30,7 @@ export default function Footer() {
           <Typography
             variant="body1"
             color="#ffffff"
-            paddingTop="30px"
+            paddingTop="5px"
             paddingLeft="4px"
             gutterBottom
           >
