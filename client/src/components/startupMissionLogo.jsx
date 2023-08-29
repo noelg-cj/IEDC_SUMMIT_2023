@@ -6,15 +6,15 @@ function StartupMissionLogo() {
       version="1.1"
       id="Layer_1-2"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       x="0px"
       y="0px"
       width="165px"
       height="92px"
       viewBox="0 0 165 92"
-      enable-background="new 0 0 165 92"
-      xml:space="preserve"
-      class="h-12 w-24"
+      enableBackground="new 0 0 165 92"
+      xmlSpace="preserve"
+      className="h-12 w-24"
     >
       <g>
         <g>
