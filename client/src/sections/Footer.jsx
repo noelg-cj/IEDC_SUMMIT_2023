@@ -8,6 +8,7 @@ import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
 import KSUMlogo from "../assets/img/footer/KSUM logo.png";
 import IEDClogo from "../assets/img/footer/IEDC logo.png";
 import cetLogo from "../assets/img/footer/cet.png";
+import IEDCcetLogo from "../assets/img/footer/IEDC CET logo.png";
 
 
 
@@ -30,7 +31,7 @@ export default function Footer() {
           <Typography
             variant="body1"
             color="#ffffff"
-            paddingTop="5px"
+            paddingTop="10px"
             paddingLeft="4px"
             gutterBottom
           >
@@ -85,11 +86,14 @@ export default function Footer() {
         />
 
         <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
-          <img src={cetLogo} className=" h-20 w-24" />
+        <Grid container justifyContent="space-evenly" >
+          <img src={cetLogo} className=" h-24 w-30" />
+          <img src={IEDCcetLogo} className=" h-24 w-30" style={{ paddingTop: 10 }}/>
+        </Grid>
           <Typography
             variant="body1"
             color="#ffffff"
-            paddingTop="30px"
+            paddingTop="10px"
             paddingLeft="4px"
             gutterBottom
           >
