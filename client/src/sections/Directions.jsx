@@ -1,24 +1,23 @@
 import React, { useState } from "react";
 
-import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: '600px',
-  height: '400px',
-  
-  borderRadius : '10px',
-  boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.1)',
-  
+  width: "600px",
+  height: "400px",
+
+  borderRadius: "10px",
+  boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
 };
 
 const center = {
   lat: 8.546137753741851,
-  lng: 76.90639433950193
+  lng: 76.90639433950193,
 };
 
 const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
-const App = () => {
+const App = ({ sectionRef }) => {
   const [activeLink, setActiveLink] = useState("TVC");
   const [content, setContent] = useState("TVC");
 
@@ -27,25 +26,22 @@ const App = () => {
     setContent(link);
   };
 
-  
-
-
   return (
-    <div className="m-20">
+    <div ref={sectionRef} className="m-20">
       <h1 className="text-6xl text-[#000000]font-darker-grotesque font-semibold">
         Get Directions to the event
       </h1>
       <div className="flex flex-col mt-20 space-x-3 w-full custom2:flex-row">
         <div className="Maps w-full m-auto flex items-center justify-center">
-            <LoadScript googleMapsApiKey = {apiKey}>
-                <GoogleMap
-                    mapContainerStyle={containerStyle}
-                    center={center}
-                    zoom={17}
-                >
-                    <Marker position={center} />
-                </GoogleMap>
-            </LoadScript>
+          <LoadScript googleMapsApiKey={apiKey}>
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              zoom={17}
+            >
+              <Marker position={center} />
+            </GoogleMap>
+          </LoadScript>
         </div>
         <div className="flex flex-col p-12 w-full overflow-x-auto">
           <nav>
@@ -54,9 +50,9 @@ const App = () => {
                 <button
                   onClick={() => handleLinkClick("TVC")}
                   className={`nav-link  ml-4 custom1:ml-0 ${
-                    activeLink === "TVC" 
-                    ? "text-[#09189C] underline" 
-                    : "text-[#858585] underline"
+                    activeLink === "TVC"
+                      ? "text-[#09189C] underline"
+                      : "text-[#858585] underline"
                   }`}
                 >
                   TVC
@@ -74,9 +70,9 @@ const App = () => {
                 <button
                   onClick={() => handleLinkClick("Petta")}
                   className={`nav-link ${
-                    activeLink === "Petta" ?
-                     "text-[#09189C] underline" 
-                     : "text-[#858585] underline"
+                    activeLink === "Petta"
+                      ? "text-[#09189C] underline"
+                      : "text-[#858585] underline"
                   }`}
                 >
                   Petta

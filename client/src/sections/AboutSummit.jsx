@@ -1,7 +1,7 @@
 import React from "react";
 import Paragraph from "../components/paragraph";
 
-const AboutSummit = () => {
+const AboutSummit = ({ sectionRef }) => {
   const summit = {
     header: "ABOUT IEDC SUMMIT",
     heading: "Asia's largest summit for aspiring student entrepreneurs",
@@ -10,8 +10,8 @@ const AboutSummit = () => {
         <p>
           Kerala Startup Mission is organizing the eight edition of the flagship
           event- IEDC Summit 2023 and , College of Engineering Trivandrum,
-          heartily welcomes you to witness and be a part of Asia's largest summit
-          for aspiring student innovators and entrepreneurs.
+          heartily welcomes you to witness and be a part of Asia's largest
+          summit for aspiring student innovators and entrepreneurs.
         </p>
 
         <p>
@@ -29,9 +29,12 @@ const AboutSummit = () => {
       </>
     ),
   };
-
+  // console.log(sectionRef);
   return (
-    <div className="w-10/12 xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center">
+    <div
+      ref={sectionRef}
+      className="w-10/12 xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center"
+    >
       <div className="  flex-1 lg:pr-20 box-border">
         <div className=" min-w-5/6 h-96 bg-slate-400"></div>
       </div>

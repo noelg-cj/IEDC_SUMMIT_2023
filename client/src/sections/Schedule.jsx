@@ -8,6 +8,11 @@ const Schedule = () => {
     setLocation(e.target.getAttribute("data-loc-id"));
   };
 
+  const [selectedOption, setSelectedOption] = useState("venue");
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
   return (
     <div className="px-6 sm:px-16 md:w-11/12 py-10 sm:py-20 font-darker-grotesque">
       <h1 className="text-2xl sm:text-4xl lg:text-6xl text-start font-semibold">
@@ -40,7 +45,7 @@ const Schedule = () => {
           onClick={selectLocation}
           data-loc-id={2}
         >
-          CGPU 
+          CGPU
         </div>
         <div
           className={`transition-colors	cursor-pointer	duration-500 ${
@@ -62,7 +67,9 @@ const Schedule = () => {
                 type="radio"
                 className="align-middle cursor-pointer"
                 name="filter-by"
-                checked
+                value="venue"
+                checked={selectedOption === "venue"}
+                onChange={handleOptionChange}
               />{" "}
               Venue
             </div>
@@ -71,6 +78,9 @@ const Schedule = () => {
                 type="radio"
                 className="align-middle cursor-pointer"
                 name="filter-by"
+                value="type"
+                checked={selectedOption === "type"}
+                onChange={handleOptionChange}
               />{" "}
               Type
             </div>

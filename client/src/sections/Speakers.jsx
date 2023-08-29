@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-function Speakers() {
+function Speakers({ sectionRef }) {
   const { ref, inView } = useInView({
     threshold: 0.6,
   });
@@ -16,10 +16,13 @@ function Speakers() {
   // if (!isMobile) {
   return (
     <div
-      ref={ref}
+      ref={sectionRef}
       className="relative md:h-screen w-full mt-10 flex-shrink-0 bg-gradient-to-b from-[#097ED8] to-[#001E35]  px-7 py-12 overflow-hidden"
     >
-      <div className={`${inView ? "animate-right" : "animate-right-return"}`}>
+      <div
+        ref={ref}
+        className={`${inView ? "animate-right" : "animate-right-return"}`}
+      >
         <WaveLine
           position="absolute top-16 md:top-0 -right-48"
           direction={true}
@@ -60,8 +63,8 @@ function Speakers() {
         <div
           className={`mb-20 md:mb-40 mt-10 md:grid md:grid-cols-4 flex flex-col items-center gap-20 md:ml-10`}
         >
-          {speakers.map((speaker) => (
-            <Speaker speaker={speaker} key={speaker.name} />
+          {speakers.map((speaker, index) => (
+            <Speaker speaker={speaker} key={index} />
           ))}
         </div>
       </div>
