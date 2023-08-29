@@ -36,7 +36,7 @@ function Navbar({ navbarItems }) {
           <FaBars className="text-2xl" />
         </button>
         {isDropDownOpen && (
-          <div className="absolute top-20 left-0 right-0 flex flex-col items-center justify-center bg-black bg-opacity-80 text-2xl">
+          <div className="absolute top-20 left-0 right-0 flex flex-col items-center justify-center bg-white text-2xl">
             {navbarItems.map((item, index) => (
               <a
                 key={index}
