@@ -8,19 +8,33 @@ import About from "./sections/About";
 import Footer from "./sections/Footer";
 import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
+import { useRef } from "react";
 
 function App() {
+  const homeSectionRef = useRef(null);
+  const aboutSectionRef = useRef(null);
+  const speakersSectionRef = useRef(null);
+  const eventsSectionRef = useRef(null);
+  const venueSectionRef = useRef(null);
+
+  const navbarItems = [
+    { text: "HOME", href: "/", sectionRef: homeSectionRef },
+    { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
+    { text: "SPEAKERS", href: "#speakers", sectionRef: speakersSectionRef },
+    { text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
+    { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
+  ];
   return (
     <div className="flex flex-col justify-center items-center">
-      <LandingPage />
-      <AboutSummit />
+      <LandingPage navbarItems={navbarItems} />
+      <AboutSummit sectionRef={aboutSectionRef} />
       <IedcCircle />
-      <Speakers />
+      <Speakers sectionRef={speakersSectionRef} />
       <Schedule />
-      <Events />
+      <Events sectionRef={eventsSectionRef} />
       <About />
       <PrevSummut />
-      <Directions />
+      <Directions sectionRef={venueSectionRef} />
       <Footer />
     </div>
   );

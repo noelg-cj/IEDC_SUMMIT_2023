@@ -1,24 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import StartupMissionLogo from "./startupMissionLogo";
 
-function Navbar() {
+function Navbar({ navbarItems }) {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const toggleDropDown = () => {
     setIsDropDownOpen(!isDropDownOpen);
   };
+
   const scrollToSection = (ref) => {
+    toggleDropDown();
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const navbarItems = [
-    { text: "HOME", href: "/" },
-    { text: "ABOUT", href: "/" },
-    { text: "SPEAKERS", href: "/" },
-    { text: "EVENTS", href: "/" },
-    { text: "VENUE", href: "/" },
-  ];
   return (
     <nav className="font-dm-sans font-[600] py-4 w-9/12 self-center ">
       <div className="hidden md:flex md:justify-between">
@@ -29,6 +24,7 @@ function Navbar() {
             key={index}
             hover="cursor-pointer"
             className="self-center hover:text-blue-400"
+            onClick={() => scrollToSection(item.sectionRef)}
           >
             {item.text}
           </a>
@@ -46,7 +42,7 @@ function Navbar() {
                 key={index}
                 className="mx-4 my-2 text-gray-500  hover:text-white"
                 href={item.href}
-                onClick={toggleDropDown}
+                onClick={() => scrollToSection(item.sectionRef)}
               >
                 {item.text}
               </a>
