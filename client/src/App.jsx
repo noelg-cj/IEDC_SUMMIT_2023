@@ -9,6 +9,7 @@ import Footer from "./sections/Footer";
 import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
 import { useRef } from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
   const homeSectionRef = useRef(null);
@@ -26,7 +27,8 @@ function App() {
   ];
   return (
     <div className="flex flex-col justify-center items-center">
-      <LandingPage navbarItems={navbarItems} />
+      <Navbar navbarItems={navbarItems} />
+      <LandingPage />
       <AboutSummit sectionRef={aboutSectionRef} />
       <IedcCircle />
       <Speakers sectionRef={speakersSectionRef} />

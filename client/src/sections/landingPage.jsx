@@ -14,8 +14,7 @@ function LandingPage({ navbarItems }) {
         <img src={bg1} className="mb-[-5px]" />
         <img src={bg2} className="" />
       </div>
-      <Navbar navbarItems={navbarItems} />
-      <div className="font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pt-16 pb-24 md:py-28">
+      <div className="font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pt-40 pb-24 md:pt-52 md:pb-28 ">
         <div className="flex flex-col sm:flex-row items-center pb-16">
           <img
             src={logo}
