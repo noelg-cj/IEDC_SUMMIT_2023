@@ -4,15 +4,15 @@ import Speaker from "../components/SpeakerCard";
 import WaveLine from "../components/WaveLine";
 import { speakers } from "../data";
 import "../assets/css/animations.css";
-import { useMediaQuery } from "react-responsive";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+// import { useMediaQuery } from "react-responsive";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
 
 function Speakers({ sectionRef }) {
   const { ref, inView } = useInView({
     threshold: 0.6,
   });
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   // if (!isMobile) {
   return (
     <div
