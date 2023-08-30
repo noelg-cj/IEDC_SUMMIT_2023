@@ -38,7 +38,9 @@ function Navbar({ navbarItems }) {
       } ${isDropDownOpen && "bg-white"}`}
     >
       <div className="hidden md:flex md:justify-evenly">
-        <StartupMissionLogo />
+        <a href="/" className="cursor-pointer">
+          <StartupMissionLogo />
+        </a>
         {navbarItems.map((item, index) => (
           <a
             href={item.href}
