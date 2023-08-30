@@ -1,13 +1,12 @@
-import Navbar from "../components/Navbar";
 import CountDown from "../components/countDown";
 import bg0 from "../assets/img/about/C0.png";
 import bg1 from "../assets/img/about/C1.png";
 import bg2 from "../assets/img/about/C2.png";
 import logo from "../assets/img/iedcSummit.png";
 
-function LandingPage({ navbarItems }) {
+function LandingPage({ sectionRef }) {
   return (
-    <div className="relative w-full bg- flex flex-col pb-12">
+    <div ref={sectionRef} className="relative w-full bg- flex flex-col pb-12">
       <img src={bg0} className="absolute right-0 -z-50" />
 
       <div className="absolute left-0 right-0 top-48 sm:top-20 md:top-6 lg:top-0 flex flex-col items-start w-72 md:w-[22rem] lg:w-auto -z-50">

@@ -19,7 +19,7 @@ function App() {
   const venueSectionRef = useRef(null);
 
   const navbarItems = [
-    { text: "HOME", href: "/", sectionRef: homeSectionRef },
+    { text: "HOME", href: "", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
     { text: "SPEAKERS", href: "#speakers", sectionRef: speakersSectionRef },
     { text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="flex flex-col justify-center items-center">
       <Navbar navbarItems={navbarItems} />
-      <LandingPage />
+      <LandingPage sectionRef={homeSectionRef} />
       <AboutSummit sectionRef={aboutSectionRef} />
       <IedcCircle />
       <Speakers sectionRef={speakersSectionRef} />
