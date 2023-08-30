@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@react-google-maps/api": "^2.19.2",
-    "react-leaflet": "^4.2.1"
-  }
-}
