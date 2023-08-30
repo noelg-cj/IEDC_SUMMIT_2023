@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function CountDown() {
-  const deadline = new Date("2023-10-09T09:00:00");
+  const deadline = new Date("2023-10-12T09:00:00");
   const [days, setDays] = useState();
   const [hours, setHours] = useState();
   const [minutes, setMinutes] = useState();
@@ -36,25 +36,25 @@ function CountDown() {
   return (
     <div className="self-center text-4xl lg:text-6xl font-medium bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text w-[85vw] sm:w-[75vw] lg:w-[55vw] bg-lime-700 grid grid-cols-4 justify-between">
       <div className=" text-center ">
-        <h1>00</h1>
+        <h1>{days}</h1>
         <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-sm lg:text-xl font-[700]">
           DAYS
         </p>
       </div>
       <div className=" text-center ">
-        <h1>00</h1>
+        <h1>{hours}</h1>
         <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-sm lg:text-xl font-[700]">
           HOURS
         </p>
       </div>
       <div className="text-center">
-        <h1>00</h1>
+        <h1>{minutes}</h1>
         <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-sm lg:text-xl font-[700]">
           MINUTES
         </p>
       </div>
       <div className="text-center">
-        <h1>00</h1>
+        <h1>{seconds}</h1>
         <p className="font-thin bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-sm lg:text-xl font-[700]">
           SECONDS
         </p>
