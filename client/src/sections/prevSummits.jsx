@@ -3,6 +3,7 @@ import PreSumCard from "../components/prevSumCard";
 import VideoCard from "../components/videoCard";
 import { prevSummits } from "../data";
 import GIF from "../assets/img/idea.gif";
+
 function prevSummut() {
   return (
     <div className="relative font-darker-grotesque w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh]  flex flex-col ">
