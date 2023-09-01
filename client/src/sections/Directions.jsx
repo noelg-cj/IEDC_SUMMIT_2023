@@ -5,7 +5,6 @@ import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
 const containerStyle = {
   width: "600px",
   height: "400px",
-
   borderRadius: "10px",
   boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.1)",
 };
@@ -15,7 +14,7 @@ const center = {
   lng: 76.90639433950193,
 };
 
-const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY2;
 
 const App = ({ sectionRef }) => {
   const [activeLink, setActiveLink] = useState("TVC");
@@ -27,11 +26,9 @@ const App = ({ sectionRef }) => {
   };
 
   return (
-    <div ref={sectionRef} className="m-20">
-      <h1 className="text-6xl text-[#000000]font-darker-grotesque font-semibold">
-        Get Directions to the event
-      </h1>
-      <div className="flex flex-col mt-20 space-x-3 w-full custom2:flex-row">
+    <div ref={sectionRef} className=" w-10/12 my-20">
+      <h1 className="font-medium md:font-[500] font-darker-grotesque text-5xl md:text-[60px]">Get Directions to the event</h1>
+      <div className="flex flex-col mt-20 space-x-3 w-full space-y-10 custom2:flex-row">
         <div className="Maps w-full m-auto flex items-center justify-center">
           <LoadScript googleMapsApiKey={apiKey}>
             <GoogleMap
@@ -43,13 +40,13 @@ const App = ({ sectionRef }) => {
             </GoogleMap>
           </LoadScript>
         </div>
-        <div className="flex flex-col p-12 w-full overflow-x-auto">
+        <div className="flex flex-col p-0 w-full overflow-x-auto custom2:p-12">
           <nav>
             <div className="container mx-auto ml-0 flex">
-              <div className="space-x-4 items-center text-4xl flex flex-row font-darker-grotesque font-semibold custom1:flex-row custom2:flex-col custom1:items-start">
+              <div className="space-x-4 items-start text-4xl flex flex-wrap flex-row  font-darker-grotesque font-semibold custom1:flex-row custom2:flex-col custom2:items-center custom1:items-start">
                 <button
                   onClick={() => handleLinkClick("TVC")}
-                  className={`nav-link  ml-4 custom1:ml-0 ${
+                  className={`nav-link  ml-0 custom2:ml-4 custom1:ml-0 ${
                     activeLink === "TVC"
                       ? "text-[#09189C] underline"
                       : "text-[#858585] underline"
