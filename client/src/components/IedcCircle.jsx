@@ -5,9 +5,7 @@ import circleIcon from "../assets/img/center.png";
 const IedcCircle = () => {
   return (
     <div className="overflow-hidden">
-      <div
-        className={`relative w-[320px] h-[320px] sm:w-[500px] sm:h-[500px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px] flex items-center justify-center`}
-      >
+      <div className="relative w-[320px] h-[320px] sm:w-[500px] sm:h-[500px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px] flex items-center justify-center">
         <img
           src={circleIcon}
           className="w-44 sm:w-60 md:w-80 lg:w-96 round-full"

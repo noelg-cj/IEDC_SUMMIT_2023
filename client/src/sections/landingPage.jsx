@@ -21,10 +21,10 @@ function LandingPage({ sectionRef }) {
             className="sm:order-2 w-40 sm:w-48 lg:w-52 mb-12 sm:mb-0"
           />
           <div className="sm:order-1 flex flex-col items-center sm:items-start">
-            <h1 className="font-bold text-5xl md:text-6xl lg:text-7xl bg-gradient-to-b from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent pb-4">
+            <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl bg-gradient-to-b from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent pb-4">
               IEDC SUMMIT
             </h1>
-            <h1 className="font-bold text-4xl md:text-6xl lg:text-7xl bg-gradient-to-b from-[#2B394366] to-[#000000D6] bg-clip-text text-transparent">
+            <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl bg-gradient-to-b from-[#2B394366] to-[#000000D6] bg-clip-text text-transparent">
               2023
             </h1>
           </div>
