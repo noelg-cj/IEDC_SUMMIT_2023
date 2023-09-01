@@ -10,7 +10,7 @@ import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
 import { useRef } from "react";
 import Navbar from "./components/Navbar";
-import ComingSoon from "./sections/comingSoon";
+
 function App() {
   const homeSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
@@ -31,12 +31,6 @@ function App() {
       <LandingPage sectionRef={homeSectionRef} />
       <AboutSummit sectionRef={aboutSectionRef} />
       <IedcCircle />
-     
-      <ComingSoon title="The Speakers"/>
-     
-      <ComingSoon title="Schedule"/>
-      
-      <ComingSoon title="The Events"/>
       <About />
       <PrevSummut />
       <Directions sectionRef={venueSectionRef} />
