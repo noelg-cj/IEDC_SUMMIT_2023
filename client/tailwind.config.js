@@ -6,6 +6,7 @@ export default {
       screens : {
         'custom1' : '1163px',
         'custom2' : '1100px',
+        'custom3' : '350px',
       },
       fontFamily: {
         "darker-grotesque": ["Darker Grotesque", "sans"],

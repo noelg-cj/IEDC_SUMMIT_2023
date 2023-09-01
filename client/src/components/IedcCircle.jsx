@@ -1,6 +1,6 @@
 import IedcSubCircle from "./IedcSubCircle";
 import { iedcCircle } from "../data";
-import circleIcon from "../assets/img/circle-icon.svg";
+import circleIcon from "../assets/img/center.png";
 
 const IedcCircle = () => {
   return (
