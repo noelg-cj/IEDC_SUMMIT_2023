@@ -7,7 +7,7 @@ import GIF from "../assets/img/idea.gif";
 function prevSummut() {
   return (
     <div className="relative font-darker-grotesque w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh]  flex flex-col ">
-      <h1 className="font-semibold md:font-[500] text-5xl md:text-[60px]">
+      <h1 className="font-bold md:font-[500] text-5xl text-[#0597F2] text-center md:text-[60px]">
         Explore Our Previous Summits
       </h1>
       <img
@@ -15,7 +15,7 @@ function prevSummut() {
         src={GIF}
         alt="idea"
       />
-      <div className="lg:w-3/5  space-y-5 w-full">
+      <div className="lg:w-full flex flex-col lg:flex-row items-center w-full border-t-4 border-b-4 border-[#4656E1]">
         {prevSummits.map((summit, index) => (
           <PreSumCard summit={summit} key={index} />
         ))}
