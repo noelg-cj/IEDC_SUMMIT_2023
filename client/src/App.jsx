@@ -21,8 +21,8 @@ function App() {
   const navbarItems = [
     { text: "HOME", href: "", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
-    { text: "SPEAKERS", href: "#speakers", sectionRef: speakersSectionRef },
-    { text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
+    //{ text: "", href: "#speakers", sectionRef: speakersSectionRef },
+    //{ text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
   ];
   return (
