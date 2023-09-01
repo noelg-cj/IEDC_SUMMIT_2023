@@ -14,7 +14,7 @@ const center = {
   lng: 76.90639433950193,
 };
 
-const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY2;
+const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
 const App = ({ sectionRef }) => {
   const [activeLink, setActiveLink] = useState("TVC");
