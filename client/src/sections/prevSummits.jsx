@@ -15,32 +15,14 @@ function prevSummut() {
         ))}
       </div>
       <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 flex flex-col items-center gap-3 sm:justify-items-center">
-        <VideoCard number={1} />
-        <VideoCard number={2} />
+        <VideoCard videoID={"fPmUPSigxrg"} />
+        {/* <VideoCard number={2} />
         <VideoCard number={3} />
         <VideoCard number={4} />
         <VideoCard number={5} />
-        <VideoCard number={6} />
+        <VideoCard number={6} /> */}
       </div>
     </div>
   );
 }
 export default prevSummut;
-{
-  /* <svg
-  width="35"
-  height="35"
-  viewBox="0 0 35 35"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <circle cx="19.5" cy="16.5" r="0.5" fill="black" fill-opacity="0.28" />
-  <path
-    d="M11 5L23 17L11 29"
-    stroke="#09189C"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>; */
-}
