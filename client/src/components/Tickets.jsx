@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-function Ticket() {
+function Ticket(props) {
   const numberOfSquares = 14;
   const squares = [];
-
+  const { buttonTitle, eventName, eventDescription, eventLink } = props;
   for (let i = 0; i < numberOfSquares; i++) {
     squares.push(
       <div
@@ -27,17 +27,22 @@ function Ticket() {
       </div>
       <div className="font-dm-sans">
         <div className="w-11/12 mx-auto  h-fit items-center  mx-auto">
-          <h1 className=" font-[700] text-[38px]">
-            Coming Soon
-          </h1>
-          <p className=" font-[500] text-[20px]">
-            Coming Soon
+              <h1 className="font-[900] text-3xl leading-tight">
+                {eventName}
+              </h1>
+          <p className=" font-[500] text-[15px]">
+          {eventDescription}
           </p>
         </div>
         <div className="justify-center flex">
-          <button className=" font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px]">
-            See All
-          </button>
+        <a
+  href={eventLink}
+  target="_blank"
+  className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center"
+>
+  {buttonTitle}
+</a>
+
         </div>
       </div>
     </div>

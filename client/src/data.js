@@ -141,3 +141,19 @@ export const prevSummits = [
     website: "https://iedcsummit.in/2019/",
   },
 ];
+
+
+export const VolunteerCalls = [
+  {
+    ticketTitle: "Volunteers",
+    ticketDescription: "Join us as a volunteer for IEDC Summit 2023 and seize the opportunity to advance your career, build networks, and gain valuable skills. Apply now to be part of Asia's largest summit for student entrepreneurs!",
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLSeHVP308qlb2O4f8095wB5XK4yTsRaWVbvex87RF-JT6m_e-w/viewform",
+  },
+  {
+    ticketTitle: "Campus Ambassador",
+    ticketDescription: "Passionate about showcasing leadership and fostering innovation? Join us as a Campus Ambassador for valuable leadership experience, certificates, and a chance to win ₹25,000 in rewards!"
+    ,
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+];
+
