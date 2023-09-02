@@ -1,4 +1,5 @@
 import Paragraph from "../components/paragraph";
+import Img from "../assets/img/iedcSummit.png";
 
 const AboutSummit = ({ sectionRef }) => {
   const summit = {
@@ -35,7 +36,7 @@ const AboutSummit = ({ sectionRef }) => {
       className="w-10/12 xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center"
     >
       <div className="  flex-1 lg:pr-20 box-border">
-        <div className=" min-w-5/6 h-96 bg-slate-400"></div>
+        <img src={Img} />
       </div>
       <div className="flex-1">
         <Paragraph
