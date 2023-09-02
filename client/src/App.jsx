@@ -9,6 +9,7 @@ import Footer from "./sections/Footer";
 import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
 import { useRef } from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
   const homeSectionRef = useRef(null);
@@ -18,24 +19,23 @@ function App() {
   const venueSectionRef = useRef(null);
 
   const navbarItems = [
-    { text: "HOME", href: "/", sectionRef: homeSectionRef },
+    { text: "HOME", href: "", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
-    { text: "SPEAKERS", href: "#speakers", sectionRef: speakersSectionRef },
-    { text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
+    //{ text: "", href: "#speakers", sectionRef: speakersSectionRef },
+    //{ text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
   ];
   return (
     <div className="flex flex-col justify-center items-center">
-      <LandingPage navbarItems={navbarItems} />
+      <Navbar navbarItems={navbarItems} />
+      <LandingPage sectionRef={homeSectionRef} />
       <AboutSummit sectionRef={aboutSectionRef} />
       <IedcCircle />
-      <Speakers sectionRef={speakersSectionRef} />
-      <Schedule />
-      <Events sectionRef={eventsSectionRef} />
       <About />
       <PrevSummut />
       <Directions sectionRef={venueSectionRef} />
       <Footer />
+      
     </div>
   );
 }

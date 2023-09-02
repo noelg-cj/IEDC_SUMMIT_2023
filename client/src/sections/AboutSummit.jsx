@@ -1,4 +1,3 @@
-import React from "react";
 import Paragraph from "../components/paragraph";
 
 const AboutSummit = ({ sectionRef }) => {
