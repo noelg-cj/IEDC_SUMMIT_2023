@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Ticket(props) {
+function callCard(props) {
   const numberOfSquares = 14;
   const squares = [];
   const { buttonTitle, eventName, eventDescription, eventLink } = props;
@@ -49,4 +49,4 @@ function Ticket(props) {
   );
 }
 
-export default Ticket;
+export default callCard;

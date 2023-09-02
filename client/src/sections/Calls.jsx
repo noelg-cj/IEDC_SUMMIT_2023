@@ -1,7 +1,7 @@
 import React from "react";
-import Tickets from "../components/Tickets";
+import CallCard from "../components/callsCard";
 
-function Events(props) {
+function Calls(props) {
   const { title, button, sectionRef, eventData,eventDescription } = props;
   
   return (
@@ -17,7 +17,7 @@ function Events(props) {
       </div>
       <div className="flex flex-row flex-wrap justify-evenly">
   {eventData && eventData.length > 0 && eventData.map((ticket, index) => (
-    <Tickets
+    <CallCard
       key={index}
       buttonTitle={button}
       eventName={ticket.ticketTitle}
@@ -35,4 +35,4 @@ function Events(props) {
   );
 }
 
-export default Events;
+export default Calls;

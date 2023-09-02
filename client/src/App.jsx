@@ -1,6 +1,7 @@
 import Schedule from "./sections/Schedule";
 import Speakers from "./sections/Speakers";
 import Events from "./sections/Events";
+import Calls from "./sections/Calls";
 import LandingPage from "./sections/landingPage";
 import AboutSummit from "./sections/AboutSummit";
 import IedcCircle from "./components/IedcCircle";
@@ -10,7 +11,7 @@ import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
 import { useRef } from "react";
 import Navbar from "./components/Navbar";
-
+import { VolunteerCalls } from "./data.js";
 function App() {
   const homeSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
@@ -33,6 +34,9 @@ function App() {
       <IedcCircle />
       <About />
       <PrevSummut />
+      <Calls title="Volunteer Calls" button="Apply Now"  eventData={VolunteerCalls} sectionRef={eventsSectionRef} eventDescrition="" />
+
+      
       <Directions sectionRef={venueSectionRef} />
       <Footer />
       

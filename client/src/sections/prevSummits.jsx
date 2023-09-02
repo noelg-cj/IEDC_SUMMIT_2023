@@ -17,13 +17,14 @@ function prevSummut() {
       </div>
       <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 flex flex-col items-center gap-3 sm:justify-items-center">
         <VideoCard videoID={"fPmUPSigxrg"} />
-        {/* <VideoCard number={2} />
-        <VideoCard number={3} />
-        <VideoCard number={4} />
-        <VideoCard number={5} />
-        <VideoCard number={6} /> */}
+        <VideoCard videoID={"k1wGLf7s5tA"} />
+        <VideoCard videoID={"UqKGvZuhsCU"} />
+        
+        
       </div>
       <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 flex flex-col items-center gap-3 sm:justify-items-center">
+        <VideoCard videoID={"jzyTX9SRTpk"} />
+        <VideoCard videoID={"XrPAxDk_dM4"} />
         <img src={ Summit } alt="summit-image" className="w-full sm:[w-250px] xl:w-[350px] h-[250px] bg-gray-300 rounded-[20px]" />
       </div>
     </div>

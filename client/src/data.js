@@ -141,3 +141,61 @@ export const prevSummits = [
     website: "https://iedcsummit.in/2019/",
   },
 ];
+
+
+export const VolunteerCalls = [
+  {
+    ticketTitle: "Volunteers",
+    ticketDescription: "Join us as a volunteer for IEDC Summit 2023 and seize the opportunity to advance your career, build networks, and gain valuable skills. Apply now to be part of Asia's largest summit for student entrepreneurs!",
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLSeHVP308qlb2O4f8095wB5XK4yTsRaWVbvex87RF-JT6m_e-w/viewform",
+  },
+  {
+    ticketTitle: "Campus Ambassador",
+    ticketDescription: "Passionate about showcasing leadership and fostering innovation? Join us as a Campus Ambassador for valuable leadership experience, certificates, and a chance to win ₹25,000 in rewards!"
+    ,
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+];
+export const Engagementprograms = [
+  {
+    ticketTitle: "Startups",
+    ticketDescription: "Join us as a volunteer for IEDC Summit 2023 and seize the opportunity to advance your career, build networks, and gain valuable skills. Apply now to be part of Asia's largest summit for student entrepreneurs!",
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLSe8wz7WoImaqrtfjqZAA41vYCFV-RxlpO59bPtarNpJUQJUFw/viewform?usp=sf_link",
+  },
+  {
+    ticketTitle: "Mentors",
+    ticketDescription: "Passionate about showcasing leadership and fostering innovation? Join us as a Campus Ambassador for valuable leadership experience, certificates, and a chance to win ₹25,000 in rewards!"
+    ,
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLScLPb79tRtdFEIhihjGqaRYJYzf-ULBn2jWyaAQFplEoX_kew/viewform?usp=sf_link",
+  },
+  {
+    ticketTitle: "Investors",
+    ticketDescription: "Passionate about showcasing leadership and fostering innovation? Join us as a Campus Ambassador for valuable leadership experience, certificates, and a chance to win ₹25,000 in rewards!"
+    ,
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLScCdW_1haP3qJiGsduCVbl0T2QiH4CIz2qKaNXEI8-bkIOqWQ/viewform?usp=sf_link",
+  },
+  {
+    ticketTitle: "Industries",
+    ticketDescription: "Passionate about showcasing leadership and fostering innovation? Join us as a Campus Ambassador for valuable leadership experience, certificates, and a chance to win ₹25,000 in rewards!"
+    ,
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLSdYnVS2-aLea81lRFJYJDtThaSGkN-VrQuNLTkrJ2hNLpM8KA/viewform?usp=sf_link",
+  },
+  {
+    ticketTitle: "Government Departments",
+    ticketDescription: "Passionate about showcasing leadership and fostering innovation? Join us as a Campus Ambassador for valuable leadership experience, certificates, and a chance to win ₹25,000 in rewards!"
+    ,
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLScoI8Zb2A3bw0dp2WdRE0KunLXL2UbphSPW05FibqrC229bFQ/viewform?usp=sf_link",
+  },
+  {
+    ticketTitle: "Corporates",
+    ticketDescription: "Passionate about showcasing leadership and fostering innovation? Join us as a Campus Ambassador for valuable leadership experience, certificates, and a chance to win ₹25,000 in rewards!"
+    ,
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLSfxsN-jncTmn_1kVCsEJijCH6V0n9_dLRo_wytVtroVc-3cPQ/viewform?usp=sf_link",
+  },
+  {
+    ticketTitle: "Communities",
+    ticketDescription: "Passionate about showcasing leadership and fostering innovation? Join us as a Campus Ambassador for valuable leadership experience, certificates, and a chance to win ₹25,000 in rewards!"
+    ,
+    ticketLink: "https://docs.google.com/forms/d/e/1FAIpQLSeDPqNv3cvpsIMT4cYCY5SllVEVbvoUVYl-qGg-mGNLQPeOCg/viewform?usp=sf_link",
+  },
+];
