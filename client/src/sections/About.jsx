@@ -1,9 +1,19 @@
 import React from "react";
+import { useInView } from 'react-intersection-observer'
 import Paragraph from "../components/paragraph";
 import CET from "../assets/img/CET.jpeg";
 import KSUM from "../assets/img/about/ksum-office.jpg";
 
 const About = () => {
+  const [ refOne, inViewOne] = useInView({
+    threshold: 0.5,
+    triggerOnce: true
+  });
+  const [ refTwo, inViewTwo] = useInView({
+    threshold: 0.5,
+    triggerOnce: true
+  });
+
   const aboutSections = [
     {
       header: "ABOUT KSUM",
@@ -49,20 +59,25 @@ const About = () => {
 
   return (
     <>
-      <div className="w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh] font-dm-sans lg:flex place-items-center">
-        <div className="flex-1 lg:pr-20 box-border">
-          <img src={KSUM} alt="image of ksum" />
-        </div>
-        <div className="flex-1">
-          <Paragraph
-            header={aboutSections[0].header}
-            heading={aboutSections[0].heading}
-            content={aboutSections[0].content}
-          />
-        </div>
+      <div className={`w-10/12 xs:w-11/12 ${ inViewOne ? 'opacity-1' : 'opacity-0' } py-10 space-y-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`} ref={refOne}>
+        { inViewOne ? (
+          <>
+            <div className="flex-1 lg:pr-20 box-border">
+              <img src={KSUM} alt="image of ksum" />
+            </div>
+            <div className="flex-1">
+              <Paragraph
+                header={aboutSections[0].header}
+                heading={aboutSections[0].heading}
+                content={aboutSections[0].content}
+              />
+            </div>
+          </>
+        ) : null
+        }
       </div>
 
-      <div className="w-10/12 xs:w-11/12 min-h-[80vh] font-dm-sans lg:flex place-items-center">
+      <div className={`w-10/12 xs:w-11/12 min-h-[80vh] ${ inViewTwo ? 'opacity-1' : 'opacity-0' } font-dm-sans lg:flex place-items-center transition duration-300`} ref={refTwo}>
         <div className="flex-1 mb-8 md:mb-0">
           <Paragraph
             header={aboutSections[1].header}

@@ -1,6 +1,12 @@
 import Paragraph from "../components/paragraph";
+import { useInView } from "react-intersection-observer";
 
 const AboutSummit = ({ sectionRef }) => {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.5,
+    triggerOnce: true
+  });
+
   const summit = {
     header: "ABOUT IEDC SUMMIT",
     heading: "Asia's largest summit for aspiring student entrepreneurs",
@@ -31,19 +37,23 @@ const AboutSummit = ({ sectionRef }) => {
   // console.log(sectionRef);
   return (
     <div
-      ref={sectionRef}
-      className="w-10/12 xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center"
+      ref={ref}
+      className={`w-10/12 ${ inView ? 'opacity-1' : 'opacity-0' } xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`}
     >
-      <div className="  flex-1 lg:pr-20 box-border">
-        <div className=" min-w-5/6 h-96 bg-slate-400"></div>
-      </div>
-      <div className="flex-1">
-        <Paragraph
-          header={summit.header}
-          heading={summit.heading}
-          content={summit.content}
-        />
-      </div>
+      {inView ? (
+        <>
+          <div className="  flex-1 lg:pr-20 box-border">
+            <div className=" min-w-5/6 h-96 bg-slate-400"></div>
+          </div>
+          <div className="flex-1">
+            <Paragraph
+              header={summit.header}
+              heading={summit.heading}
+              content={summit.content}
+            />
+          </div>
+        </>
+      ): null}
     </div>
   );
 };
