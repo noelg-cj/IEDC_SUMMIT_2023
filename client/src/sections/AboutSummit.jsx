@@ -1,5 +1,9 @@
 import Paragraph from "../components/paragraph";
+
 import { useInView } from "react-intersection-observer";
+
+import Img from "../assets/img/iedcSummit.png";
+
 
 const AboutSummit = ({ sectionRef }) => {
   const { ref, inView, entry } = useInView({
@@ -40,6 +44,7 @@ const AboutSummit = ({ sectionRef }) => {
       ref={ref}
       className={`w-10/12 ${ inView ? 'opacity-1' : 'opacity-0' } xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`}
     >
+
       {inView ? (
         <>
           <div className="  flex-1 lg:pr-20 box-border">
@@ -54,6 +59,18 @@ const AboutSummit = ({ sectionRef }) => {
           </div>
         </>
       ): null}
+
+      <div className="  flex-1 lg:pr-20 box-border">
+        <img src={Img} />
+      </div>
+      <div className="flex-1">
+        <Paragraph
+          header={summit.header}
+          heading={summit.heading}
+          content={summit.content}
+        />
+      </div>
+>
     </div>
   );
 };

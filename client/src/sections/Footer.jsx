@@ -7,7 +7,7 @@ import { Grid, Divider } from "@mui/material";
 import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
 import KSUMlogo from "../assets/img/footer/KSUM logo.png";
 import IEDClogo from "../assets/img/footer/IEDC logo.png";
-import cetLogo from "../assets/img/footer/cet.png";
+import cetLogo from "../assets/img/footer/Cet_emblem.png";
 import IEDCcetLogo from "../assets/img/footer/IEDC CET logo.png";
 
 export default function Footer() {
@@ -93,7 +93,7 @@ export default function Footer() {
 
         <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
           <Grid container justifyContent="space-evenly">
-            <img src={cetLogo} className=" h-24 w-30" />
+            <img src={cetLogo} className=" h-24 w-28" />
             <img
               src={IEDCcetLogo}
               className=" h-24 w-30"
@@ -139,23 +139,23 @@ export default function Footer() {
             <br /> 00000000
           </Typography>
           <Link
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/iedccet/"
             color="#ababab"
             paddingLeft="4px"
           >
             <Facebook />
           </Link>
           <Link
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/iedc_cet/?hl=en"
             color="#ababab"
             sx={{ pl: 1, pr: 1 }}
           >
             <Instagram />
           </Link>
-          <Link href="https://www.twitter.com/" color="#ababab">
+          <Link href="https://twitter.com/CetIedc" color="#ababab">
             <Twitter />
           </Link>
-          <Link href="https://www.linkedin.com/" color="#ababab">
+          <Link href="https://www.linkedin.com/company/innovation-and-entrepreneurship-development-cell-cet/?originalSubdomain=in" color="#ababab">
             <LinkedIn />
           </Link>
         </Grid>
