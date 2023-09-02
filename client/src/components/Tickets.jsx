@@ -30,7 +30,7 @@ function Ticket(props) {
               <h1 className="font-[900] text-3xl leading-tight">
                 {eventName}
               </h1>
-          <p className=" font-[500] text-[15px]">
+          <p className=" font-[300] text-[18px]">
           {eventDescription}
           </p>
         </div>
