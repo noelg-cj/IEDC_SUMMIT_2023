@@ -3,8 +3,14 @@ import bg0 from "../assets/img/about/C0.png";
 import bg1 from "../assets/img/about/C1.png";
 import bg2 from "../assets/img/about/C2.png";
 import logo from "../assets/img/iedcSummit.png";
+import { useInView } from "react-intersection-observer";
 
 function LandingPage({ sectionRef }) {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.5,
+    triggerOnce: true
+  });
+
   return (
     <div ref={sectionRef} className="relative w-full bg- flex flex-col pb-12">
       <img src={bg0} className="absolute right-0 -z-50" />
@@ -13,7 +19,7 @@ function LandingPage({ sectionRef }) {
         <img src={bg1} className="mb-[-5px]" />
         <img src={bg2} className="" />
       </div>
-      <div className="font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pt-40 pb-24 md:pt-52 md:pb-28 ">
+      <div ref={ref} className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pt-40 pb-24 md:pt-52 md:pb-28 ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } transition duration-500`}>
         <div className="flex flex-col sm:flex-row items-center pb-16">
           <img
             src={logo}

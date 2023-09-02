@@ -38,7 +38,7 @@ const AboutSummit = ({ sectionRef }) => {
   return (
     <div
       ref={ref}
-      className={`w-10/12 ${ inView ? 'opacity-1' : 'opacity-0' } xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`}
+      className={`w-10/12 ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-500`}
     >
       {inView ? (
         <>
