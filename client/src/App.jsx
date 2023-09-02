@@ -1,6 +1,7 @@
 import Schedule from "./sections/Schedule";
 import Speakers from "./sections/Speakers";
 import Events from "./sections/Events";
+import Calls from "./sections/Calls";
 import LandingPage from "./sections/landingPage";
 import AboutSummit from "./sections/AboutSummit";
 import IedcCircle from "./components/IedcCircle";
@@ -33,7 +34,7 @@ function App() {
       <IedcCircle />
       <About />
       <PrevSummut />
-      <Events title="Volunteer Calls" button="Apply Now"  eventData={VolunteerCalls} sectionRef={eventsSectionRef} eventDescrition="" />
+      <Calls title="Volunteer Calls" button="Apply Now"  eventData={VolunteerCalls} sectionRef={eventsSectionRef} eventDescrition="" />
 
       
       <Directions sectionRef={venueSectionRef} />
