@@ -2,6 +2,7 @@ import React from "react";
 import PreSumCard from "../components/prevSumCard";
 import VideoCard from "../components/videoCard";
 import { prevSummits } from "../data";
+import Summit from '../assets/img/Summit.jpg'
 
 function prevSummut() {
   return (
@@ -21,6 +22,9 @@ function prevSummut() {
         <VideoCard number={4} />
         <VideoCard number={5} />
         <VideoCard number={6} /> */}
+      </div>
+      <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 flex flex-col items-center gap-3 sm:justify-items-center">
+        <img src={ Summit } alt="summit-image" className="w-full sm:[w-250px] xl:w-[350px] h-[250px] bg-gray-300 rounded-[20px]" />
       </div>
     </div>
   );
