@@ -45,20 +45,7 @@ const AboutSummit = ({ sectionRef }) => {
       className={`w-10/12 ${ inView ? 'opacity-1' : 'opacity-0' } xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`}
     >
 
-      {inView ? (
-        <>
-          <div className="  flex-1 lg:pr-20 box-border">
-            <div className=" min-w-5/6 h-96 bg-slate-400"></div>
-          </div>
-          <div className="flex-1">
-            <Paragraph
-              header={summit.header}
-              heading={summit.heading}
-              content={summit.content}
-            />
-          </div>
-        </>
-      ): null}
+      
 
       <div className="  flex-1 lg:pr-20 box-border">
         <img src={Img} />
@@ -70,7 +57,7 @@ const AboutSummit = ({ sectionRef }) => {
           content={summit.content}
         />
       </div>
->
+
     </div>
   );
 };
