@@ -7,7 +7,7 @@ import { Grid, Divider } from "@mui/material";
 import { Facebook, Instagram, Twitter, LinkedIn } from "@mui/icons-material";
 import KSUMlogo from "../assets/img/footer/KSUM logo.png";
 import IEDClogo from "../assets/img/footer/IEDC logo.png";
-import cetLogo from "../assets/img/footer/cet.png";
+import cetLogo from "../assets/img/footer/Cet_emblem.png";
 import IEDCcetLogo from "../assets/img/footer/IEDC CET logo.png";
 
 export default function Footer() {
