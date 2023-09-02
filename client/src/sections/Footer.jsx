@@ -93,7 +93,7 @@ export default function Footer() {
 
         <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
           <Grid container justifyContent="space-evenly">
-            <img src={cetLogo} className=" h-24 w-30" />
+            <img src={cetLogo} className=" h-24 w-28" />
             <img
               src={IEDCcetLogo}
               className=" h-24 w-30"
