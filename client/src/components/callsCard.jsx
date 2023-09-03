@@ -14,19 +14,10 @@ function callCard(props) {
   }
 
   return (
-    <div className=" mb-6  overflow-hidden relative flex flex-col h-[622px] bg-gradient-to-b from-[#17C4E8] to-[#0E79BE] w-[365.82px] rounded-[30px] ">
-      <div className="h-[234px] bg-white  self-center m-[19px]  w-11/12 rounded-[30px]"></div>
-      <div className="self-center flex flex-row bg-lime- ">
-        <div className="w-[38px] rotate-180  overflow-hidden">
-          <div className="w-[75px] h-[75px] bg-white rounded-[75px]"></div>
-        </div>
-        <div className="ml-2 my-auto mx-auto flex">{squares}</div>
-        <div className="w-[38px]   overflow-hidden">
-          <div className="w-[75px] h-[75px] bg-white rounded-[75px]"></div>
-        </div>
-      </div>
+    <div className=" mb-6  overflow-hidden relative flex flex-col h-[632px] bg-white shadow-md hover:shadow-xl w-[365.82px] rounded-[30px] ">
+      <div className="h-1/2 bg-orange-300  self-center w-full"></div>
       <div className="font-dm-sans">
-        <div className="w-11/12 mx-auto  h-fit items-center  mx-auto">
+        <div className="w-10/12 h-fit mt-4 items-center  mx-auto">
               <h1 className="font-[900] text-3xl leading-tight">
                 {eventName}
               </h1>
@@ -38,7 +29,7 @@ function callCard(props) {
         <a
   href={eventLink}
   target="_blank"
-  className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center"
+  className="text-center absolute border-[1px] border-black bottom-7 right-11 text-xl font-medium w-[151px] h-[32px] rounded-xl flex items-center justify-center hover:bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] hover:text-white hover:border-0"
 >
   {buttonTitle}
 </a>
