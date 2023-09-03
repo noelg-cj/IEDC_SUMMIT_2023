@@ -213,3 +213,66 @@ export const Engagementprograms = [
       "https://docs.google.com/forms/d/e/1FAIpQLSeDPqNv3cvpsIMT4cYCY5SllVEVbvoUVYl-qGg-mGNLQPeOCg/viewform?usp=sf_link",
   },
 ];
+
+export const TeamMembers = [
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+  {
+    name: "John George",
+    role: "Frontend Developer",
+    image: Alt,
+  },
+];

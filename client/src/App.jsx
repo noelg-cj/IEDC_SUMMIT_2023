@@ -9,9 +9,11 @@ import About from "./sections/About";
 import Footer from "./sections/Footer";
 import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
+import Team from "./sections/Team";
 import { useRef } from "react";
 import Navbar from "./components/Navbar";
 import { VolunteerCalls } from "./data.js";
+
 function App() {
   const homeSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
@@ -34,12 +36,16 @@ function App() {
       <IedcCircle />
       <About />
       <PrevSummut />
-      <Calls title="Volunteer Calls" button="Apply Now"  eventData={VolunteerCalls} sectionRef={eventsSectionRef} eventDescrition="" />
-
-      
+      <Calls
+        title="Volunteer Calls"
+        button="Apply Now"
+        eventData={VolunteerCalls}
+        sectionRef={eventsSectionRef}
+        eventDescrition=""
+      />
       <Directions sectionRef={venueSectionRef} />
+      <Team />
       <Footer />
-      
     </div>
   );
 }
