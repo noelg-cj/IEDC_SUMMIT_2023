@@ -140,7 +140,7 @@ export default function Footer() {
             >
               IEDC CET
               <br /> iedc@cet.ac.in
-              <br /> 00000000
+              <br /> 
             </Typography>
             <Link
               href="https://www.facebook.com/iedccet/"
