@@ -6,11 +6,11 @@ import KSUM from "../assets/img/about/ksum-office.jpg";
 
 const About = () => {
   const [ refOne, inViewOne] = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
     triggerOnce: true
   });
   const [ refTwo, inViewTwo] = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
     triggerOnce: true
   });
 
@@ -59,7 +59,7 @@ const About = () => {
 
   return (
     <>
-      <div className={`w-10/12 xs:w-11/12 ${ inViewOne ? 'opacity-1' : 'opacity-0' } py-10 space-y-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`} ref={refOne}>
+      <div className={`w-10/12 xs:w-11/12 ${ inViewOne ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } py-10 space-y-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`} ref={refOne}>
         { inViewOne ? (
           <>
             <div className="flex-1 lg:pr-20 box-border">
@@ -77,7 +77,7 @@ const About = () => {
         }
       </div>
 
-      <div className={`w-10/12 xs:w-11/12 min-h-[80vh] ${ inViewTwo ? 'opacity-1' : 'opacity-0' } font-dm-sans lg:flex place-items-center transition duration-300`} ref={refTwo}>
+      <div className={`w-10/12 xs:w-11/12 min-h-[80vh] ${ inViewTwo ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } font-dm-sans lg:flex place-items-center transition duration-300`} ref={refTwo}>
         <div className="flex-1 mb-8 md:mb-0">
           <Paragraph
             header={aboutSections[1].header}
