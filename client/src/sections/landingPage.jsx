@@ -42,9 +42,14 @@ function LandingPage({ sectionRef }) {
           TRIVANDRUM
         </h1>
         <div className="flex items-center w-[232px] h-[58px] bg-[#0597F2] cursor-pointer rounded-[30px] hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1]">
-          <div className="font-bold text-white text-2xl justify-center mx-auto">
-            BUY TICKETS
-          </div>
+          
+          <a
+            target="_blank"
+            href="https://www.townscript.com/v2/e/iedc-summit-2023-230401/booking/attendees"      
+            className="font-bold text-white text-2xl justify-center mx-auto"
+          >
+            Grab Your Tickets
+          </a>
         </div>
       </div>
       <CountDown />
