@@ -41,8 +41,8 @@ function LandingPage({ sectionRef }) {
         <h1 className="font-semibold text-xl md:text-3xl text-[#676C70] pb-4">
           TRIVANDRUM
         </h1>
-        <div className="flex items-center w-[232px] h-[58px] bg-[#097ED8] rounded-[30px] ">
-          <div className="font-bold text-white text-2xl justify-center mx-auto cursor-pointer">
+        <div className="flex items-center w-[232px] h-[58px] bg-[#0597F2] cursor-pointer rounded-[30px] hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1]">
+          <div className="font-bold text-white text-2xl justify-center mx-auto">
             BUY TICKETS
           </div>
         </div>
