@@ -140,7 +140,7 @@ export default function Footer() {
             >
               IEDC CET
               <br /> iedc@cet.ac.in
-              <br /> 
+              <br /> +91 9995620503
             </Typography>
             <Link
               href="https://www.facebook.com/iedccet/"
