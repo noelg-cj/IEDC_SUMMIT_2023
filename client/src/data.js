@@ -11,7 +11,7 @@ import aryaVijayan from "./assets/img/teams/AryaVijayan.jpg"
 import adwaithHR from "./assets/img/teams/Adwaith_HR.jpg"
 import aharonMathew from "./assets/img/teams/AharonMathews.jpeg"
 import aslamNaseer from "./assets/img/teams/AslamNaseer.png"
-import ajayGosh from "./assets/img/teams/AJAY GHOSH M .PNG"
+import ajayGosh from "./assets/img/teams/ajayGosh.png"
 export const speakers = [
   {
     img: Alt,
