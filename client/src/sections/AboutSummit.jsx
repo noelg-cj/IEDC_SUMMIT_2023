@@ -7,7 +7,7 @@ import Img from "../assets/img/iedcSummit.png";
 
 const AboutSummit = ({ sectionRef }) => {
   const { ref, inView, entry } = useInView({
-    threshold: 0.5,
+    threshold: 0.3,
     triggerOnce: true
   });
 

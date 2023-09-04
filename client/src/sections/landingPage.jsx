@@ -19,7 +19,7 @@ function LandingPage({ sectionRef }) {
         <img src={bg1} className="mb-[-5px]" />
         <img src={bg2} className="" />
       </div>
-      <div ref={ref} className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pt-40 pb-24 md:pt-52 md:pb-28 ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } transition duration-500`}>
+      <div ref={ref} className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pb-24 pt-24 md:pt-28 md:pb-14 ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } transition duration-500`}>
         <div className="flex flex-col sm:flex-row items-center pb-16">
           
           <div className="sm:order-1 flex flex-col items-center sm:items-start">
