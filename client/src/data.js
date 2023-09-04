@@ -2,6 +2,15 @@
 import Alt from "./assets/img/noavatar.png";
 import CA from "./assets/img/calls/ca.jpg";
 import Volunteer from "./assets/img/calls/volunteer.jpg";
+import nivedNarayanan from "./assets/img/teams/Nived Narayanan.jpg"
+import johnGeorge from "./assets/img/teams/John George.jpg"
+import ivinMK from "./assets/img/teams/Ivin_Mathew.png"
+import noelGeorge from "./assets/img/teams/Noel_George.jpg"
+import mathewVK from "./assets/img/teams/Mathew_V_K.jpg"
+import aryaVijayan from "./assets/img/teams/AryaVijayan.jpg"
+import adwaithHR from "./assets/img/teams/Adwaith_HR.jpg"
+import aharonMathew from "./assets/img/teams/AharonMathews.jpeg"
+import aslamNaseer from "./assets/img/teams/AslamNaseer.png"
 export const speakers = [
   {
     img: Alt,
@@ -216,63 +225,55 @@ export const Engagementprograms = [
 
 export const TeamMembers = [
   {
-    name: "John George",
-    role: "Frontend Developer",
-    image: Alt,
+    name: "Nived Narayanan",
+    role: "Web Master",
+    image: nivedNarayanan,
+  },
+  {
+    name: "Mathew V Kariath",
+    role: "FullStack Developer",
+    image: mathewVK,
   },
   {
     name: "John George",
-    role: "Frontend Developer",
-    image: Alt,
+    role: "FullStack Developer",
+    image: johnGeorge,
   },
   {
-    name: "John George",
+    name: "Aslam Naseer",
     role: "Frontend Developer",
-    image: Alt,
+    image: aslamNaseer,
   },
   {
-    name: "John George",
-    role: "Frontend Developer",
-    image: Alt,
+    name: "Noel George",
+    role: "Frontend Developer & UI Designer",
+    image: noelGeorge,
   },
   {
-    name: "John George",
+    name: "Ivin Mathew Kurian",
     role: "Frontend Developer",
-    image: Alt,
+    image: ivinMK,
   },
   {
-    name: "John George",
+    name: "Aharon Mathews",
     role: "Frontend Developer",
-    image: Alt,
+    image: aharonMathew,
   },
   {
-    name: "John George",
-    role: "Frontend Developer",
-    image: Alt,
+    name: "Arya Vijayan",
+    role: "UI/UX Designer",
+    image: aryaVijayan,
   },
   {
-    name: "John George",
-    role: "Frontend Developer",
-    image: Alt,
+    name: "Adwaith HR",
+    role: "UI/UX Designer",
+    image: adwaithHR,
   },
   {
-    name: "John George",
-    role: "Frontend Developer",
+    name: "Ajay",
+    role: "Animations",
     image: Alt,
   },
-  {
-    name: "John George",
-    role: "Frontend Developer",
-    image: Alt,
-  },
-  {
-    name: "John George",
-    role: "Frontend Developer",
-    image: Alt,
-  },
-  {
-    name: "John George",
-    role: "Frontend Developer",
-    image: Alt,
-  },
+  
+  
 ];
