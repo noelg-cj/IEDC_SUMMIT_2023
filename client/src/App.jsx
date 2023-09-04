@@ -44,7 +44,7 @@ function App() {
         eventDescrition=""
       />
       <Directions sectionRef={venueSectionRef} />
-      {/* <Team /> */}
+       <Team /> 
       <Footer />
     </div>
   );
