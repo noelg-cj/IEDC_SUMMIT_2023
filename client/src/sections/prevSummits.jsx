@@ -1,12 +1,14 @@
 import React from "react";
 import PreSumCard from "../components/prevSumCard";
 import VideoCard from "../components/videoCard";
+import Idea from '../assets/img/idea.gif'
 import { prevSummits } from "../data";
-import Summit from '../assets/img/Summit.jpg'
+import Summit from '../assets/img/Summit.jpg';
 
 function prevSummut() {
   return (
     <div className="relative font-darker-grotesque w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh]  flex flex-col ">
+      <img src={Idea} className="absolute w-32 right-[-2vw] top-32 lg:top-14 -z-10" />
       <h1 className="font-bold md:font-[500] text-5xl text-[#0597F2] text-center md:text-[60px]">
         Explore Our Previous Summits
       </h1>
