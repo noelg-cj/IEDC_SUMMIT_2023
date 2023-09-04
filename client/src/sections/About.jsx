@@ -59,7 +59,8 @@ const About = () => {
 
   return (
     <>
-      <div className={`w-10/12 xs:w-11/12 ${ inViewOne ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } py-10 space-y-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`} ref={refOne}>
+      <div className={`relative w-10/12 xs:w-11/12 ${ inViewOne ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } py-10 space-y-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`} ref={refOne}>
+        <div className="w-[500px] h-[500px] md:w-[700px] md:h-[700px] lg:w-[900px] lg:h-[900px] bg-transparent border-[#3866F2] border-[70px] md:border-[100px] lg:border-[140px] left-[-250px] md:left-[-350px] lg:left-[-450px] top-0 lg:top-[-150px] opacity-40 absolute rounded-full -z-20"></div>
         { inViewOne ? (
           <>
             <div className="flex-1 lg:pr-20 box-border">

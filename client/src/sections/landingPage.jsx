@@ -19,7 +19,7 @@ function LandingPage({ sectionRef }) {
         <img src={bg1} className="mb-[-5px]" />
         <img src={bg2} className="" />
       </div>
-      <div ref={ref} className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pt-40 pb-24 md:pt-52 md:pb-28 ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } transition duration-500`}>
+      <div ref={ref} className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pb-24 pt-24 md:pt-28 md:pb-14 ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } transition duration-500`}>
         <div className="flex flex-col sm:flex-row items-center pb-16">
           
           <div className="sm:order-1 flex flex-col items-center sm:items-start">
@@ -41,8 +41,8 @@ function LandingPage({ sectionRef }) {
         <h1 className="font-semibold text-xl md:text-3xl text-[#676C70] pb-4">
           TRIVANDRUM
         </h1>
-        <div className="flex items-center w-[232px] h-[58px] bg-[#097ED8] rounded-[30px] ">
-          <div className="font-bold text-white text-2xl justify-center mx-auto cursor-pointer">
+        <div className="flex items-center w-[232px] h-[58px] bg-[#0597F2] cursor-pointer rounded-[30px] hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1]">
+          <div className="font-bold text-white text-2xl justify-center mx-auto">
             BUY TICKETS
           </div>
         </div>
