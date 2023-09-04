@@ -22,7 +22,7 @@ function App() {
   const venueSectionRef = useRef(null);
 
   const navbarItems = [
-    { text: "HOME", href: "", sectionRef: homeSectionRef },
+    { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
     //{ text: "", href: "#speakers", sectionRef: speakersSectionRef },
     //{ text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
