@@ -37,7 +37,7 @@ function App() {
       <About />
       <PrevSummut />
       <Calls
-        title="Volunteer Calls"
+        title="Join Us"
         button="Apply Now"
         eventData={VolunteerCalls}
         sectionRef={eventsSectionRef}
