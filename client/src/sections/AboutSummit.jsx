@@ -40,7 +40,8 @@ const AboutSummit = ({ sectionRef }) => {
   };
   // console.log(sectionRef);
   return (
-    <div ref={sectionRef}>
+    <div ref={sectionRef} className="relative">
+      <div className="w-[900px] h-[900px] bg-transparent border-[#3866F2] border-[140px] right-[-450px] top-[350px] opacity-40 absolute rounded-full"></div>
       <div
         ref={ref}
         className={`w-10/12 mx-auto ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } xs:w-11/12 py-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-500`}

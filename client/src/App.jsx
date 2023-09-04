@@ -29,7 +29,7 @@ function App() {
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
   ];
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center overflow-hidden">
       <Navbar navbarItems={navbarItems} />
       <LandingPage sectionRef={homeSectionRef} />
       <AboutSummit sectionRef={aboutSectionRef} />
