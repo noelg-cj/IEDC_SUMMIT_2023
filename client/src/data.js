@@ -104,27 +104,27 @@ export const schedules = [
 export const iedcCircle = [
   {
     value: 14,
-    title: "districts",
+    title: "Districts",
   },
   {
-    value: "5K+",
-    title: "attendees",
+    value: "10K+",
+    title: "Attendees",
   },
   {
-    value: 14,
-    title: "startups",
+    value: "350+",
+    title: "Startups",
   },
   {
     value: "40+",
-    title: "events",
+    title: "Events",
   },
   {
-    value: "30+",
-    title: "speakers",
+    value: "60+",
+    title: "Speakers",
   },
   {
-    value: "99+",
-    title: "colleges",
+    value: "425",
+    title: "IEDCs",
   },
 ];
 export const prevSummits = [
