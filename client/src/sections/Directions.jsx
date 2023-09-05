@@ -32,6 +32,11 @@ const App = ({ sectionRef }) => {
        Directions   
         </h1>
       </div> 
+      
+      <h1 className="font-medium md:font-[500] font-darker-grotesque text-5xl md:text-[60px] text-center">
+        Get Directions to the event
+      </h1>
+      
       <div className="flex flex-col mt-20 space-x-3 w-full space-y-10 custom2:flex-row">
         <div className="Maps w-full m-auto flex items-center justify-center">
           <LoadScript googleMapsApiKey={apiKey}>
