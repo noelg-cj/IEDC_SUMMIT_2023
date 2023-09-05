@@ -1,9 +1,9 @@
 import React from "react";
 import PreSumCard from "../components/prevSumCard";
 import VideoCard from "../components/videoCard";
-import Idea from '../assets/img/idea.gif'
+import Idea from "../assets/img/idea.gif";
 import { prevSummits } from "../data";
-import Summit from '../assets/img/Summit.jpg';
+import Summit from "../assets/img/Summit.jpg";
 
 function prevSummut() {
   return (
@@ -26,13 +26,15 @@ function prevSummut() {
         <VideoCard videoID={"fPmUPSigxrg"} />
         <VideoCard videoID={"k1wGLf7s5tA"} />
         <VideoCard videoID={"UqKGvZuhsCU"} />
-        
-        
       </div>
       <div className="sm:grid lg:grid-cols-3 sm:grid-cols-2 flex flex-col items-center gap-3 sm:justify-items-center">
         <VideoCard videoID={"jzyTX9SRTpk"} />
         <VideoCard videoID={"XrPAxDk_dM4"} />
-        <img src={ Summit } alt="summit-image" className="w-full sm:[w-250px] xl:w-[350px] h-[250px] bg-gray-300 rounded-[20px]" />
+        <img
+          src={Summit}
+          alt="summit-image"
+          className="w-full sm:[w-250px] xl:w-[350px] h-[250px] bg-gray-300 rounded-[20px]"
+        />
       </div>
     </div>
   );

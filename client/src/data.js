@@ -2,16 +2,16 @@
 import Alt from "./assets/img/noavatar.png";
 import CA from "./assets/img/calls/ca.jpg";
 import Volunteer from "./assets/img/calls/volunteer.jpg";
-import nivedNarayanan from "./assets/img/teams/Nived Narayanan.jpg"
-import johnGeorge from "./assets/img/teams/John George.jpg"
-import ivinMK from "./assets/img/teams/Ivin_Mathew.png"
-import noelGeorge from "./assets/img/teams/Noel_George.jpg"
-import mathewVK from "./assets/img/teams/Mathew_V_K.jpg"
-import aryaVijayan from "./assets/img/teams/AryaVijayan.jpg"
-import adwaithHR from "./assets/img/teams/Adwaith_HR.jpg"
-import aharonMathew from "./assets/img/teams/AharonMathews.jpeg"
-import aslamNaseer from "./assets/img/teams/AslamNaseer.png"
-import ajayGosh from "./assets/img/teams/ajayGosh.png"
+import nivedNarayanan from "./assets/img/teams/Nived Narayanan.jpg";
+import johnGeorge from "./assets/img/teams/John George.jpg";
+import ivinMK from "./assets/img/teams/Ivin_Mathew.png";
+import noelGeorge from "./assets/img/teams/Noel_George.jpg";
+import mathewVK from "./assets/img/teams/Mathew_V_K.jpg";
+import aryaVijayan from "./assets/img/teams/AryaVijayan.jpg";
+import adwaithHR from "./assets/img/teams/Adwaith_HR.jpg";
+import aharonMathew from "./assets/img/teams/AharonMathews.jpeg";
+import aslamNaseer from "./assets/img/teams/AslamNaseer.png";
+import ajayGosh from "./assets/img/teams/ajayGosh.png";
 export const speakers = [
   {
     img: Alt,
@@ -154,7 +154,7 @@ export const prevSummits = [
   },
 ];
 
-export const VolunteerCalls = [
+export const calls = [
   {
     ticketTitle: "Volunteers",
     ticketImg: Volunteer,
@@ -172,6 +172,7 @@ export const VolunteerCalls = [
       "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
   },
 ];
+
 export const Engagementprograms = [
   {
     ticketTitle: "Startups",
@@ -275,6 +276,4 @@ export const TeamMembers = [
     role: "Animations",
     image: ajayGosh,
   },
-  
-  
 ];

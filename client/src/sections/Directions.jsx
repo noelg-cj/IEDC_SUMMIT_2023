@@ -32,11 +32,6 @@ const App = ({ sectionRef }) => {
        Directions   
         </h1>
       </div> 
-      
-      <h1 className="font-medium md:font-[500] font-darker-grotesque text-5xl md:text-[60px] text-center">
-        Get Directions to the event
-      </h1>
-      
       <div className="flex flex-col mt-20 space-x-3 w-full space-y-10 custom2:flex-row">
         <div className="Maps w-full m-auto flex items-center justify-center">
           <LoadScript googleMapsApiKey={apiKey}>
@@ -74,9 +69,9 @@ const App = ({ sectionRef }) => {
                   Kochuveli
                 </button>
                 <button
-                  onClick={() => handleLinkClick("Petta")}
+                  onClick={() => handleLinkClick("Pettah")}
                   className={`nav-link ${
-                    activeLink === "Petta"
+                    activeLink === "Pettah"
                       ? "text-[#09189C] underline"
                       : "text-[#858585] underline"
                   }`}
@@ -117,7 +112,7 @@ const App = ({ sectionRef }) => {
                 </p>
               </div>
             )}
-            {content === "Petta" && (
+            {content === "Pettah" && (
               <div>
                 <div className="font-semibold mt-4 text-4xl text-[#000000] font-darker-grotesque">
                   Pettah to CET
@@ -126,7 +121,7 @@ const App = ({ sectionRef }) => {
                   Via Bus
                 </h2>
                 <p className="font-semibold pr-12 text-xl text-[#605D5D] font-darker-grotesque">
-                  Pettah Railway Station - Pettah bus stop (Board Chavadimukku
+                  Pettahh Railway Station - Pettahh bus stop (Board Chavadimukku
                   bus) - Chavadimukku Junction Stop (Final Stop) - CET
                 </p>
               </div>

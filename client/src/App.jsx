@@ -1,6 +1,6 @@
-import Schedule from "./sections/Schedule";
-import Speakers from "./sections/Speakers";
-import Events from "./sections/Events";
+// import Schedule from "./sections/Schedule";
+// import Speakers from "./sections/Speakers";
+// import Events from "./sections/Events";
 import Calls from "./sections/Calls";
 import LandingPage from "./sections/landingPage";
 import AboutSummit from "./sections/AboutSummit";
@@ -9,10 +9,10 @@ import About from "./sections/About";
 import Footer from "./sections/Footer";
 import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
-import Team from "./sections/Team";
+// import Team from "./sections/Team";
 import { useRef } from "react";
 import Navbar from "./components/Navbar";
-import { VolunteerCalls } from "./data.js";
+import { calls } from "./data.js";
 
 function App() {
   const homeSectionRef = useRef(null);
@@ -20,7 +20,7 @@ function App() {
   const speakersSectionRef = useRef(null);
   const eventsSectionRef = useRef(null);
   const venueSectionRef = useRef(null);
-
+  console.log(Calls);
   const navbarItems = [
     { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
@@ -34,17 +34,16 @@ function App() {
       <LandingPage sectionRef={homeSectionRef} />
       <AboutSummit sectionRef={aboutSectionRef} />
       <IedcCircle />
-      <About />
-      <PrevSummut />
       <Calls
         title="Join Us"
         button="Apply Now"
-        eventData={VolunteerCalls}
+        eventData={calls}
         sectionRef={eventsSectionRef}
         eventDescrition=""
       />
+      <PrevSummut />
+      <About />
       <Directions sectionRef={venueSectionRef} />
-       
       <Footer />
     </div>
   );
