@@ -10,11 +10,22 @@ import Footer from "./sections/Footer";
 import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
 // import Team from "./sections/Team";
-import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import { calls } from "./data.js";
+import LoadingScreen from "./sections/loadingScreen";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 8000)
+  }, [])
+
+
   const homeSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
   const speakersSectionRef = useRef(null);
@@ -30,21 +41,28 @@ function App() {
   ];
   return (
     <div className="flex flex-col justify-center items-center overflow-hidden">
-      <Navbar navbarItems={navbarItems} />
-      <LandingPage sectionRef={homeSectionRef} />
-      <AboutSummit sectionRef={aboutSectionRef} />
-      <IedcCircle />
-      <Calls
-        title="Join Us"
-        button="Apply Now"
-        eventData={calls}
-        sectionRef={eventsSectionRef}
-        eventDescrition=""
-      />
-      <PrevSummut />
-      <About />
-      <Directions sectionRef={venueSectionRef} />
-      <Footer />
+      { loading ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <Navbar navbarItems={navbarItems} />
+          <LandingPage sectionRef={homeSectionRef} />
+          <AboutSummit sectionRef={aboutSectionRef} />
+          <IedcCircle />
+          <loadingScreen></loadingScreen>
+          <Calls
+            title="Join Us"
+            button="Apply Now"
+            eventData={calls}
+            sectionRef={eventsSectionRef}
+            eventDescrition=""
+          />
+          <PrevSummut />
+          <About />
+          <Directions sectionRef={venueSectionRef} />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
