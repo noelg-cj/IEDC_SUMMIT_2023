@@ -3,18 +3,18 @@ import React, { useState } from "react";
 function callCard(props) {
   const numberOfSquares = 14;
   const squares = [];
-  const { buttonTitle, eventName, eventImg, eventDescription, eventLink } =props;
-  
+  const { buttonTitle, eventName, eventImg, eventDescription, eventLink } =
+    props;
 
   return (
-    <div className=" mb-6  overflow-hidden relative flex flex-col h-[632px] bg-[#3866F266]  border-[2px] border-[#3866F266] shadow-md hover:shadow-xl w-[365.82px] rounded-[30px] ">
+    <div className=" mb-6  overflow-hidden relative flex flex-col h-[632px] bg-black  border-[2px] border-[#3866F266] shadow-md hover:shadow-xl w-[365.82px] rounded-[30px] ">
       <img src={eventImg} className="h-1/2 bg-orange-300  self-center w-full" />
       <div className="font-dm-sans">
-        <div className="w-10/12 h-fit mt-4 items-center  mx-auto">
+        <div className="text-white w-10/12 h-fit mt-4 items-center  mx-auto">
           <h1 className="font-[900] text-3xl leading-tight">{eventName}</h1>
           <p className=" font-[300] text-[18px]">{eventDescription}</p>
         </div>
-        <div className="justify-center flex">
+        <div className="justify-center flex bg-black">
           <a
             href={eventLink}
             target="_blank"
