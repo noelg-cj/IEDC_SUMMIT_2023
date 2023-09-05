@@ -26,10 +26,17 @@ const App = ({ sectionRef }) => {
   };
 
   return (
-    <div ref={sectionRef} className=" w-10/12 my-20">
-      <h1 className="font-medium md:font-[500] font-darker-grotesque text-5xl md:text-[60px]">
+    <div ref={sectionRef} className="relative w-10/12 my-20  min-h-[80vh]  flex flex-col ">
+      <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-180px] lg:top-[-140px] md:top-[-90px] sm:top-[-75px] w-full text-center self-center">
+        <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold">
+       Directions   
+        </h1>
+      </div> 
+      
+      <h1 className="font-medium md:font-[500] font-darker-grotesque text-5xl md:text-[60px] text-center">
         Get Directions to the event
       </h1>
+      
       <div className="flex flex-col mt-20 space-x-3 w-full space-y-10 custom2:flex-row">
         <div className="Maps w-full m-auto flex items-center justify-center">
           <LoadScript googleMapsApiKey={apiKey}>
@@ -119,7 +126,7 @@ const App = ({ sectionRef }) => {
                   Via Bus
                 </h2>
                 <p className="font-semibold pr-12 text-xl text-[#605D5D] font-darker-grotesque">
-                  Pettahh Railway Station - Pettahh bus stop (Board Chavadimukku
+                  Pettah Railway Station - Pettah bus stop (Board Chavadimukku
                   bus) - Chavadimukku Junction Stop (Final Stop) - CET
                 </p>
               </div>

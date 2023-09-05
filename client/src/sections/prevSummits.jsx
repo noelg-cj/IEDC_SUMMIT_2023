@@ -8,6 +8,12 @@ import Summit from "../assets/img/Summit.jpg";
 function prevSummut() {
   return (
     <div className="relative font-darker-grotesque w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh]  flex flex-col ">
+      <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-120px] lg:top-[-70px] md:top-[-20px] top-0 w-full space-y-6 text-center self-center">
+        <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold">
+        Explore 
+        </h1>
+      </div> 
+      <img src={Idea} className="absolute w-32 right-[-2vw] top-32 lg:top-14 -z-10" />
       <h1 className="font-bold md:font-[500] text-5xl text-[#0597F2] text-center md:text-[60px]">
         Explore Our Previous Summits
       </h1>

@@ -9,11 +9,11 @@ function Calls(props) {
       ref={sectionRef}
       className="relative space-y-10 font-dm-sans mt-10  w-full flex flex-col"
     >
-      <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-120px] lg:top-[-80px] md:top-[-20px] top-0 w-full space-y-6 text-center self-center">
+      <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-100px] lg:top-[-70px] md:top-[-20px] top-0 w-full space-y-6 text-center self-center">
         <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold">
           {title}
         </h1>
-      </div>
+      </div> 
       <div className="w-11/12 space-y-6 text-center self-center">
         <h1 className="inline font-[700] text-[75px] bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent">
           {title}

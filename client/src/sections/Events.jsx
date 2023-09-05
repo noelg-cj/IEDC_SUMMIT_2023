@@ -16,21 +16,15 @@ function Events(props) {
         </p>
       </div>
       <div className="flex flex-row flex-wrap justify-evenly">
-  {eventData && eventData.length > 0 && eventData.map((ticket, index) => (
-    <Tickets
-      key={index}
-      buttonTitle={button}
-      eventName={ticket.ticketTitle}
-      eventDescription={ticket.ticketDescription}
-      eventLink={ticket.ticketLink}
-    />
-  ))}
-</div>
-
-
-
-
-
+          {eventData && eventData.length > 0 && eventData.map((ticket, index) => (
+      <Tickets
+        key={index}
+        buttonTitle={button}
+        eventName={ticket.ticketTitle}
+        eventDescription={ticket.ticketDescription}
+        eventLink={ticket.ticketLink}
+      /> ))}
+      </div>
     </div>
   );
 }
