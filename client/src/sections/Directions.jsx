@@ -126,7 +126,7 @@ const App = ({ sectionRef }) => {
                   Via Bus
                 </h2>
                 <p className="font-semibold pr-12 text-xl text-[#605D5D] font-darker-grotesque">
-                  Pettahh Railway Station - Pettahh bus stop (Board Chavadimukku
+                  Pettah Railway Station - Pettah bus stop (Board Chavadimukku
                   bus) - Chavadimukku Junction Stop (Final Stop) - CET
                 </p>
               </div>
