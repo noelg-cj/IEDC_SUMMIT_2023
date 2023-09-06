@@ -9,7 +9,6 @@ import About from "./sections/About";
 import Footer from "./sections/Footer";
 import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
-import Team from "./sections/Team";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import { calls } from "./data.js";
@@ -62,7 +61,6 @@ function App() {
           <PrevSummut />
           <About />
           <Directions sectionRef={venueSectionRef} />
-          <Team />
           <Footer />
         </>
       )}
