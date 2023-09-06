@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import ModalBox from "../components/TeamModalbox";
+import ModalBox from "./TeamModalbox";
 
 
 
