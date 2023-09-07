@@ -10,7 +10,7 @@ import KSUMlogo from "../assets/img/footer/KSUM logo.png";
 import IEDClogo from "../assets/img/footer/IEDC logo.png";
 import cetLogo from "../assets/img/footer/Cet_emblem.png";
 import IEDCcetLogo from "../assets/img/footer/IEDC CET logo.png";
-
+import Team from "../components/Team";
 
 export default function Footer() {
   return (
@@ -173,8 +173,8 @@ export default function Footer() {
           <Typography variant="body2" color="#605d5d" align="center">
             {"Copyright © "}
             {new Date().getFullYear()}
-            <Link color="#ababab" href="https://your-website.com/"></Link>
             {"‎ Kerala Startup Mission. All Rights Reserved."}
+            <Team />  
           </Typography>
         </Container>
         </div>

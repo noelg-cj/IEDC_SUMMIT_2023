@@ -9,11 +9,11 @@ import About from "./sections/About";
 import Footer from "./sections/Footer";
 import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
-// import Team from "./sections/Team";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import { calls } from "./data.js";
 import LoadingScreen from "./sections/loadingScreen";
+
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -24,6 +24,7 @@ function App() {
       setLoading(false)
     }, 8000)
   }, [])
+
 
 
   const homeSectionRef = useRef(null);
