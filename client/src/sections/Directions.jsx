@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
+import "../assets/css/textBackdrop.css";
 
 const containerStyle = {
   width: "600px",
@@ -27,7 +28,7 @@ const App = ({ sectionRef }) => {
 
   return (
     <div ref={sectionRef} className="relative w-10/12 my-20  min-h-[80vh]  flex flex-col ">
-      <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-180px] lg:top-[-140px] md:top-[-90px] sm:top-[-75px] w-full text-center self-center">
+      <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-180px] lg:top-[-140px] md:top-[-90px] sm:top-[-75px] hidden-xs w-full text-center self-center">
         <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold">
        Directions   
         </h1>

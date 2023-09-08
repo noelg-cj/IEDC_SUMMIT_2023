@@ -4,11 +4,12 @@ import VideoCard from "../components/videoCard";
 import Idea from "../assets/img/idea.gif";
 import { prevSummits } from "../data";
 import Summit from "../assets/img/Summit.jpg";
+import "../assets/css/textBackdrop.css";
 
 function prevSummut() {
   return (
     <div className="relative font-darker-grotesque w-10/12 xs:w-11/12 py-10 space-y-10 min-h-[80vh]  flex flex-col ">
-      <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-120px] lg:top-[-70px] md:top-[-20px] top-0 w-full space-y-6 text-center self-center">
+      <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-120px] lg:top-[-70px] md:top-[-20px] hidden-xs top-0 w-full space-y-6 text-center self-center">
         <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold">
           Explore
         </h1>
