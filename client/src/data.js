@@ -1,7 +1,5 @@
 // import Alt from "./assets/img/speakers/sashi.jpg";
 import Alt from "./assets/img/noavatar.png";
-import CA from "./assets/img/calls/ca.jpg";
-import Volunteer from "./assets/img/calls/volunteer.jpg";
 import nivedNarayanan from "./assets/img/teams/Nived Narayanan.jpg";
 import johnGeorge from "./assets/img/teams/John George.jpg";
 import ivinMK from "./assets/img/teams/Ivin_Mathew.png";
@@ -12,6 +10,17 @@ import adwaithHR from "./assets/img/teams/Adwaith_HR.jpg";
 import aharonMathew from "./assets/img/teams/AharonMathews.jpeg";
 import aslamNaseer from "./assets/img/teams/AslamNaseer.png";
 import ajayGosh from "./assets/img/teams/ajayGosh.png";
+
+import campusAmb from "./assets/img/calls/campus_ambassador.png";
+import communityEng from "./assets/img/calls/community_engagement.png";
+import corporateEng from "./assets/img/calls/corporate_engagement.png";
+import govtEng from "./assets/img/calls/govt_dept_engagement.png";
+import industryEng from "./assets/img/calls/industry_engagement.png";
+import invesrtorEng from "./assets/img/calls/investor_engagement.png";
+import mentorEng from "./assets/img/calls/mentor_engagement.png";
+import startupEng from "./assets/img/calls/startup_engagement.png";
+import volunteers from "./assets/img/calls/volunteers.png";
+
 export const speakers = [
   {
     img: Alt,
@@ -154,10 +163,10 @@ export const prevSummits = [
   },
 ];
 
-export const calls = [
+export const joinUs = [
   {
     ticketTitle: "Volunteers",
-    ticketImg: Volunteer,
+    ticketImg: volunteers,
     ticketDescription:
       "Be the driving force behind innovation – Join our IEDC Summit Volunteering Team!",
     ticketLink:
@@ -165,9 +174,64 @@ export const calls = [
   },
   {
     ticketTitle: "Campus Ambassador",
-    ticketImg: CA,
+    ticketImg: campusAmb,
     ticketDescription:
       "Empower your campus, lead innovation, and shape the future as a Campus Ambassador!",
+    ticketLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+  {
+    ticketTitle: "Start-up Engagement",
+    ticketImg: startupEng,
+    ticketDescription:
+      "Boost up your Start-up at the IEDC Summit 2023. Present, Connect and Market. Join us Now!",
+    ticketLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+  {
+    ticketTitle: "Community Engagement",
+    ticketImg: communityEng,
+    ticketDescription:
+      "Empowering Communities at the IEDC Summit 2023! Collaborate, share, and network with us. See you there! ",
+    ticketLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+  {
+    ticketTitle: "Investor Engagement",
+    ticketImg: invesrtorEng,
+    ticketDescription:
+      "Join us at the IEDC Summit 2023 for investment opportunities, investor meetings, and access to verified startups.",
+    ticketLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+  {
+    ticketTitle: "Mentor Engagement",
+    ticketImg: mentorEng,
+    ticketDescription: "",
+    ticketLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+  {
+    ticketTitle: "Corporate Engagement",
+    ticketImg: corporateEng,
+    ticketDescription:
+      "Join us at the IEDC Summit 2023 to connect with brilliant minds and explore tomorrow's innovation for your corporate growth! ",
+    ticketLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+  {
+    ticketTitle: "Government Department Engagement",
+    ticketImg: govtEng,
+    ticketDescription:
+      "Let’s recognize the full potential of the innovation and entrepreneurship ecosystem by working together. Join us at the IEDC Summit 2023!",
+    ticketLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
+  },
+  {
+    ticketTitle: "Industry Engagement",
+    ticketImg: industryEng,
+    ticketDescription:
+      "Discover the industry’s next big leap at the IEDC Summit 2023. Connect and Drive your field into the future. Join us now!",
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
   },

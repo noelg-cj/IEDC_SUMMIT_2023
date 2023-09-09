@@ -11,21 +11,18 @@ import Directions from "./sections/Directions";
 import PrevSummut from "./sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
-import { calls } from "./data.js";
+import { joinUs } from "./data.js";
 import LoadingScreen from "./sections/loadingScreen";
-
 
 function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     setTimeout(() => {
-      setLoading(false)
-    }, 8000)
-  }, [])
-
-
+      setLoading(false);
+    }, 8000);
+  }, []);
 
   const homeSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
@@ -42,7 +39,7 @@ function App() {
   ];
   return (
     <div className="flex flex-col justify-center items-center overflow-hidden">
-      { loading ? (
+      {loading ? (
         <LoadingScreen />
       ) : (
         <>
@@ -54,7 +51,7 @@ function App() {
           <Calls
             title="Join Us"
             button="Apply Now"
-            eventData={calls}
+            eventData={joinUs}
             sectionRef={eventsSectionRef}
             eventDescrition=""
           />
