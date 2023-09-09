@@ -34,7 +34,7 @@ function CountDown() {
   }, []);
 
   return (
-    <div className="font-dm-sans self-center text-5xl lg:text-6xl font-normal bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text w-[85vw] sm:w-[65vw] lg:w-[40vw] grid grid-cols-4 justify-between">
+    <div className="font-dm-sans self-center text-5xl lg:text-6xl font-normal bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text w-[95vw] sm:w-[65vw] lg:w-[40vw] grid grid-cols-4 justify-between">
       <div className=" text-center ">
         <h1>{days}</h1>
         <p className="font-bold bg-gradient-to-b from-blue-500 to-blue-900 text-transparent bg-clip-text text-xs lg:text-md">
