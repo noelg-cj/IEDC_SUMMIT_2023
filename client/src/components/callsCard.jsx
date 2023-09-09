@@ -7,7 +7,7 @@ function callCard(props) {
     props;
 
   return (
-    <div className=" mb-6  overflow-hidden relative flex flex-col h-[632px] bg-black  border-[2px] border-[#3866F266] shadow-md hover:shadow-xl w-[365.82px] rounded-[30px] ">
+    <div className=" mb-6  overflow-hidden relative flex flex-col h-[632px] bg-[#2c2c2c]  border-[2px] border-[#3866F266] shadow-md hover:shadow-xl w-[365.82px] rounded-[16px] ">
       <img src={eventImg} className="h-1/2 bg-orange-300  self-center w-full" />
       <div className="font-dm-sans">
         <div className="text-white w-10/12 h-fit mt-4 items-center  mx-auto">
