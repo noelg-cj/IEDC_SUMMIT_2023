@@ -20,8 +20,8 @@ import invesrtorEng from "./assets/img/calls/investor_engagement.png";
 import mentorEng from "./assets/img/calls/mentor_engagement.png";
 import startupEng from "./assets/img/calls/startup_engagement.png";
 import volunteers from "./assets/img/calls/volunteers.png";
-import studentProd from "./assets/img/calls/studentProd.png"
-import fleaMarket from "./assets/img/calls/fleaMarket.jpg"
+import studentProd from "./assets/img/calls/studentProd.png";
+import fleaMarket from "./assets/img/calls/fleaMarket.jpg";
 
 export const speakers = [
   {
@@ -166,7 +166,6 @@ export const prevSummits = [
 ];
 
 export const joinUs = [
-  
   {
     ticketTitle: "Start-ups",
     ticketImg: startupEng,
@@ -194,7 +193,8 @@ export const joinUs = [
   {
     ticketTitle: "Mentors ",
     ticketImg: mentorEng,
-    ticketDescription: "Mold the young and aspiring innovators. Join us as a Mentor and be their guiding light!",
+    ticketDescription:
+      "Mold the young and aspiring innovators. Join us as a Mentor and be their guiding light!",
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScLPb79tRtdFEIhihjGqaRYJYzf-ULBn2jWyaAQFplEoX_kew/viewform?usp=sf_link",
   },
@@ -227,16 +227,14 @@ export const joinUs = [
     ticketImg: studentProd,
     ticketDescription:
       "Showcase your talents and your love for technology at the IEDC Summit 2023. Exhibit projects, Connect with mentors, investors and many more! Join us now!",
-    ticketLink:
-      "https://forms.gle/qtTdJAQetEniAT897",
+    ticketLink: "https://forms.gle/qtTdJAQetEniAT897",
   },
   {
     ticketTitle: "Flea Market",
     ticketImg: fleaMarket,
     ticketDescription:
       "Showcase and sell your products at Asia's biggest entrepreneurship event, the IEDC Summit 2023. Book your stalls now!",
-    ticketLink:
-      "https://forms.gle/qtTdJAQetEniAT897",
+    ticketLink: "https://forms.gle/qtTdJAQetEniAT897",
   },
   {
     ticketTitle: "Volunteers",
@@ -246,7 +244,7 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSeHVP308qlb2O4f8095wB5XK4yTsRaWVbvex87RF-JT6m_e-w/viewform",
   },
-  
+
   {
     ticketTitle: "Campus Ambassador",
     ticketImg: campusAmb,
@@ -256,8 +254,6 @@ export const joinUs = [
       "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
   },
 ];
-
-
 
 export const TeamMembers = [
   {
@@ -310,4 +306,12 @@ export const TeamMembers = [
     role: "Animations",
     image: ajayGosh,
   },
+];
+
+export const leaderboard = [
+  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
+  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
+  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
+  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
+  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
 ];
