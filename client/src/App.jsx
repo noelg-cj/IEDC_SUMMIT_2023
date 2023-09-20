@@ -13,6 +13,7 @@ import { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import { joinUs } from "./data.js";
 import LoadingScreen from "./sections/loadingScreen";
+import Leaderboard from "./components/Leaderboard";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,7 +30,6 @@ function App() {
   const speakersSectionRef = useRef(null);
   const eventsSectionRef = useRef(null);
   const venueSectionRef = useRef(null);
-  console.log(Calls);
   const navbarItems = [
     { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
@@ -55,6 +55,7 @@ function App() {
             sectionRef={eventsSectionRef}
             eventDescrition=""
           />
+          <Leaderboard/>
           <PrevSummut />
           <About />
           <Directions sectionRef={venueSectionRef} />
