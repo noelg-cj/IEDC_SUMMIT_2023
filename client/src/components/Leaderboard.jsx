@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import LBmodal from "./LeaderboardSection";
-
 function LBcall(props) {
   return (
     //Modify this button to change Leaderboard button UI

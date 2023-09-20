@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import LeaderboardCard from "./LeaderboardCard";
-import { leaderboard } from "../data";
+import { leaderboard } from "../leaderBoardData";
 import bg from "../assets/img/leaderboard.png";
 
 export default function LBmodal(props) {
@@ -31,7 +31,7 @@ export default function LBmodal(props) {
           </div>
           <div className="bg-transparent flex flex-col gap-6 h-[70vh] sm:h-[55vh] overflow-auto">
             {leaderboard.map((lb, index) => (
-              <LeaderboardCard data={lb} key={index + lb.name} />
+              <LeaderboardCard data={lb} position={index+1} key={index + lb.name} />
             ))}
           </div>
         </div>

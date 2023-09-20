@@ -308,10 +308,3 @@ export const TeamMembers = [
   },
 ];
 
-export const leaderboard = [
-  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
-  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
-  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
-  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
-  { name: "Mathew V Kariath", college: "College of Engineering, Trivandrum" },
-];
