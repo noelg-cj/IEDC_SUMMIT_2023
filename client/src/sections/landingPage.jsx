@@ -8,24 +8,20 @@ import { useInView } from "react-intersection-observer";
 function LandingPage({ sectionRef }) {
   const { ref, inView, entry } = useInView({
     threshold: 0.5,
-    triggerOnce: true,
+    triggerOnce: true
   });
 
   return (
     <div ref={sectionRef} className="relative w-full bg- flex flex-col pb-12">
       <img src={bg0} className="absolute right-0 -z-50" />
 
-      <div className="absolute left-0 right-0 top-8 flex flex-col items-start w-72 md:w-[19rem] lg:w-auto -z-50">
+      <div className="absolute left-0 right-0 top-48 sm:top-20 md:top-6 lg:top-0 flex flex-col items-start w-72 md:w-[22rem] lg:w-auto -z-50">
         <img src={bg1} className="mb-[-5px]" />
         <img src={bg2} className="" />
       </div>
-      <div
-        ref={ref}
-        className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pb-28 pt-48 md:pb-24 ${
-          inView ? "opacity-1 translate-y-0" : "opacity-0 translate-y-7"
-        } transition duration-500`}
-      >
+      <div ref={ref} className={`font-dm-sans flex flex-col self-center items-center sm:items-start md:w-9/12 pb-24 pt-24 md:pt-28 md:pb-14 ${ inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } transition duration-500`}>
         <div className="flex flex-col sm:flex-row items-center pb-16">
+          
           <div className="sm:order-1 flex flex-col items-center sm:items-start">
             <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl bg-gradient-to-b from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent pb-2">
               IEDC SUMMIT
@@ -35,7 +31,7 @@ function LandingPage({ sectionRef }) {
             </h1>
           </div>
         </div>
-
+        <CountDown  />
         <h1 className="font-bold text-2xl md:text-5xl text-[#0597F2] pb-4">
           OCTOBER 12
         </h1>
@@ -45,18 +41,19 @@ function LandingPage({ sectionRef }) {
         <h1 className="font-semibold text-xl md:text-3xl text-[#676C70] pb-4">
           TRIVANDRUM
         </h1>
-        <div className="flex items-center w-[245px] h-[58px] bg-[#0597F2] cursor-pointer rounded-[30px] hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1]">
+        <div className="flex items-center w-[232px] h-[58px] bg-[#0597F2] cursor-pointer rounded-[30px] hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1]">
+          
           <a
-            target="_blank"
-            href="https://www.townscript.com/v2/e/iedc-summit-2023-230401/booking/attendees"
+            onClick={ ()=> {
+              popup('iedc-summit-2023-230401');
+            }}
             className="font-bold text-white text-2xl justify-center mx-auto"
-            rel="noreferrer"
           >
             Grab Your Tickets
           </a>
         </div>
       </div>
-      <CountDown />
+      
     </div>
   );
 }

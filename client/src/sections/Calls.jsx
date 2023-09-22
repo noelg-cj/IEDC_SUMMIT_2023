@@ -3,7 +3,7 @@ import CallCard from "../components/callsCard";
 import "../assets/css/textBackdrop.css";
 
 function Calls(props) {
-  const { title, button, sectionRef, eventData, eventDescription } = props;
+  const { title, sectionRef, eventData, eventDescription } = props;
 
   return (
     <div
@@ -29,7 +29,7 @@ function Calls(props) {
           eventData.map((ticket, index) => (
             <CallCard
               key={index}
-              buttonTitle={button}
+              buttonTitle={ticket.ticketButton}
               eventImg={ticket.ticketImg}
               eventName={ticket.ticketTitle}
               eventDescription={ticket.ticketDescription}

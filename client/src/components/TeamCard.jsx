@@ -8,10 +8,10 @@ function TeamCard({ member }) {
           <img src={member.image} alt={member.name} className="w-full h-full rounded-full" />
         </div>
         <div className="flex-1 flex flex-col justify-center items-start">
-          <p className="text-xl lg:text-xl xl:text-2xl  font-semibold">
+          <p className="text-2xl font-semibold">
             {member.name}
           </p>
-          <p className="text-l lg:text-l xl:text-xl font-[300]">
+          <p className="text-xl lg:text-xl xl:text-2xl font-[300]">
             {member.role}
           </p>
         </div>

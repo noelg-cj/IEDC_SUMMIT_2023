@@ -1,4 +1,3 @@
-// import Alt from "./assets/img/speakers/sashi.jpg";
 import Alt from "./assets/img/noavatar.png";
 import nivedNarayanan from "./assets/img/teams/Nived Narayanan.jpg";
 import johnGeorge from "./assets/img/teams/John George.jpg";
@@ -20,8 +19,15 @@ import invesrtorEng from "./assets/img/calls/investor_engagement.png";
 import mentorEng from "./assets/img/calls/mentor_engagement.png";
 import startupEng from "./assets/img/calls/startup_engagement.png";
 import volunteers from "./assets/img/calls/volunteers.png";
-import studentProd from "./assets/img/calls/studentProd.png";
-import fleaMarket from "./assets/img/calls/fleaMarket.jpg";
+import studentProd from "./assets/img/calls/studentProd.png"
+import fleaMarket from "./assets/img/calls/fleaMarket.jpg"
+ 
+
+import mascotChallenge from "./assets/img/events/mascotChallenge.jpg"
+import excelAdvanced from "./assets/img/events/excelAdvanced.jpg"
+import aiMentalHealth from "./assets/img/events/AIMentalHealth.jpg"
+import gameDesign from "./assets/img/events/gameDesign.jpg"
+import shortFilm from "./assets/img/events/shortFilm.jpg"
 
 export const speakers = [
   {
@@ -166,7 +172,23 @@ export const prevSummits = [
 ];
 
 export const joinUs = [
-  {
+  { ticketButton: "Apply Now",
+    ticketTitle: "Student Product Showcase",
+    ticketImg: studentProd,
+    ticketDescription:
+      "Showcase your talents and your love for technology at the IEDC Summit 2023. Exhibit projects, Connect with mentors, investors and many more! Join us now!",
+    ticketLink:
+      "https://forms.gle/qtTdJAQetEniAT897",
+  },
+  { ticketButton: "Apply Now",
+    ticketTitle: "Flea Market",
+    ticketImg: fleaMarket,
+    ticketDescription:
+      "Showcase and sell your products at Asia's biggest entrepreneurship event, the IEDC Summit 2023. Book your stalls now!",
+    ticketLink:
+      "https://forms.gle/qtTdJAQetEniAT897",
+  },
+  { ticketButton: "Apply Now",
     ticketTitle: "Start-ups",
     ticketImg: startupEng,
     ticketDescription:
@@ -174,7 +196,7 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSe8wz7WoImaqrtfjqZAA41vYCFV-RxlpO59bPtarNpJUQJUFw/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Communities",
     ticketImg: communityEng,
     ticketDescription:
@@ -182,7 +204,7 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSeDPqNv3cvpsIMT4cYCY5SllVEVbvoUVYl-qGg-mGNLQPeOCg/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Investors",
     ticketImg: invesrtorEng,
     ticketDescription:
@@ -190,15 +212,14 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScCdW_1haP3qJiGsduCVbl0T2QiH4CIz2qKaNXEI8-bkIOqWQ/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Mentors ",
     ticketImg: mentorEng,
-    ticketDescription:
-      "Mold the young and aspiring innovators. Join us as a Mentor and be their guiding light!",
+    ticketDescription: "Mold the young and aspiring innovators. Join us as a Mentor and be their guiding light!",
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScLPb79tRtdFEIhihjGqaRYJYzf-ULBn2jWyaAQFplEoX_kew/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Corporates ",
     ticketImg: corporateEng,
     ticketDescription:
@@ -206,7 +227,7 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfxsN-jncTmn_1kVCsEJijCH6V0n9_dLRo_wytVtroVc-3cPQ/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Government Departments ",
     ticketImg: govtEng,
     ticketDescription:
@@ -214,7 +235,7 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScoI8Zb2A3bw0dp2WdRE0KunLXL2UbphSPW05FibqrC229bFQ/viewform?usp=sf_link",
   },
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Industries ",
     ticketImg: industryEng,
     ticketDescription:
@@ -222,30 +243,15 @@ export const joinUs = [
     ticketLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSdYnVS2-aLea81lRFJYJDtThaSGkN-VrQuNLTkrJ2hNLpM8KA/viewform?usp=sf_link",
   },
-  {
-    ticketTitle: "Student Product Showcase",
-    ticketImg: studentProd,
-    ticketDescription:
-      "Showcase your talents and your love for technology at the IEDC Summit 2023. Exhibit projects, Connect with mentors, investors and many more! Join us now!",
-    ticketLink: "https://forms.gle/qtTdJAQetEniAT897",
-  },
-  {
-    ticketTitle: "Flea Market",
-    ticketImg: fleaMarket,
-    ticketDescription:
-      "Showcase and sell your products at Asia's biggest entrepreneurship event, the IEDC Summit 2023. Book your stalls now!",
-    ticketLink: "https://forms.gle/qtTdJAQetEniAT897",
-  },
-  {
+  { ticketButton: "List Published",
     ticketTitle: "Volunteers",
     ticketImg: volunteers,
     ticketDescription:
       "Be the driving force behind innovation – Join our IEDC Summit Volunteering Team!",
     ticketLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSeHVP308qlb2O4f8095wB5XK4yTsRaWVbvex87RF-JT6m_e-w/viewform",
+      "https://docs.google.com/spreadsheets/d/1mb830MuWfnEwQ-vHTsTZDsnTquEBEdmQknfgtKUCHWg/edit?usp=drivesdk",
   },
-
-  {
+  { ticketButton: "Apply Now",
     ticketTitle: "Campus Ambassador",
     ticketImg: campusAmb,
     ticketDescription:
@@ -254,6 +260,8 @@ export const joinUs = [
       "https://docs.google.com/forms/d/e/1FAIpQLScELRKFTHPidYEnD-bLfuxa6B8Zoba9EkSThh3hMZ3ZBad26g/viewform",
   },
 ];
+
+
 
 export const TeamMembers = [
   {
@@ -307,4 +315,50 @@ export const TeamMembers = [
     image: ajayGosh,
   },
 ];
-
+export const eventData=[
+  {
+    ticketTitle: "Mascot Design Challenge",
+    ticketImg: mascotChallenge,
+    ticketDescription:
+      "Design a mascot that embodies the concept of the 'Circle of Innovation'",
+    ticketLink:
+      "https://forms.gle/rjNuvLr6UK4M7SEs8",
+  },
+  {
+    ticketTitle: "Visualisation using PowerBI",
+    ticketImg: excelAdvanced,
+    ticketDescription:
+      "Learn, explore and advance your skills in data management and visualisation with this advanced excel and Power BI masterclass. Secure your spot now!",
+    ticketLink:
+      "https://forms.gle/QyfJrPuQ5H3QFRYF9",
+  },
+  {
+    ticketTitle: "AI in Mental Health",
+    ticketImg: aiMentalHealth,
+    ticketDescription: "A student panel discussion. Learn from diverse perspectives and innovative solutions. Explore the future of mental health with today's bright minds.",
+    ticketLink: "https://forms.gle/dLFZsJhaMzhWcDfNA"
+  },
+  {
+    ticketTitle: "Game Character Design Workshop",
+    ticketImg: gameDesign,
+    ticketDescription: "Certificates will be ready in 2-3 days. If you have any questions, feel free to reach out. Your patience is appreciated.",
+    ticketLink: ""
+  },
+ /* {
+    ticketTitle: "VFX Workshop",
+    ticketImg: Alt,
+    ticketDescription: "Dive into the world of visual effects, learn the niches of visual design to make stunning effects and forge your career path in the industry. Join now!",
+    ticketLink: ""
+  },{
+    ticketTitle: "Valorant Competition",
+    ticketImg: Alt,
+    ticketDescription: "Calling all ardent gamers! Show off your skills and get to the top of the table with this exciting Valorant competition organized just for you. Register now!",
+    ticketLink: "https://forms.gle/xyVrApbt8pTN2Urv5"
+  },*/
+  {
+    ticketTitle: "Short Film Competition",
+    ticketImg: shortFilm,
+    ticketDescription: "Pick up your cameras, clean up your lenses and sell your story for a chance to be featured on the big screen. Join now",
+    ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8"
+  },
+  ]

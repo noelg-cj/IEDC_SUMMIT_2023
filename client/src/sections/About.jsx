@@ -1,17 +1,17 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
+import { useInView } from 'react-intersection-observer'
 import Paragraph from "../components/paragraph";
 import CET from "../assets/img/CET.jpeg";
 import KSUM from "../assets/img/about/ksum-office.jpg";
 
 const About = () => {
-  const [refOne, inViewOne] = useInView({
+  const [ refOne, inViewOne] = useInView({
     threshold: 0.3,
-    triggerOnce: true,
+    triggerOnce: true
   });
-  const [refTwo, inViewTwo] = useInView({
+  const [ refTwo, inViewTwo] = useInView({
     threshold: 0.3,
-    triggerOnce: true,
+    triggerOnce: true
   });
 
   const aboutSections = [
@@ -59,14 +59,9 @@ const About = () => {
 
   return (
     <>
-      <div
-        className={`relative w-10/12 xs:w-11/12 ${
-          inViewOne ? "opacity-1 translate-y-0" : "opacity-0 translate-y-7"
-        } py-10 space-y-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`}
-        ref={refOne}
-      >
+      <div className={`relative w-10/12 xs:w-11/12 ${ inViewOne ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } py-10 space-y-10 min-h-[80vh] font-dm-sans lg:flex place-items-center transition duration-300`} ref={refOne}>
         <div className="w-[500px] h-[500px] md:w-[700px] md:h-[700px] lg:w-[900px] lg:h-[900px] bg-transparent border-[#3866F2] border-[70px] md:border-[100px] lg:border-[140px] left-[-250px] md:left-[-350px] lg:left-[-450px] top-0 lg:top-[-150px] opacity-40 absolute rounded-full -z-20"></div>
-        {inViewOne ? (
+        { inViewOne ? (
           <>
             <div className="flex-1 lg:pr-20 box-border">
               <img src={KSUM} alt="image of ksum" />
@@ -79,15 +74,10 @@ const About = () => {
               />
             </div>
           </>
-        ) : null}
+        ) : null
+        }
       </div>
-
-      <div
-        className={`w-10/12 xs:w-11/12 min-h-[80vh] ${
-          inViewTwo ? "opacity-1 translate-y-0" : "opacity-0 translate-y-7"
-        } font-dm-sans flex flex-col-reverse md:flex-row place-items-center transition duration-300`}
-        ref={refTwo}
-      >
+      <div className={`w-10/12 xs:w-11/12 min-h-[80vh] ${ inViewTwo ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-7' } font-dm-sans flex flex-col-reverse lg:flex-row place-items-center transition duration-300`} ref={refTwo}>
         <div className="flex-1 mt-8 md:mt-0">
           <Paragraph
             header={aboutSections[1].header}
