@@ -1,18 +1,14 @@
 import MainPage from "./pages/mainPage"
 import LeaderboardPage from "./pages/leaderBoard";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Router } from 'wouter';
 
-function App() {
-  
+const App = () => {
   return (
     <Router>
-    <Routes>
-      <Route path="/" element={<MainPage/>}/>
-      <Route path="/leaderboard" element={<LeaderboardPage/>}/>
-    </Routes>
-  </Router>
-    
+      <Route path="/" component={MainPage} />
+      <Route path="/leaderboard" component={LeaderboardPage} />
+    </Router>
   );
-}
+};
 
 export default App;
