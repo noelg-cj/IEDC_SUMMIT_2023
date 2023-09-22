@@ -10,7 +10,7 @@ export const leaderboard = [
     {"name": "Muhammed Afsal", "refCode": "PEMAT", "score": 105},
     {"name": "Juhana Sherin T M", "refCode": "I9EVG", "score": 95},
     {"name": "Anu Anna S", "refCode": "32170", "score": 95},
-    {"name": "K E NANDAGOPAL", "refCode": "W51A2", "score": 90},
+    {"name": "K E Nandagopal", "refCode": "W51A2", "score": 90},
     {"name": "Fahmin Fayas A.K", "refCode": "01OLR", "score": 89},
     {"name": "Farhana Fathima Ayoob", "refCode": "9NJ64", "score": 80},
     {"name": "Ann S S", "refCode": "BV83W", "score": 80},

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
 function callCard(props) {
-  const numberOfSquares = 14;
-  const squares = [];
-  const { buttonTitle, eventName, eventImg, eventDescription, eventLink } =
+  
+  const { eventName, eventImg, eventDescription, eventLink, buttonTitle } =
     props;
 
   return (

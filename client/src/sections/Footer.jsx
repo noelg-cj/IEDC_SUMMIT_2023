@@ -21,7 +21,7 @@ export default function Footer() {
         component="footer"
         width="100%"
       >
-        <div class="grid">
+        <div className="grid">
         <Grid container justifyContent="space-evenly" spacing="1%">
           <Grid item xs={12} sm={4} zeroMinWidth paddingBottom={7}>
             <Grid container justifyContent="space-evenly">

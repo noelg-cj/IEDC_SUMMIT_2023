@@ -4,12 +4,15 @@ import LeaderboardCard from "./LeaderboardCard";
 import { leaderboard } from "../leaderBoardData";
 import bg from "../assets/img/leaderboard.png";
 
-export default function LBmodal(props) {
-  return (
-    <div className="static ">
-      <div className="fixed top-[5%] bottom-[5%] lg:right-[15%] lg:left-[15%] right-[6%] left-[6%] z-[100] flex justify-center bg-gradient-to-br from-[#0597F2] to-[#6F04D9] p-1 rounded-[20px]">
-        <img src={bg} className="invisible lg:visible absolute z-10 top-12" />
+function LBmodal() {
+ 
 
+
+  return (
+    
+      <div className=" relative w-full flex justify-center bg-gradient-to-br from-[#0597F2] to-[#6F04D9] p-1 ">
+        <button  className="absolute top-2 md:top-5 left-2 md:left-5 p-2 bg-transparent text-white border-[#FFF8] rounded-[10px] border-2">Go To Home</button>
+        <img src={bg} className="invisible lg:visible absolute z-10 top-12" />
         <div className="mx-4 my-4 w-9/12 z-[100]">
           <div className="flex justify-end pt-8 pb-12 w-full">
             <div className="w-full text-center self-center flex flex-col bg-transparent ">
@@ -18,24 +21,20 @@ export default function LBmodal(props) {
                   Campus Ambassador
                 </h1>
               </div>
-              <h1 className="inline font-[700] text-4xl text-white z-[100]">
+              <h1 className="inline font-[700] text-5xl text-white z-[100]">
                 LeaderBoard
               </h1>
             </div>
-            <button
-              onClick={() => props.toggler()}
-              className="text-white text-xl px-2 m-2 self-end absolute top-4 right-4"
-            >
-              {"\u274C"}
-            </button>
+            
           </div>
-          <div className="bg-transparent flex flex-col gap-6 h-[70vh] sm:h-[55vh] overflow-auto">
+          <div className="bg-transparent flex flex-col gap-6 min-h-screen ">
             {leaderboard.map((lb, index) => (
               <LeaderboardCard data={lb} position={index+1} key={index + lb.name} />
             ))}
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }
+export default LBmodal;

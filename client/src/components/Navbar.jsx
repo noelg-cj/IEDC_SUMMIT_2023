@@ -5,6 +5,23 @@ import StartupMissionLogo from "./startupMissionLogo";
 function Navbar({ navbarItems }) {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const [blur, setBlur] = useState(false);
+  const [scroll, setScroll] = useState(0);
+
+  const onScroll = () => {
+    const winScroll = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    const scrollPrgress = (winScroll / height) * 100;
+
+    setScroll(scrollPrgress);
+    console.log(scrollPrgress);
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const toggleDropDown = () => {
     setIsDropDownOpen(!isDropDownOpen);
@@ -16,10 +33,7 @@ function Navbar({ navbarItems }) {
       setIsDropDownOpen(false);
     };
     window.addEventListener("scroll", scrollHandler);
-
-    console.log(window.scrollY);
     scrollHandler();
-
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
@@ -75,6 +89,7 @@ function Navbar({ navbarItems }) {
           ))}
         </div>
       </div>
+      <div className={`absolute bottom-0 bg-[#3866F2] h-1`} style={{width: `${scroll}%`}}></div>
     </nav>
   );
 }
