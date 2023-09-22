@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<MainPage />} />
         <Route exact path="/leaderboard" element={<LeaderboardPage />} />
+        <Route path="/test" element={<h1>404 Not Found</h1>} />
       </Routes>
     </Router>
   );
