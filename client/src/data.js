@@ -370,12 +370,7 @@ export const eventData=[
       answer:
         "IEDC Summit 2023 offers 3 categories of tickets (i) An IEDC Group Pass that admits 20 members from the IEDC in any institution. Entry is priced at 499 per head. (ii) An individual academia pass for a student and faculties of any educational institution, priced at 499. (iii) An individual pass for any other individual, priced at 999.",
     },
-    {
-      question:
-        "What does the IEDC group pass include?",
-      answer:
-        " With an IEDC group pass, 20 students from an IEDC can attend the summit.",
-    },
+    
     {
       question:
         "What would an attendee get with an entry pass, at the IEDC Summit 2023?",
