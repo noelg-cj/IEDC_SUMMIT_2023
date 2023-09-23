@@ -11,8 +11,9 @@ import Directions from "../sections/Directions";
 import PrevSummut from "../sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
-import { joinUs ,eventData} from "../data";
+import { joinUs, faqData ,eventData} from "../data";
 import LoadingScreen from "../sections/loadingScreen";
+import FAQ from "../sections/FAQ";
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
@@ -29,12 +30,15 @@ function mainPage() {
   const speakersSectionRef = useRef(null);
   const eventsSectionRef = useRef(null);
   const venueSectionRef = useRef(null);
+  const faqSectionRef =useRef(null);
   const navbarItems = [
     { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
     //{ text: "", href: "#speakers", sectionRef: speakersSectionRef },
     //{ text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
+    
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
+    { text: "FAQ", href: "#faq", sectionRef: faqSectionRef },
   ];
   return (
     <div className="flex flex-col justify-center items-center overflow-hidden">
@@ -62,9 +66,8 @@ function mainPage() {
           />
           <PrevSummut />
           <About />
-          
-
-          <Directions sectionRef={venueSectionRef} />
+          <Directions sectionRef={faqSectionRef} />
+          <FAQ faqData={faqData} sectionRef={venueSectionRef}/>
           <Footer />
         </>
       )}

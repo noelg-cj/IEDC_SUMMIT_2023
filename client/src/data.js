@@ -362,3 +362,66 @@ export const eventData=[
     ticketLink: "https://forms.gle/1YS17eGTL9w6M1JR8"
   },
   ]
+
+  export const faqData = [
+    {
+      question:
+        "How many types of tickets are available for the IEDC Summit 2023?",
+      answer:
+        "IEDC Summit 2023 offers 3 categories of tickets (i) An IEDC Group Pass that admits 20 members from the IEDC in any institution. Entry is priced at 499 per head. (ii) An individual academia pass for a student and faculties of any educational institution, priced at 499. (iii) An individual pass for any other individual, priced at 999.",
+    },
+    {
+      question:
+        "What does the IEDC group pass include?",
+      answer:
+        " With an IEDC group pass, 20 students from an IEDC can attend the summit.",
+    },
+    {
+      question:
+        "What would an attendee get with an entry pass, at the IEDC Summit 2023?",
+      answer:
+        'An attendee possessing an entry pass would receive: * A registration kit  * Complimentary lunch  * Access to all events happening at the IEDC Summit 2023',
+    },
+    {
+      question:
+        "How can I submit the project for the Student Product Showcase?",
+      answer:
+        "If you're interested in showcasing your product, visit iedcsummit.in and click on 'Apply Now' on the Student Product Showcase section.",
+    },
+    {
+      question:
+        "Is the Summit open to individuals not currently studying in an institution?",
+      answer:
+        "Yes, any interested individual out of college can register with the individual pass.",
+    },
+    {
+      question:
+        "What are the facilities provided by CET for students attending the summit?",
+      answer:
+        "",
+    },
+    {
+      question:
+        "What are the perks of registering for the summit?",
+      answer:
+        "Unlimited access to all the events of the summit, as well as certificates worth activity points.",
+    },
+    {
+      question:
+        "Who is this summit aimed at?",
+      answer:
+        "This summit is for ANY interested individual or institution, with the various ticket passes offered by KSUM.",
+    },
+    {
+      question:
+        "Upto when are registrations open?",
+      answer:
+        "Registrations are open till Sept 30. Seats filling fast!",
+    },
+    {
+      question:
+        "Do I need to be registered for the IEDC Summit to attend the pre-summit events?",
+      answer:
+        "NO, you do not need to be registered for the IEDC Summit to attend the pre-summit events.",
+    },
+  ];
