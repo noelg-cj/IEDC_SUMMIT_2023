@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FAQ = ({faqData}, { sectionRef }) => {
+function FAQ({faqData}, { sectionRef }){
   const [expandedQuestion, setExpandedQuestion] = useState(null);
 
   
@@ -14,8 +14,8 @@ const FAQ = ({faqData}, { sectionRef }) => {
   };
 
   return (
-    <div  ref={ sectionRef } className="mb-4 space-y-3 md:w-2/3 w-3/4 self-center">
-        <h2 className="text-center block mb-12 text-4xl font-bold">FAQs</h2>
+    <div  ref={ sectionRef } className="mb-16 space-y-3 md:w-2/3 w-3/4 self-center">
+        <h2 className="text-center block mb-20 text-4xl font-bold font-medium md:font-[500] font-darker-grotesque md:text-[60px]">FAQs</h2>
           {faqData.map((faq, index) => (
             <div key={index} className="p-2 bg-[#64748B] text-white rounded-md shadow-md ">
               <div className="flex justify-between items-center">

@@ -30,7 +30,7 @@ function mainPage() {
   const speakersSectionRef = useRef(null);
   const eventsSectionRef = useRef(null);
   const venueSectionRef = useRef(null);
-  const faqSectionRef =useRef(null);
+  const FaqSectionRef = useRef(null);
   const navbarItems = [
     { text: "HOME", href: "#", sectionRef: homeSectionRef },
     { text: "ABOUT", href: "#about", sectionRef: aboutSectionRef },
@@ -38,7 +38,6 @@ function mainPage() {
     //{ text: "EVENTS", href: "#events", sectionRef: eventsSectionRef },
     
     { text: "VENUE", href: "#venue", sectionRef: venueSectionRef },
-    { text: "FAQ", href: "#faq", sectionRef: faqSectionRef },
   ];
   return (
     <div className="flex flex-col justify-center items-center overflow-hidden">
@@ -66,8 +65,8 @@ function mainPage() {
           />
           <PrevSummut />
           <About />
-          <Directions sectionRef={faqSectionRef} />
-          <FAQ faqData={faqData} sectionRef={venueSectionRef}/>
+          <Directions sectionRef={venueSectionRef} />
+          <FAQ faqData={faqData} sectionRef={FaqSectionRef}/>
           <Footer />
         </>
       )}
