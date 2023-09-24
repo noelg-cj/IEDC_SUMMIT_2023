@@ -63,7 +63,7 @@ function Calls(props) {
         >
           &#x21e6;
         </button>
-        <div className="flex flex-wrap md:flex-nowrap overflow-scroll md:gap-6 md:px-8 scroll-smooth">
+        <div className="flex flex-wrap md:flex-nowrap overflow-scroll md:gap-6 px-8 scroll-smooth">
           {callCards}
         </div>
         <button
