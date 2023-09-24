@@ -5,6 +5,39 @@ import "../assets/css/textBackdrop.css";
 function Calls(props) {
   const { title, sectionRef, eventData, eventDescription } = props;
 
+  const callCards = [];
+  eventData &&
+    eventData.length > 0 &&
+    eventData.forEach((ticket, index) =>
+      callCards.push(
+        <CallCard
+          key={index}
+          buttonTitle={ticket.ticketButton}
+          eventImg={ticket.ticketImg}
+          eventName={ticket.ticketTitle}
+          eventDescription={ticket.ticketDescription}
+          eventLink={ticket.ticketLink}
+        />
+      )
+    );
+
+  const goPrev = (e) => {
+    const div = e.target.nextElementSibling;
+    const isEnd = div.scrollLeft === 0;
+    div.scrollLeft = isEnd
+      ? div.firstChild.scrollWidth * eventData.length
+      : div.scrollLeft - div.firstChild.scrollWidth * 2.05 - 25;
+  };
+
+  const goNext = (e) => {
+    const div = e.target.previousElementSibling;
+    const isEnd =
+      div.scrollLeft >= div.firstChild.scrollWidth * (eventData.length - 2.2);
+    div.scrollLeft = isEnd
+      ? 0
+      : div.scrollLeft + div.firstChild.scrollWidth * 2.05 + 25;
+  };
+
   return (
     <div
       ref={sectionRef}
@@ -14,7 +47,7 @@ function Calls(props) {
         <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold">
           {title}
         </h1>
-      </div> 
+      </div>
       <div className="w-full space-y-6 text-center self-center">
         <h1 className="inline font-[700] text-[75px] bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] bg-clip-text text-transparent">
           {title}
@@ -23,19 +56,22 @@ function Calls(props) {
           {eventDescription}
         </p>
       </div>
-      <div className="flex flex-row flex-wrap justify-evenly">
-        {eventData &&
-          eventData.length > 0 &&
-          eventData.map((ticket, index) => (
-            <CallCard
-              key={index}
-              buttonTitle={ticket.ticketButton}
-              eventImg={ticket.ticketImg}
-              eventName={ticket.ticketTitle}
-              eventDescription={ticket.ticketDescription}
-              eventLink={ticket.ticketLink}
-            />
-          ))}
+      <div className="flex items-center flex-row gap-12">
+        <button
+          className="hidden md:block text-4xl font-bold hover:bg-[#aaa] px-3 rounded-[5px]"
+          onClick={goPrev}
+        >
+          &#x21e6;
+        </button>
+        <div className="flex flex-wrap md:flex-nowrap overflow-scroll md:gap-6 px-8 scroll-smooth">
+          {callCards}
+        </div>
+        <button
+          className="hidden md:block text-4xl font-bold hover:bg-[#aaa] px-3 rounded-[5px]"
+          onClick={goNext}
+        >
+          &#x21e8;
+        </button>
       </div>
     </div>
   );

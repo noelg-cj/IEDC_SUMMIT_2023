@@ -9,13 +9,14 @@ function Navbar({ navbarItems }) {
 
   const onScroll = () => {
     const winScroll = document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
 
     const scrollPrgress = (winScroll / height) * 100;
 
     setScroll(scrollPrgress);
-    console.log(scrollPrgress);
-  }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
@@ -89,7 +90,10 @@ function Navbar({ navbarItems }) {
           ))}
         </div>
       </div>
-      <div className={`absolute bottom-0 bg-[#3866F2] h-1`} style={{width: `${scroll}%`}}></div>
+      <div
+        className={`absolute bottom-0 bg-[#3866F2] h-1`}
+        style={{ width: `${scroll}%` }}
+      ></div>
     </nav>
   );
 }
