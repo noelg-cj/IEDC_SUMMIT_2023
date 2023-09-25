@@ -8,6 +8,12 @@
     width: 10px;
 }
 
+.horiz-scroll::-webkit-scrollbar {
+    background-color: #aaa7;
+    border-radius: 20px;
+    width: 10px;
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: #0597F2;
     border-radius: 100vw;

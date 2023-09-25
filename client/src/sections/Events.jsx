@@ -1,4 +1,3 @@
-import React from "react";
 import Tickets from "../components/Tickets";
 
 function Events(props) {
@@ -20,7 +19,7 @@ function Events(props) {
           {eventDescription}
         </p>
       </div>
-      <div className="flex md:flex-wrap overflow-scroll scroll-smooth gap-8 md:gap-0 justify-evenly">
+      <div className="flex md:flex-wrap overflow-x-auto scroll-smooth gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll">
         {eventData &&
           eventData.length > 0 &&
           eventData.map((ticket, index) => (
