@@ -27,7 +27,7 @@ function Calls(props) {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
+  
   return (
     <div
       ref={sectionRef}
@@ -57,15 +57,15 @@ function Calls(props) {
         >
           {eventData &&
             eventData.length > 0 &&
-            eventData.map((ticket, index) => (
+            eventData.map((call, index) => (
               <SwiperSlide>
                 <CallCard
                   key={index}
-                  buttonTitle="Closed"
-                  eventImg={ticket.ticketImg}
-                  eventName={ticket.ticketTitle}
-                  eventDescription={ticket.ticketDescription}
-                  eventLink={ticket.ticketLink}
+                  buttonTitle="Apply Now"
+                  eventImg={call.poster}
+                  eventName={call.title}
+                  eventDescription={call.description}
+                  eventLink={call.link}
                 />
               </SwiperSlide>
             ))}

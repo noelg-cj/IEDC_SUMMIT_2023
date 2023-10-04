@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {urlFor} from "../../sanityConfig.js"
 
 function Ticket(props) {
   const numberOfSquares = 14;
@@ -28,7 +29,7 @@ function Ticket(props) {
     >
       <div className="h-[50%] shadow-2xl shadow-blue-100 border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
         <img
-          src={eventImg}
+          src={urlFor(eventImg).url()}
           alt="Event Image"
           className=" rounded-[20px] w-full h-full  "
         />

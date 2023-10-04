@@ -66,14 +66,14 @@ function Events(props) {
             eventData.length > 0 &&
             eventData.map(
               (ticket, index) =>
-                ticket.sectionId === parseInt(activeLink) && (
+                ticket.section === parseInt(activeLink) && (
                   <Tickets
                     key={index}
-                    eventName={ticket.ticketTitle}
-                    eventImg={ticket.ticketImg}
-                    eventDescription={ticket.ticketDescription}
-                    eventLink={ticket.ticketLink}
-                    eventButton={ticket.ticketButton}
+                    eventName={ticket.title}
+                    eventImg={ticket.poster}
+                    eventDescription={ticket.description}
+                    eventLink={ticket.link}
+                    eventButton={ticket.button}
                   />
                 )
             )}
@@ -91,15 +91,15 @@ function Events(props) {
               eventData.length > 0 &&
               eventData.map(
                 (ticket, index) =>
-                  ticket.sectionId === parseInt(activeLink) && (
+                  ticket.section === parseInt(activeLink) && (
                     <SwiperSlide>
                       <Tickets
                         key={index}
-                        eventName={ticket.ticketTitle}
-                        eventImg={ticket.ticketImg}
-                        eventDescription={ticket.ticketDescription}
-                        eventLink={ticket.ticketLink}
-                        eventButton={ticket.ticketButton}
+                        eventName={ticket.title}
+                        eventImg={ticket.poster}
+                        eventDescription={ticket.description}
+                        eventLink={ticket.link}
+                        eventButton={ticket.button}
                       />
                     </SwiperSlide>
                   )
