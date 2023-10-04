@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {urlFor} from "../../sanityConfig.js"
 
 function Speaker({ speaker }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -12,7 +13,7 @@ function Speaker({ speaker }) {
       >
         <img
           className="w-full h-full object-cover rounded-full"
-          src={speaker.img}
+          src={urlFor(speaker.image).url()}
           alt="Speaker"
         />
         <div

@@ -1,17 +1,26 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { useInView } from "react-intersection-observer";
 import Speaker from "../components/SpeakerCard";
 import WaveLine from "../components/WaveLine";
-import { speakers } from "../data";
 import "../assets/css/animations.css";
+import {client} from "../../sanityConfig.js";
 // import { useMediaQuery } from "react-responsive";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
+async function getSpeakers() {
+  const speakers = await client.fetch('*[_type == "speaker"]')
+  return speakers
+}
 
 function Speakers({ sectionRef }) {
   const { ref, inView } = useInView({
     threshold: 0.6,
   });
+  
+  const [speakers, setSpeakers] = useState([])
+  useEffect(() => {
+    getSpeakers().then((speakers) => setSpeakers(speakers))
+  }, [])
   // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   // if (!isMobile) {
   return (

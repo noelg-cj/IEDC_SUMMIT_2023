@@ -10,19 +10,33 @@ import Directions from "../sections/Directions";
 import PrevSummut from "../sections/prevSummits";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
-import { joinUs, faqData, eventData } from "../data";
+import { faqData } from "../data";
 import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 import Speakers from "../sections/Speakers";
+import {client} from "../../sanityConfig.js";
+
+async function getEvents() {
+  const speakers = await client.fetch('*[_type == "event"]')
+  return speakers
+}
+
+async function getCalls() {
+  const calls = await client.fetch('*[_type == "call"]')
+  return calls
+}
 
 function mainPage() {
   const [loading, setLoading] = useState(false);
-
+  const [events, setEvents] = useState([])
+  const [calls, setCalls] = useState([])
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 4000);
+    getEvents().then((Events) => setEvents(Events))
+    getCalls().then((calls) => setCalls(calls))
   }, []);
 
   const homeSectionRef = useRef(null);
@@ -51,12 +65,12 @@ function mainPage() {
           <Events
             title="Events"
             button="Register Now"
-            eventData={eventData}
+            eventData={events}
             sectionRef={eventsSectionRef}
             eventDescrition=""
           />
           <Speakers sectionRef={speakersSectionRef} />
-          <Calls title="Join Us" eventData={joinUs} eventDescrition="" />
+          <Calls title="Join Us" eventData={calls} eventDescrition="" />
           <PrevSummut />
           <About />
           <Directions sectionRef={venueSectionRef} />
