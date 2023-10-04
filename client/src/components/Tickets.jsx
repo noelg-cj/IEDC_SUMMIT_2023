@@ -2,56 +2,76 @@ import React, { useState } from "react";
 
 function Ticket(props) {
   const numberOfSquares = 14;
+  const buttonTitleArray = [
+    "Register Now",
+    "Event Completed",
+    "Registrations Closed",
+    "Forthcoming Results",
+  ];
   const squares = [];
-  const { buttonTitle, eventName, eventImg, eventDescription, eventLink } =
+  const { eventName, eventImg, eventDescription, eventLink, eventButton } =
     props;
   for (let i = 0; i < numberOfSquares; i++) {
     squares.push(
       <div
         key={i}
-        className="bg-white w-[15px] h-[15px] rounded-[15px] mr-2"
+        className="shadow-inner  border-2 bg-zinc-50 w-[15px] h-[15px] rounded-[15px] mr-2"
       ></div>
     );
   }
 
   return (
     <div
-      className="flex-none mb-6  overflow-hidden relative flex flex-col h-[622px] 
-    bg-[#3866F2] hover:bg-gradient-to-br from-[#1687F2] to-[#5D25E1]
-    w-[365.82px] rounded-[30px]"
+    className="flex-none overflow-hidden relative flex flex-col h-[622px] border-b-2 border-r- border-gray-300
+    bg-white
+    w-[350px] rounded-[30px] mb-12 "
     >
-      <div className="h-[234px] bg-white  self-center m-[19px]  w-11/12 rounded-[30px]">
+      <div className="h-[50%] shadow-2xl shadow-blue-100 border-2 rounded-[20px]  w-full self-center     rounded-t-[30px]">
         <img
           src={eventImg}
-          alt="mathew"
-          className="rounded-[30px] w-full h-full "
+          alt="Event Image"
+          className=" rounded-[20px] w-full h-full  "
         />
       </div>
-      <div className="self-center flex flex-row bg-lime- ">
-        <div className="w-[38px] rotate-180  overflow-hidden">
-          <div className="w-[75px] h-[75px] bg-white rounded-[75px]"></div>
+
+      <div className="h-[50%] ">
+        <div className=" flex flex-row h-[25%] items-center  mx-auto">
+          <div className="w-[38px]  rotate-180  overflow-hidden">
+            <div className="shadow-inner  w-[75px] bg-zinc-50 h-[75px]  rounded-[75px]"></div>
+          </div>
+          <div className="ml-2 my-auto mx-auto flex">{squares}</div>
+          <div className="w-[38px]   overflow-hidden">
+            <div className="shadow-inner w-[75px] bg-zinc-50 h-[75px] rounded-[75px]"></div>
+          </div>
         </div>
-        <div className="ml-2 my-auto mx-auto flex">{squares}</div>
-        <div className="w-[38px]   overflow-hidden">
-          <div className="w-[75px] h-[75px] bg-white rounded-[75px]"></div>
-        </div>
-      </div>
-      <div className="font-dm-sans">
-        <div className="w-11/12 mx-auto  h-fit items-center  mx-auto">
-          <h1 className="font-[900] text-3xl leading-tight">{eventName}</h1>
-          <p className=" font-[300] text-[18px]">{eventDescription}</p>
-        </div>
-        <div className="justify-center flex">
-          {eventLink !== "" ? (
-            <a
-              href={eventLink}
-              target="_blank"
-              className="text-center font-[700] absolute bottom-5 text-xl font-extrabold w-[151px] h-[60px] bg-[#FFFFFF] shadow-md rounded-[30px] flex items-center justify-center hover:bg-[#E1F3FE]"
-              rel="noreferrer"
-            >
-              {buttonTitle}
-            </a>
-          ) : null}
+        <div className="h-[75%] border-2 border-t-0  ">
+          <div className="  h-3/4 p-2 w-full  items-center  mx-auto">
+            <h1 className="font-[900] text-left text-2xl  leading-tight">
+              {eventName}
+            </h1>
+            <p className=" font-[300] block text-md ">{eventDescription}</p>
+          </div>
+          <div className="h-1/4  items-center  mx-auto">
+            <div className="justify-center flex">
+              {eventButton == 0 ? (
+                <a
+                  href={eventLink}
+                  target="_blank"
+                  className="text-center bg-[#32d9ff] absolute bottom-5 text-md font-extrabold w-[151px] p-3 shadow-md rounded-[30px] flex items-center justify-center hover:bg-gradient-to-tr from-[#0597F2] to-[#4656E1] hover:text-white"
+                  rel="noreferrer"
+                >
+                  {buttonTitleArray[0]}
+                </a>
+              ) : (
+                <a
+                  className="text-center absolute bottom-5 text-md font-extrabold w-[151px] h-[60px]  shadow-md rounded-[30px] flex items-center justify-center"
+                  rel="noreferrer"
+                >
+                  {buttonTitleArray[eventButton]}
+                </a>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

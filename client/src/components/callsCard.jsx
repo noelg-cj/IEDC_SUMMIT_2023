@@ -5,25 +5,25 @@ function callCard(props) {
     props;
 
   return (
-    <div className="flex-none mb-6  overflow-hidden relative flex flex-col h-[632px] bg-[#2c2c2c]  border-[2px] border-[#3866F266] shadow-md hover:shadow-xl w-[365.82px] rounded-lg lg:rounded-2xl ">
+    <div className="flex-none mb-12  overflow-hidden relative flex flex-col h-[451px] bg-[#2c2c2c]  border-[1px] border-[#3866F266] shadow-lg hover:shadow-xl  w-[340px] rounded-lg lg:rounded-2xl ">
       <img
         src={eventImg}
-        className="h-full flex-1 lg:h-1/2 bg-orange-300  self-center w-full object-cover"
+        className=" shadow-lg h-full flex-1 h-1/2 bg-orange-300   rounded-t-md object-cover"
       />
       <div className="font-dm-sans flex-[2] flex items-center flex-col w-full">
-        <div className="text-white w-10/12 h-fit mt-4 items-center  mx-auto">
-          <h1 className="font-[900] text-left text-2xl lg:text-3xl leading-tight">
+        <div className="text-white w-11/12 h-fit mt-4 items-center  mx-auto">
+          <h1 className="font-[900] text-left text-xl leading-tight">
             {eventName}
           </h1>
-          <p className=" font-[300] block text-md lg:text-lg">
+          <p className=" font-[300] block text-sm">
             {eventDescription}
           </p>
         </div>
         <div className="justify-center flex h-full relative w-full">
           <a
-            href={eventLink}
+            href=""
             target="_blank"
-            className="text-center absolute border-[1px] border-black bottom-4 lg:bottom-7 right-7 lg:right-11 text-xl font-medium w-[151px] h-10 rounded-md flex items-center justify-center bg-white hover:bg-gradient-to-tr from-[#0597F2] to-[#6F04D9] hover:text-white hover:border-0"
+            className="text-center absolute border-[1px] border-black bottom-2  lg:right-2  text-md font-medium w-24 h-6 rounded-md flex items-center justify-center bg-gray-200 "
             rel="noreferrer"
           >
             {buttonTitle}

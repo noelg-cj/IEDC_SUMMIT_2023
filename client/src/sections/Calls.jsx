@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CallCard from "../components/callsCard";
 import "../assets/css/textBackdrop.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 
 function Calls(props) {
   const { title, sectionRef, eventData, eventDescription } = props;
+  const [slides, setSlidesPerView] = useState(3);
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 600) {
+        setSlidesPerView(1);
+      } else if (screenWidth <= 1200) {
+        setSlidesPerView(2);
+      } else if (screenWidth <= 1550) {
+        setSlidesPerView(3);
+      } else {
+        setSlidesPerView(4);
+      }
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div
       ref={sectionRef}
       className="relative space-y-10 font-dm-sans mt-10  md:w-10/12 w-11/12  flex flex-col"
     >
-      <div className="absolute overflow-hidden -z-10 opacity-5 text-[#0597F2] xl:top-[-100px] lg:top-[-70px] md:top-[-20px] hidden-xs top-0 w-full space-y-6 text-center self-center">
+      <div className="absolute overflow-hidden opacity-5 text-[#0597F2] xl:top-[-100px] lg:top-[-70px] md:top-[-20px] hidden-xs top-0 w-full space-y-6 text-center self-center">
         <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold">
           {title}
         </h1>
@@ -23,19 +46,30 @@ function Calls(props) {
           {eventDescription}
         </p>
       </div>
-      <div className="flex md:flex-wrap overflow-x-auto scroll-smooth gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll">
-        {eventData &&
-          eventData.length > 0 &&
-          eventData.map((ticket, index) => (
-            <CallCard
-              key={index}
-              buttonTitle={ticket.ticketButton}
-              eventImg={ticket.ticketImg}
-              eventName={ticket.ticketTitle}
-              eventDescription={ticket.ticketDescription}
-              eventLink={ticket.ticketLink}
-            />
-          ))}
+      <div className="w-5/6space-x-5 flex md:flex-wrap overflow-x-auto scroll-smooth gap-16 md:gap-0 pb-8 md:justify-evenly horiz-scroll">
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={slides}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+        >
+          {eventData &&
+            eventData.length > 0 &&
+            eventData.map((ticket, index) => (
+              <SwiperSlide>
+                <CallCard
+                  key={index}
+                  buttonTitle="Closed"
+                  eventImg={ticket.ticketImg}
+                  eventName={ticket.ticketTitle}
+                  eventDescription={ticket.ticketDescription}
+                  eventLink={ticket.ticketLink}
+                />
+              </SwiperSlide>
+            ))}
+        </Swiper>
       </div>
     </div>
   );

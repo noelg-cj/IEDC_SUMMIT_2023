@@ -17,7 +17,7 @@ function Speakers({ sectionRef }) {
   return (
     <div
       ref={sectionRef}
-      className="relative md:h-screen w-full mt-10 flex-shrink-0 bg-gradient-to-b from-[#097ED8] to-[#001E35]  px-7 py-12 overflow-hidden"
+      className="relative w-full mt-10 flex-shrink-0 bg-gradient-to-r from-[#0597F2] to-[#6F04D9]  px-7 py-12 overflow-hidden"
     >
       <div
         ref={ref}
@@ -52,14 +52,12 @@ function Speakers({ sectionRef }) {
       >
         <h1>The Speakers</h1>
       </div>
-      <div
-        className={`lg:h-3/4 4/5 ${
-          // inView
-          //   ? "animate-speakers-move"
-          //   : "animate-speakers-move-return hidden"
-          ""
-        }`}
-      >
+      <div className="absolute overflow-hidden opacity-5 text-white xl:top-[-100px] lg:top-[-70px] md:top-[-20px] hidden-xs top-0 w-full space-y-6 text-center self-center">
+        <h1 className="xl:text-[250px] lg:text-[200px] md:text-[150px] sm:text-[120px] whitespace-nowrap font-bold">
+          The Speakers
+        </h1>
+      </div>
+      <div className="lg:h-3/4 4/5">
         <div
           className={`mb-20 md:mb-40 mt-10 md:grid md:grid-cols-4 flex flex-col items-center gap-20 md:ml-10`}
         >
@@ -71,45 +69,13 @@ function Speakers({ sectionRef }) {
 
       <div className={`${inView ? "animate-left" : "animate-left-return"}`}>
         <WaveLine position="absolute bottom-0 -left-48" direction={false} />
-        <WaveLine position="absolute -bottom-4 -left-48" direction={false} />
-        <WaveLine position="absolute -bottom-8 -left-48" direction={false} />
-        <WaveLine
-          position="absolute bottom-4 md:-bottom-12 -left-48"
-          direction={false}
-        />
-        <WaveLine
-          position="absolute bottom-8 md:-bottom-16 -left-48"
-          direction={false}
-        />
+        <WaveLine position="absolute bottom-4 -left-48" direction={false} />
+        <WaveLine position="absolute bottom-8 -left-48" direction={false} />
+        <WaveLine position="absolute bottom-12 -left-48" direction={false} />
+        <WaveLine position="absolute bottom-16 -left-48" direction={false} />
       </div>
     </div>
   );
-  // } else {
-  //   return (
-  //     <div className="my-5">
-  //       <div className="font-darker-grotesque text-5xl text-black text-center font-semibold">
-  //         <h1>The Speakers</h1>
-  //       </div>
-  //       <Swiper
-  //         spaceBetween={50}
-  //         slidesPerView={1}
-  //         onSlideChange={() => console.log("slide change")}
-  //         onSwiper={(swiper) => console.log(swiper)}
-  //         className="bg-gray-300"
-  //       >
-  //         {speakers.map((speaker) => (
-  //           <SwiperSlide>
-  //             <Speaker speaker={speaker} key={speaker.name} />
-  //           </SwiperSlide>
-  //         ))}
-  //         {/* <SwiperSlide>Slide 1</SwiperSlide>
-  //         <SwiperSlide>Slide 2</SwiperSlide>
-  //         <SwiperSlide>Slide 3</SwiperSlide>
-  //         <SwiperSlide>Slide 4</SwiperSlide> */}
-  //       </Swiper>
-  //     </div>
-  //   );
-  // }
 }
 
 export default Speakers;
