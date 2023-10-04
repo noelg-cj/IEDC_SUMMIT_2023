@@ -8,7 +8,7 @@ function preSumCard({ summit }) {
           href={summit.website}
           target="_blank"
         >
-        {summit.year}
+          {summit.year}
         </a>
       </div>
       <div className="flex flex-col justify-between lg:h-32">
@@ -35,9 +35,13 @@ function preSumCard({ summit }) {
               strokeLinejoin="round"
             />
           </svg>
-          <p className="font-[400] text-[20px] w-10/12 sm:text-[20px]">
+          <a
+            className="font-[400] text-[20px] w-10/12 sm:text-[20px]"
+            href={summit.website}
+            target="_blank"
+          >
             {summit.college}
-          </p>
+          </a>
         </span>
         <span className="flex gap-5">
           <svg
@@ -77,7 +81,6 @@ function preSumCard({ summit }) {
               strokeLinejoin="round"
             />
           </svg>
-
           <p className="font-[400] text-[16px] sm:text-[20px]">{summit.date}</p>
         </span>
       </div>

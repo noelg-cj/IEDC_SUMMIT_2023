@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import StartupMissionLogo from "./startupMissionLogo";
+import { AiOutlineClose } from "react-icons/ai"
 
 function Navbar({ navbarItems }) {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
@@ -9,14 +10,12 @@ function Navbar({ navbarItems }) {
 
   const onScroll = () => {
     const winScroll = document.documentElement.scrollTop;
-    const height =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
     const scrollPrgress = (winScroll / height) * 100;
 
     setScroll(scrollPrgress);
-  };
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
@@ -70,7 +69,8 @@ function Navbar({ navbarItems }) {
       <div className="md:hidden items-center justify-around flex duration-500">
         <StartupMissionLogo />
         <button onClick={toggleDropDown}>
-          <FaBars className="text-2xl" />
+          { !isDropDownOpen && <FaBars className="text-2xl" /> }
+          { isDropDownOpen && <AiOutlineClose className="text-2xl" /> }
         </button>
 
         <div
@@ -90,10 +90,7 @@ function Navbar({ navbarItems }) {
           ))}
         </div>
       </div>
-      <div
-        className={`absolute bottom-0 bg-[#3866F2] h-1`}
-        style={{ width: `${scroll}%` }}
-      ></div>
+      <div className={`absolute bottom-0 bg-[#3866F2] h-1`} style={{width: `${scroll}%`}}></div>
     </nav>
   );
 }

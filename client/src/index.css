@@ -11,7 +11,11 @@
 .horiz-scroll::-webkit-scrollbar {
     background-color: #aaa7;
     border-radius: 20px;
-    width: 10px;
+    height: 15px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
 }
 
 ::-webkit-scrollbar-thumb {
