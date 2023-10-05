@@ -5,13 +5,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
-import { eventData } from "../data";
 import { FaSearch } from "react-icons/fa";
 
-let searchEvents = [];
-
-const EventSearch = () => {
+function EventSearch({ eventData }) {
   const [search, setSearch] = useState("");
   const [searchEvents, setSearchEvents] = useState([]);
   const [slides, setSlidesPerView] = useState(3);
@@ -41,7 +37,7 @@ const EventSearch = () => {
   useEffect(() => {
     setSearchEvents(
       eventData.filter((event) =>
-        event.ticketTitle.toLowerCase().includes(search.toLowerCase())
+        event.title.toLowerCase().includes(search.toLowerCase())
       )
     );
   }, [search]);
@@ -73,13 +69,13 @@ const EventSearch = () => {
             searchEvents.map((ticket, index) => (
               <SwiperSlide className="mb-12">
                 <Tickets
-                  key={index}
-                  eventName={ticket.ticketTitle}
-                  eventImg={ticket.ticketImg}
-                  eventDescription={ticket.ticketDescription}
-                  eventLink={ticket.ticketLink}
-                  eventButton={ticket.ticketButton}
-                />
+                    key={index}
+                    eventName={ticket.title}
+                    eventImg={ticket.poster}
+                    eventDescription={ticket.description}
+                    eventLink={ticket.link}
+                    eventButton={ticket.button}
+                  />
               </SwiperSlide>
             ))}
         </Swiper>

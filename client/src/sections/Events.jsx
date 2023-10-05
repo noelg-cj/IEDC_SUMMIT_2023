@@ -8,9 +8,7 @@ import EventSearch from "../components/EventSearch";
 
 function Events(props) {
   const { title, button, sectionRef, eventData, eventDescription } = props;
-
   const [activeLink, setActiveLink] = useState("1");
-
   const links = [
     { id: "1", text: "Road To Summit" },
     { id: "2", text: "Everything is Entrepreneurship" },
@@ -36,7 +34,7 @@ function Events(props) {
         <h1 className="font-[700] text-[75px] text-center text-[#0065B2]">
           {title}
         </h1>
-        <EventSearch />
+        <EventSearch eventData={eventData}/>
         <div className="w-full flex flex-col">
           <div className="flex flex-col p-0 w-full  custom2:p-10">
             <nav>

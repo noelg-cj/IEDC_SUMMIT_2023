@@ -3,7 +3,6 @@ import {urlFor} from "../../sanityConfig.js"
 
 function callCard(props) {
   const { eventName, eventImg, eventDescription, eventLink, buttonTitle } = props;
-  console.log(eventName, eventImg, eventDescription, eventLink, buttonTitle)
   return (
     <div className="flex-none mb-12  overflow-hidden relative flex flex-col h-[451px] bg-[#2c2c2c]  border-[1px] border-[#3866F266] shadow-lg hover:shadow-xl  w-[340px] rounded-lg lg:rounded-2xl ">
       <img
