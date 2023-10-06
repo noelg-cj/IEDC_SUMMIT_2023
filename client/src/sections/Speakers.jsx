@@ -8,7 +8,7 @@ import {client} from "../../sanityConfig.js";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 async function getSpeakers() {
-  const speakers = await client.fetch('*[_type == "speaker"]')
+  const speakers = await client.fetch('*[_type == "speaker"] | order(order asc)')
   return speakers
 }
 
