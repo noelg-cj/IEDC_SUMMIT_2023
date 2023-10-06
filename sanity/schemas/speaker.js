@@ -4,6 +4,12 @@ export default {
   title: 'Speakers',
   fields: [
     {
+      name:'order',
+      type:'number',
+      title:'Order',
+      default: 1000,
+    },
+    {
       name: 'name',
       type: 'string',
       title: 'Name',
@@ -11,12 +17,12 @@ export default {
     {
       name: 'title1',
       type: 'string',
-      title: 'Title1',
+      title: 'Title 1',
     },
     {
       name: 'title2',
       type: 'string',
-      title: 'Title2',
+      title: 'Title 2',
     },
     {
       name: 'image',
