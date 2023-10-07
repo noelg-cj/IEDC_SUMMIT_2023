@@ -14,7 +14,7 @@ import { faqData } from "../data";
 import LoadingScreen from "../sections/loadingScreen";
 import FAQ from "../sections/FAQ";
 import Speakers from "../sections/Speakers";
-import {client} from "../../sanityConfig.js";
+import {client,getData,urlToImage} from "../../sanityConfig.js";
 
 async function getEvents() {
   const speakers = await client.fetch('*[_type == "event"]')
@@ -30,6 +30,21 @@ function mainPage() {
   const [loading, setLoading] = useState(false);
   const [events, setEvents] = useState([])
   const [calls, setCalls] = useState([])
+  const [speakers, setSpeakers] = useState([]);
+  useEffect(() => {
+    setLoading(true);
+    getData('*[_type == "speaker"] | order(order asc)')
+      .then((data) => {
+        setSpeakers(data);
+        return data;
+      })
+      .then((data) => urlToImage(data))
+      .then(() => setLoading(false))
+      .catch((error) => {
+        console.error("Error:", error);
+        setLoading(false);
+      });
+  }, []);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -69,7 +84,7 @@ function mainPage() {
             sectionRef={eventsSectionRef}
             eventDescrition=""
           />
-          <Speakers sectionRef={speakersSectionRef} />
+          <Speakers sectionRef={speakersSectionRef} speakersData={speakers} />
           <Calls title="Join Us" eventData={calls} eventDescrition="" />
           <PrevSummut />
           <About />
