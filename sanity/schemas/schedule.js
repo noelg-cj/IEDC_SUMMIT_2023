@@ -19,6 +19,7 @@ export default {
 					title:'Venue',
 					options: {
 						list: [
+							{title: 'Main Stage', value: 'mainStage'},
 							{title: 'DJ Hall', value: 'djHall'},
 							{title: 'Sargam Stage', value: 'sargamStage'},
 							{title: 'CGPU Hall', value: 'cgpuHall'},
